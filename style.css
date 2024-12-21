@@ -1,104 +1,181 @@
 /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { /* The universal selector selects all elements */
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width/height */
   }
   
   body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    font-family: Arial, sans-serif; /* Sets the font to Arial or a fallback sans-serif */
+    background-color: #000; /* Sets the background color to black */
+    color: #fff; /* Sets text color to white */
   }
   
-  /* Header */
+  /* Header Base Styling */
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000;
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    background-color: #000; /* Black background */
+    padding: 10px 20px; /* Adds 10px vertical and 20px horizontal padding */
+    position: relative; /* Allows positioning of child elements relative to this container */
   }
   
-  .header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+  .header .logo {
+    display: flex; /* Flex container for the logo */
+    align-items: center; /* Vertically centers the content */
+    flex-grow: 1; /* Allows the logo to grow and take available space */
+  }
+  
+  .header .logo img {
+    max-height: 50px; /* Sets a maximum height for the logo */
+  }
+  
+  .nav {
+    display: flex; /* Flex container for navigation links */
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center; /* Vertically centers the items */
+    gap: 20px; /* Adds 20px spacing between links */
+  }
+  
+  .nav a {
+    color: white; /* Sets text color to white */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes text bold */
+    font-size: 1rem; /* Sets font size to 1 rem (relative to the root font size) */
+    text-transform: uppercase; /* Converts text to uppercase */
+    transition: color 0.3s ease; /* Smooth color transition when hovering */
+  }
+  
+  .nav a:hover {
+    color: #ccc; /* Changes link color to light gray on hover */
+  }
+  
+  .nav .cart {
+    position: relative; /* Prepares for positioning the notification dot */
+  }
+  
+  /* Cart Notification Dot */
+  .nav .cart::after {
+    content: ''; /* Adds an empty content element */
+    position: absolute; /* Positions relative to .cart */
+    top: -5px; /* Moves the dot above the top of the cart */
+    right: -5px; /* Moves the dot to the right */
+    width: 10px; /* Sets the dot's width */
+    height: 10px; /* Sets the dot's height */
+    background-color: red; /* Sets the dot color to red */
+    border-radius: 50%; /* Makes the dot circular */
+  }
+  
+  .rainbow-strip {
+    width: calc(100% + 40px); /* Makes the strip wider by 40px */
+    margin-left: -20px; /* Centers the extra width evenly */
+    height: 4px; /* Sets the strip's height */
+  }
+  
+  .rainbow-strip img {
+    width: 100%; /* Ensures the image spans the container width */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Scales the image without distortion */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) { /* Applies styles when screen width is 768px or smaller */
+    .header {
+      flex-direction: column; /* Stacks header items vertically */
+    }
+  
+    .nav {
+      justify-content: center; /* Centers navigation links */
+      flex-wrap: wrap; /* Allows links to wrap to a new line */
+      gap: 10px; /* Reduces spacing between links */
+    }
+  
+    .nav a {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  
+    .header .logo img {
+      max-height: 40px; /* Reduces logo size */
+    }
+  
+    .rainbow-strip {
+      width: 100%; /* Removes extra width */
+      margin-left: 0; /* Aligns strip with the screen */
+    }
   }
   
   /* Hero Section */
   .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: red; /* Red hero background */
+    display: flex; /* Flex container for hero content */
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Spreads items across the container */
+    padding: 50px; /* Adds padding around the content */
+    background-color: red; /* Sets the background color to red */
   }
   
   .hero h1 {
-    font-size: 3rem;
-    color: white;
+    font-size: 3rem; /* Large font size for heading */
+    color: white; /* Sets heading text color to white */
   }
   
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Sets paragraph font size */
   }
   
   /* Latest Release */
   .latest-release {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    background-color: #101010;
+    display: flex; /* Flex container for the release section */
+    align-items: center; /* Vertically centers items */
+    padding: 50px; /* Adds padding */
+    background-color: #101010; /* Dark gray background */
   }
   
   .latest-release .release-text {
-    margin-left: 20px;
+    margin-left: 20px; /* Adds space to the left of the text */
   }
   
   .latest-release button {
-    padding: 10px 20px;
-    border: none;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 10px 20px; /* Adds padding inside the button */
+    border: none; /* Removes border */
+    background-color: white; /* White background */
+    color: black; /* Black text color */
+    font-weight: bold; /* Makes text bold */
+    cursor: pointer; /* Changes cursor to pointer */
   }
   
   /* Product Grid */
   .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 50px;
+    display: grid; /* Uses Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 20px; /* Adds spacing between grid items */
+    padding: 50px; /* Adds padding around the grid */
   }
   
   .product {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Adds padding inside the product box */
+    border: 1px solid #ccc; /* Adds a light gray border */
   }
   
   /* Footer */
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000;
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Spreads items across the footer */
+    align-items: center; /* Vertically centers items */
+    padding: 20px; /* Adds padding around the footer */
+    background-color: #000; /* Black background */
   }
   
   .footer nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 15px; /* Adds horizontal margin between links */
   }
   
   .social-media {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Flex container for social media icons */
+    gap: 10px; /* Adds spacing between icons */
   }
   

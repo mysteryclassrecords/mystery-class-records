@@ -1,0 +1,26 @@
+Optimize Images for Web Use
+Before adding images to your GitHub repo, optimize them to reduce file size while maintaining quality:
+    Tools for Optimization:
+        SVG: Use SVGOMG to clean and compress your SVGs.
+        PNG/JPEG: Use TinyPNG to compress images.
+        WEBP: Use Squoosh for advanced optimization.
+    Why Optimize?
+        Keeps your website loading quickly, especially on mobile devices.
+        Reduces the size of your GitHub repository.
+
+What Format Should You Use?
+    Logos, Icons, and Simple Graphics: Stick with SVG (smallest size, scalable, and high quality).
+    Images Without Transparency: Use JPEG (smaller size for complex graphics or photos).
+    Images With Transparency: Use PNG (if you need transparency, but optimize for smaller file size).
+    Advanced Optimization: Consider WEBP if file size is a concern and browser compatibility isn’t an issue.
+
+To ensure a great mobile experience, you need to implement responsive web design techniques.
+
+Quick Checklist for Mobile Responsiveness
+✔ Use relative units (%, em, vw, etc.).
+✔ Implement media queries for breakpoints.
+✔ Test layouts using browser dev tools.
+✔ Avoid fixed widths and large images.
+✔ Use flexible layouts like Flexbox or CSS Grid.
+✔ Make text and buttons easily readable and touch-friendly.
+
