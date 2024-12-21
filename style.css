@@ -1,21 +1,104 @@
 /* General Reset */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    background-color: #4CAF50;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .header nav a {
     color: white;
-    padding: 20px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: red; /* Red hero background */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Latest Release */
+  .latest-release {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #101010;
+  }
+  
+  .latest-release .release-text {
+    margin-left: 20px;
+  }
+  
+  .latest-release button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .product {
+    background-color: #fff;
+    color: #000;
     text-align: center;
-}
-
-/* Main Content Styling */
-main {
     padding: 20px;
-    text-align: center;
-}
+    border: 1px solid #ccc;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 10px;
+  }
+  
