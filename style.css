@@ -30,15 +30,16 @@ body {
 }
 
 .nav a {
-  font-family: 'Ringold', sans-serif;
+  font-family: "ringold-sans", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   color: #F3F4F6;
-  text-decoration: none; /* Remove underline */
-  font-weight: 400; /* Normal weight */
+  font-style: normal;
+  text-decoration: none;  
 }
 
 .nav a:hover {
-  color: #ccc; /* Light gray on hover */
+  color: #ccc;
 }
 
 .rainbow-strip {
