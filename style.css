@@ -22,8 +22,8 @@ body {
 }
 
 .header .logo img {
-  max-width: 68.01px;
-  max-height: 56.04px;
+  max-width: 68px;
+  max-height: 56px;
 }
 
 .nav {
@@ -52,7 +52,6 @@ body {
   height: 5px;
   margin: 0; /* Remove any unintended margin */
   padding: 0; /* Ensure no padding exists */
-  z-index: 1; /* Ensure it sits above the header background */
 }
 
 .rainbow-strip img {
@@ -106,7 +105,7 @@ body {
   }
 
   .nav a {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .hero-content {
