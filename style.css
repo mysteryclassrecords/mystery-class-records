@@ -7,11 +7,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #0B1215;
   color: #fff;
 }
 
-/* Header */
 .header {
   background-color: #0B1215;
   display: flex;
@@ -19,7 +18,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   position: relative;
-  height: 80px;
+  height: 110px;
 }
 
 .header .logo img {
@@ -34,7 +33,7 @@ body {
 
 .nav a {
   font-family: "ringold-sans", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   color: #F3F4F6;
   text-decoration: none;  
@@ -44,15 +43,20 @@ body {
   color: #ccc;
 }
 
+/* Rainbow Strip */
 .rainbow-strip {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 5px;
+  margin: 0; /* Remove any unintended margin */
+  padding: 0; /* Ensure no padding exists */
+  z-index: 1; /* Ensure it sits above the header background */
 }
 
 .rainbow-strip img {
+  display: block; /* Ensures no extra space below the image */
   width: 100%;
   height: 100%;
   object-fit: cover;
