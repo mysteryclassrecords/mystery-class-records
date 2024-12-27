@@ -1,0 +1,15 @@
+.tape-stack {
+    position: absolute;
+    top: clamp(-200px, -15vh, -245px); /* Dynamically adjust the top offset */
+    left: -50px; /* Keep the left offset fixed */
+    width: clamp(600px, 40vw, 1252px); /* Shrink dynamically based on viewport width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0;
+  }
+  
+  .tape-stack img {
+    width: 100%; /* Ensure the image fills the parent container */
+    height: auto; /* Maintain aspect ratio dynamically */
+    object-fit: cover; /* Ensure the image fills while maintaining its proportions */
+  }
+  
