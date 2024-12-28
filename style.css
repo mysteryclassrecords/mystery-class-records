@@ -99,15 +99,14 @@ body {
 }
 
 .hero-star {
-  position: relative;
-  left: clamp(1px, calc(50vw + 100px), 1400px);
-  top: 70px;
-  width: 966px;
+  position: absolute;
+  top: 50%;
+  right: clamp(50px, 9.3vw, 180px);
+  transform: translateY(-50%);
 }
-
 .hero-star img {
-  width: 100%;
-  height: 100%;
+  width: clamp(500px, 50.3vw, 966px);
+  height: clamp(455px, 45.8vw, 880px);
 }
 
 /* Latest Release Section */
