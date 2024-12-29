@@ -275,13 +275,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 60px; /* Adjusted padding for better alignment */
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px; /* Added space below top section */
 }
 
 .footer-logo img {
@@ -297,6 +298,7 @@ body {
 .footer-nav a {
   font-family: "ringold-sans", sans-serif;
   font-size: 15px;
+  font-weight: bold; /* Matches the bold text */
   color: #F3F4F6;
   text-decoration: none;
 }
@@ -308,13 +310,14 @@ body {
 .footer-separator img {
   width: 100%;
   height: auto;
+  margin: 10px 0; /* Added margin to separate top and bottom sections */
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 20px; /* Adjusted spacing */
 }
 
 .footer-tagline {
@@ -326,6 +329,7 @@ body {
 .footer-tagline p {
   font-family: "coolvetica", sans-serif;
   font-size: 32px;
+  font-weight: bold; /* Matches expected bold text */
   color: #F3F4F6;
 }
 
