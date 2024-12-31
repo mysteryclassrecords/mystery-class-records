@@ -196,7 +196,6 @@ body {
 /* Merch Section */
 .merch-section {
   background-color: #F3F4F6;
-  height: 985px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,13 +204,14 @@ body {
 
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40px; /* Space between grid items */
   width: 100%;
-  max-width: 1800px;
+  max-width: calc(4 * 425px + 3 * 40px); /* Allow space for 4 columns and 3 gaps */
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr)); /* Maintain 4 columns maximum */
+  justify-content: center; /* Center the grid */
 }
 
+/* Merch Block */
 .merch-block {
   position: relative;
   width: 425px;
@@ -238,6 +238,10 @@ body {
 }
 
 .merch-info {
+  position: relative;
+  top: 5px;
+  gap: 5px;
+  left: 1px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -275,14 +279,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 60px; /* Adjusted padding for better alignment */
+  padding: 20px 60px;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Added space below top section */
+  margin-bottom: 20px;
 }
 
 .footer-logo img {
@@ -292,13 +296,12 @@ body {
 
 .footer-nav {
   display: flex;
-  gap: 40px;
+  gap: 400px;
 }
 
 .footer-nav a {
   font-family: "ringold-sans", sans-serif;
-  font-size: 15px;
-  font-weight: bold; /* Matches the bold text */
+  font-size: 40px;
   color: #F3F4F6;
   text-decoration: none;
 }
@@ -310,14 +313,13 @@ body {
 .footer-separator img {
   width: 100%;
   height: auto;
-  margin: 10px 0; /* Added margin to separate top and bottom sections */
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px; /* Adjusted spacing */
+  margin-top: 20px;
 }
 
 .footer-tagline {
@@ -328,8 +330,8 @@ body {
 
 .footer-tagline p {
   font-family: "coolvetica", sans-serif;
+  font-style: italic;
   font-size: 32px;
-  font-weight: bold; /* Matches expected bold text */
   color: #F3F4F6;
 }
 
@@ -355,6 +357,7 @@ body {
 
 /* Responsive Styles Section */
 @media (max-width: 768px) {
+  
   /* Mobile Header*/
   .header {
     flex-direction: column;
