@@ -49,4 +49,3 @@ font-style: italic;
 
 Add outline for troubleshooting margins:
 outline: 2px solid red;
-
