@@ -455,8 +455,7 @@ body {
   }
   
   .header-spacer {
-    display: none;
-    /* height: 285px; */
+    height: 80px;
   }
 
   /* Mobile Hero*/
