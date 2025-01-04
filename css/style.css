@@ -74,7 +74,7 @@ body {
 }
 
 .header-spacer {
-  height: 100px; /* Matches the header height */
+  height: 100px;
   width: 100%;
 }
 
@@ -422,11 +422,11 @@ body {
   display: none; /* Hidden by default */
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Center links when shown */
+  align-items: center;
   width: 100%;
   padding: 0;
   margin: 0;
-  order: 2; /* Ensure it appears between the logo and the hamburger icon */
+  order: 2;
 }
 
 .nav.active {
@@ -446,16 +446,17 @@ body {
 .hamburger-icon {
   display: block; /* Ensure visibility in mobile mode */
   cursor: pointer;
-  order: 3; /* Ensure it stays at the end */
-  position: absolute; /* Explicitly position it */
-  right: 20px; /* Stay aligned to the right */
-  top: 50%; /* Vertically center in collapsed mode */
-  transform: translateY(-50%); /* Correct vertical alignment */
+  order: 3;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
 .header.expanded .hamburger-icon {
   top: auto; /* Reset top positioning */
-  bottom: 20px; /* Place in the bottom-right corner */
+  bottom: 30px; /* Place in the bottom-right corner */
   transform: none; /* Remove vertical centering */
 }
 
@@ -465,9 +466,8 @@ body {
 }
 
 .header-spacer {
-  display: none;
+  
 }
-
 
   /* Mobile Hero*/
   .hero {
