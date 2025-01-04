@@ -1,19 +1,50 @@
-let lastScrollY = window.scrollY;
 const header = document.querySelector('.header');
-let threshold = 50; // Adjust to your preference
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const nav = document.querySelector('.nav');
 
+// Check if it's mobile mode
+const isMobile = () => window.innerWidth <= 768;
+
+// Handle header toggle in mobile mode
+const toggleHeader = () => {
+  header.classList.toggle('expanded');
+  nav.classList.toggle('active');
+};
+
+// Add click event to the hamburger icon
+hamburgerIcon.addEventListener('click', toggleHeader);
+
+// Remove scroll-based header behavior in mobile mode
+const handleScroll = () => {
+  if (!isMobile()) {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down: Hide header
+      header.style.transform = `translateY(-${header.getBoundingClientRect().height}px)`;
+    } else {
+      // Scrolling up: Show header
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = currentScrollY;
+  }
+};
+
+// Throttle scroll event for performance
+let lastScrollY = window.scrollY;
+let ticking = false;
 window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      handleScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
 
-  if (Math.abs(currentScrollY - lastScrollY) < threshold) return;
-
-  if (currentScrollY > lastScrollY) {
-    // Scrolling down
-    header.style.transform = 'translateY(-110px)';
-  } else {
-    // Scrolling up
+// Update behavior on resize
+window.addEventListener('resize', () => {
+  if (isMobile()) {
     header.style.transform = 'translateY(0)';
   }
-
-  lastScrollY = currentScrollY;
 });

@@ -52,6 +52,10 @@ body {
   margin-right: 60px;
 }
 
+.hamburger-icon {
+  display: none; /* Hidden by default */
+}
+
 .rainbow-strip {
   position: absolute;
   bottom: 0;
@@ -70,7 +74,7 @@ body {
 }
 
 .header-spacer {
-  height: 110px; /* Matches the header height */
+  height: 100px; /* Matches the header height */
   width: 100%;
 }
 
@@ -385,29 +389,74 @@ body {
   
   /* Mobile Header*/
   .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Adjusted height for the collapsed state */
+    padding: 10px 20px;
+    transition: height 0.3s ease; /* Smooth transition for expansion/collapse */
+  }
+
+  .header.expanded {
+    height: auto; /* Allow expansion to fit nav */
     flex-direction: column;
-    height: auto;
+    align-items: flex-start; /* Align content at the start */
     padding: 20px;
   }
 
   .header .logo {
-    margin-bottom: 20px;
+    order: 1; /* Ensure it stays at the top-left */
+    margin-bottom: 0;
+    align-self: flex-start; /* Fix logo position */
+    padding-bottom: 10px; /* Add spacing for consistent alignment */
+  }
+
+  .header .logo img {
+    max-height: 60px; /* Ensure the logo fits within the header height */
+    width: auto;
   }
 
   .nav {
+    display: none; /* Hidden by default */
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    gap: 10px;
+    align-items: center; /* Center links when shown */
+    width: 100%;
     margin-top: 10px;
-    padding-left: 0;
+    padding: 0;
+    order: 2; /* Ensure it appears between the logo and the hamburger icon */
+  }
+
+  .nav.active {
+    display: flex; /* Show nav when active */
   }
 
   .nav a {
     font-size: 24px;
+    text-align: center;
   }
 
   .nav .cart {
     margin-right: 0;
+  }
+
+  .hamburger-icon {
+    display: block; /* Ensure visibility in mobile mode */
+    cursor: pointer;
+    z-index: 1100;
+    align-self: flex-end; /* Keep it aligned to the right */
+    order: 3; /* Maintain position as last */
+    margin-top: auto; /* Prevent it from moving down */
+  }
+
+  .hamburger-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .header-spacer {
+    display: none;
+    /* height: 285px; */
   }
 
   /* Mobile Hero*/
