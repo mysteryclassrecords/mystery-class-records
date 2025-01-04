@@ -1,65 +1,64 @@
-@media (max-width: 768px) {
-    /* Mobile Header */
-    .header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 80px; /* Adjusted height for the collapsed state */
-      padding: 10px 20px;
-      transition: height 0.3s ease; /* Smooth transition for expansion/collapse */
-    }
-  
-    .header.expanded {
-      height: auto; /* Allow expansion to fit nav */
-      flex-direction: column;
-      align-items: flex-start; /* Align content at the start */
-      padding: 20px;
-    }
-  
-    .header .logo {
-      order: 1; /* Ensure it stays at the top-left */
-      margin-bottom: 0;
-      align-self: flex-start; /* Fix logo position */
-      padding-bottom: 10px; /* Add spacing for consistent alignment */
-    }
-  
-    .header .logo img {
-      max-height: 60px; /* Ensure the logo fits within the header height */
-      width: auto;
-    }
-  
-    .nav {
-      display: none; /* Hidden by default */
-      flex-direction: column;
-      gap: 10px;
-      align-items: center; /* Center links when shown */
-      width: 100%;
-      margin-top: 10px;
-      padding: 0;
-      order: 2; /* Ensure it appears between the logo and the hamburger icon */
-    }
-  
-    .nav.active {
-      display: flex; /* Show nav when active */
-    }
-  
-    .nav a {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    .hamburger-icon {
-      display: block; /* Ensure visibility in mobile mode */
-      cursor: pointer;
-      z-index: 1100;
-      align-self: flex-end; /* Keep it aligned to the right */
-      order: 3; /* Maintain position as last */
-      margin-top: auto; /* Prevent it from moving down */
-    }
-  
-    .hamburger-icon img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-  
+/* Mobile Header*/
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px; /* Match logo height */
+  width: 100%;
+  padding: 20px;
+  transition: height 0.3s ease; /* Smooth transition for expansion/collapse */
+}
+
+.header.expanded {
+  height: auto; /* Allow expansion to fit nav */
+  flex-direction: column;
+  align-items: flex-start; /* Align content at the start */
+  padding-bottom: 10px;
+}
+
+.header .logo img {
+  width: 68px;
+  height: 56px;
+  align-self: flex-start; /* Ensure the logo stays at the top-left */
+  margin-bottom: 0; /* Prevent shifting */
+}
+
+.nav {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center links when shown */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  order: 2; /* Ensure it appears between the logo and the hamburger icon */
+}
+
+.nav.active {
+  display: flex; /* Show nav when active */
+}
+
+.nav a {
+  font-size: 24px;
+  text-align: center;
+}
+
+.nav .cart {
+  margin-right: 0;
+}
+
+.hamburger-icon {
+  display: block; /* Ensure visibility in mobile mode */
+  cursor: pointer;
+  align-self: center; /* Center vertically in the header */
+  order: 3; /* Ensure it stays at the end */
+}
+
+.hamburger-icon img {
+  width: 40px;
+  height: 26px;
+}
+
+.header-spacer {
+  height: 110px; /* Matches collapsed header height */
+}

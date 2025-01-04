@@ -26,6 +26,9 @@ const handleScroll = () => {
       header.style.transform = 'translateY(0)';
     }
     lastScrollY = currentScrollY;
+  } else {
+    // Ensure the header remains visible in mobile mode
+    header.style.transform = 'translateY(0)';
   }
 };
 
