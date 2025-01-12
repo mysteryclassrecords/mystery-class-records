@@ -219,12 +219,12 @@ body {
   color: #000000;
 }
 
-/* Responsive Styles Section */
+/* Mobile Styles (<= 768px) */
 @media (max-width: 768px) {
 
   /* Mobile Hero*/
   .hero {
-    height: auto;
+    height: 480px;
     padding: 20px;
   }
 
@@ -297,4 +297,14 @@ body {
     padding-left: 0;
     width: 20vw;
   }
+}
+
+/* Laptop Styles (769px to 1024px) */
+@media (max-width: 1024px) {
+  
+  /* Hero Section */
+  .hero {
+    height: 768px;
+  }
+
 }
