@@ -1,12 +1,13 @@
 All Pages:
 check footer size to be accurate
 
-Product Page:
-add description section to product page
-
 Home Page:
 add link to mcr002 on merch page
 get product images on home page merch section to load from shopify
+
+Product Page:
+add description section to product page
+add drop-down menu to link to other versions of product
 
 Responsive Design:
 learn how to view live server on mobile and laptop
