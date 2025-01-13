@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/product.css">
   </head>
   <body>  
+    
     <!-- Header -->
     <header class="header">
       <div class="logo">
