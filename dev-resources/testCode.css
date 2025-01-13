@@ -1,64 +1,178 @@
-/* Mobile Header*/
-.header {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 110px; /* Match logo height */
-  width: 100%;
-  padding: 20px;
-  transition: height 0.3s ease; /* Smooth transition for expansion/collapse */
-}
-
-.header.expanded {
-  height: auto; /* Allow expansion to fit nav */
-  flex-direction: column;
-  align-items: flex-start; /* Align content at the start */
-  padding-bottom: 10px;
-}
-
-.header .logo img {
-  width: 68px;
-  height: 56px;
-  align-self: flex-start; /* Ensure the logo stays at the top-left */
-  margin-bottom: 0; /* Prevent shifting */
-}
-
-.nav {
-  display: none; /* Hidden by default */
-  flex-direction: column;
-  gap: 20px;
-  align-items: center; /* Center links when shown */
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  order: 2; /* Ensure it appears between the logo and the hamburger icon */
-}
-
-.nav.active {
-  display: flex; /* Show nav when active */
-}
-
-.nav a {
-  font-size: 24px;
-  text-align: center;
-}
-
-.nav .cart {
-  margin-right: 0;
-}
-
-.hamburger-icon {
-  display: block; /* Ensure visibility in mobile mode */
-  cursor: pointer;
-  align-self: center; /* Center vertically in the header */
-  order: 3; /* Ensure it stays at the end */
-}
-
-.hamburger-icon img {
-  width: 40px;
-  height: 26px;
-}
-
-.header-spacer {
-  height: 110px; /* Matches collapsed header height */
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Mystery Class Records</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/chq5wda.css"> <!-- Adobe Fonts Embed Code -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/product.css">
+  </head>
+  <body>  
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="../../images/header-logo.svg" alt="Logo">
+      </div>
+      <nav class="nav">
+        <a href="../../store">STORE</a>
+        <a href="../../artists">ARTISTS</a>
+        <a href="../../about">ABOUT</a>
+        <a href="#" class="cart">CART</a>
+      </nav>
+      <div class="rainbow-strip">
+        <img src="../../images/rainbow-strip.svg" alt="Rainbow Strip">
+      </div>
+      <div class="hamburger-icon">
+        <img src="../../images/hamburger-icon.svg" alt="Hamburger Menu">
+      </div>
+    </header>
+    
+    <!-- Header Spacer -->
+    <div class="header-spacer"></div> 
+  
+    <!-- Product Section -->
+    <main class="product-section">
+      <div class="product-content">
+        <div class="product-carousel">
+          <div id='product-component-1736648451004'></div>
+        </div>
+        <div class="product-details">
+          <h1 class="product-title">OF COURSE I WILL</h1>
+          <h2 class="product-artist">Cryhard</h2>
+          <p class="release-date">Release Date: July 19, 2024</p>
+          <hr class="separator">
+          <div class="price-and-button">
+            <span class="product-price">$30</span>
+            <div id="product-buy-button" class="product-buy-button">
+              <!-- Shopify Buy Button Script -->
+              <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    document.body.appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: '3eyau1-rk.myshopify.com',
+                      storefrontAccessToken: '6dbf61b263e46db8a392d40ccdbf8901',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('product', {
+                        id: '7723835195446',
+                        node: document.getElementById('product-component-1736648451004'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                          "product": {
+                            "layout": "horizontal",
+                            "styles": {
+                              "button": {
+                                "font-family": "coolvetica, sans-serif",
+                                "background-color": "#0b1215",
+                                "color": "#f3f4f6",
+                                "border-radius": "40px",
+                                ":hover": {
+                                  "background-color": "#131f24"
+                                },
+                                ":focus": {
+                                  "background-color": "#131f24"
+                                }
+                              }
+                            },
+                            "contents": {
+                              "img": false,
+                              "imgWithCarousel": true,
+                              "title": false,
+                              "price": false,
+                              "description": false,
+                              "button": true
+                            }
+                          }
+                        }
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+              </script>
+            </div>
+          </div>
+          
+          <hr class="separator">
+          <div class="track-list">
+            <h3>Track List</h3>
+            <ol>
+              <li>Mind Flayer</li>
+              <li>Dementors</li>
+              <li>Fallout New Vegas</li>
+              <li>Nerf Case</li>
+              <li>Aftermath</li>
+              <li>Legends</li>
+              <li>Working Hard on the Fish Farm</li>
+              <li>Flying With a Gun</li>
+              <li>Low Riffer</li>
+            </ol>
+          </div>
+          <hr class="separator">
+          <div class="pressing-info">
+            <h3>Pressing Info:</h3>
+            <p>First Pressing<br>Black Vinyl x100<br>MCR002</p>
+          </div>
+          <hr class="separator wide-separator">
+        </div>
+      </div>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo-container">
+          <div class="footer-logo">
+            <img src="../../images/footer-logo.svg" alt="Footer Logo">
+          </div>
+          <div class="footer-vertical-separator">
+            <img src="../../images/footer-vertical-separator.svg" alt="Footer Vertical Separator">
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <a href="../../store">STORE</a>
+          <a href="../../artists">ARTISTS</a>
+          <a href="../../about">ABOUT</a>
+        </nav>
+      </div>
+      <div class="footer-horizontal-separator">
+        <img src="../../images/footer-horizontal-separator.svg" alt="Footer Horizontal Separator">
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-tagline">
+          <p>UNEXPLAINABLY GOOD MUSIC.</p>
+          <img src="../../images/footer-icon.svg" alt="Footer Icon">
+        </div>
+        <div class="footer-copyright">
+          <p>© COPYRIGHT 2024 MYSTERY CLASS RECORDS</p>
+        </div>
+        <div class="footer-social">
+          <img src="../../images/social-icons.svg" alt="Social Icons">
+        </div>
+      </div>
+    </footer>
+  </body>
+  

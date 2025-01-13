@@ -50,6 +50,7 @@ font-style: italic;
 Add outline for troubleshooting margins:
 outline: 2px solid red;
 
+storefrontAccessToken: '6dbf61b263e46db8a392d40ccdbf8901'
 
 test buy button:
 

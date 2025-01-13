@@ -1,0 +1,110 @@
+/* Product Section */
+.product-section {
+  padding: 50px;
+  background-color: #f3f4f6;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.product-carousel {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-title {
+  font-family: 'coolvetica', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0B1215;
+}
+
+.product-artist {
+  font-size: 1.5rem;
+  color: #0B1215;
+  margin-bottom: 20px;
+}
+
+.release-date {
+  font-size: 1rem;
+  color: #0B1215;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 20px 0;
+}
+
+.price-and-button {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between the price and button */
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0B1215;
+  margin: 0; /* Ensure no extra margin on the price */
+}
+
+#product-buy-button {
+  display: flex; /* Ensure button takes part in the flex container */
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove any unnecessary margin */
+}
+
+.product-buy-button {
+  display: flex; /* Ensure button takes part in the flex container */
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove any unnecessary margin */
+}
+
+.track-list {
+  margin-top: 20px;
+}
+
+.track-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0B1215;
+}
+
+.track-list ol {
+  padding-left: 20px;
+  color: #0B1215;
+}
+
+.pressing-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0B1215;
+}
+
+.pressing-info p {
+  line-height: 1.5;
+  color: #0B1215;
+}
+
+.wide-separator {
+  width: 100%;
+  margin-top: 40px;
+}

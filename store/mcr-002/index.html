@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata and Page Settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page - Mystery Class Records</title>
+    <title>Cassette - Of Course I Will - Cryhard</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts and Stylesheets -->
     <link rel="stylesheet" href="https://use.typekit.net/chq5wda.css"> <!-- Adobe Fonts Embed Code -->
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/product.css">
   </head>
-  <body>  
-    
-    <!-- Header -->
+
+  <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="logo">
         <img src="../../images/header-logo.svg" alt="Logo">
@@ -32,371 +37,82 @@
         <img src="../../images/hamburger-icon.svg" alt="Hamburger Menu">
       </div>
     </header>
-    
     <div class="header-spacer"></div> 
 
-    <!-- Main Content -->
-    <main>
-      <!-- Product Section -->
-      <section class="product-section">
-        <div class="product-container">
-          <div class="product-images">
-            <!-- Placeholder for product images or gallery -->
-            <img src="../../images/product-placeholder.png" alt="Product Image">
-          </div>
-          <div class="product-info">
-            <!-- Placeholder for product description -->
-            <h1 class="product-title">Product Title</h1>
-            <p class="product-description">A short description of the product goes here.</p>
-          </div>
+    <!-- Product Section -->
+    <main class="product-section">
+      <div class="product-content">
+        <div class="product-carousel" data-product-id="7723835195446">
+          <div id="product-image-carousel"></div>
         </div>
-
-        <!-- Shopify Buy Button Embed -->
-        <div class="shopify-buy-button">
-          <!-- Paste your Shopify Buy Button embed code here -->
-          <div id='product-component-1736648451004'></div>
-          <script type="text/javascript">
-          /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
-            function loadScript() {
-              var script = document.createElement('script');
-              script.async = true;
-              script.src = scriptURL;
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-              script.onload = ShopifyBuyInit;
-            }
-            function ShopifyBuyInit() {
-              var client = ShopifyBuy.buildClient({
-                domain: '3eyau1-rk.myshopify.com',
-                storefrontAccessToken: '6dbf61b263e46db8a392d40ccdbf8901',
-              });
-              ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                  id: '7723835195446',
-                  node: document.getElementById('product-component-1736648451004'),
-                  moneyFormat: '%24%7B%7Bamount%7D%7D',
-                  options: {
-            "product": {
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0",
-                    "margin-bottom": "50px"
-                  },
-                  "text-align": "left"
-                },
-                "title": {
-                  "font-size": "26px",
-                  "color": "#0b1215"
-                },
-                "button": {
-                  "font-family": "Oxygen, sans-serif",
-                  "color": "#f3f4f6",
-                  ":hover": {
-                    "color": "#f3f4f6",
-                    "background-color": "#131f24"
-                  },
-                  "background-color": "#0b1215",
-                  ":focus": {
-                    "background-color": "#131f24"
-                  },
-                  "border-radius": "40px"
-                },
-                "price": {
-                  "font-size": "18px",
-                  "color": "#0b1215"
-                },
-                "compareAt": {
-                  "font-size": "15.299999999999999px",
-                  "color": "#0b1215"
-                },
-                "unitPrice": {
-                  "font-size": "15.299999999999999px",
-                  "color": "#0b1215"
-                },
-                "description": {
-                  "color": "#0b1215"
-                }
-              },
-              "layout": "horizontal",
-              "contents": {
-                "img": false,
-                "imgWithCarousel": true,
-                "description": true
-              },
-              "width": "100%",
-              "googleFonts": [
-                "Oxygen"
-              ]
-            },
-            "productSet": {
-              "styles": {
-                "products": {
-                  "@media (min-width: 601px)": {
-                    "margin-left": "-20px"
-                  }
-                }
-              }
-            },
-            "modalProduct": {
-              "contents": {
-                "img": false,
-                "imgWithCarousel": true,
-                "button": false,
-                "buttonWithQuantity": true
-              },
-              "styles": {
-                "product": {
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0px",
-                    "margin-bottom": "0px"
-                  }
-                },
-                "button": {
-                  "font-family": "Oxygen, sans-serif",
-                  "color": "#f3f4f6",
-                  ":hover": {
-                    "color": "#f3f4f6",
-                    "background-color": "#131f24"
-                  },
-                  "background-color": "#0b1215",
-                  ":focus": {
-                    "background-color": "#131f24"
-                  },
-                  "border-radius": "40px"
-                },
-                "title": {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "bold",
-                  "font-size": "26px",
-                  "color": "#4c4c4c"
-                },
-                "price": {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "18px",
-                  "color": "#4c4c4c"
-                },
-                "compareAt": {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "15.299999999999999px",
-                  "color": "#4c4c4c"
-                },
-                "unitPrice": {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "15.299999999999999px",
-                  "color": "#4c4c4c"
-                },
-                "description": {
-                  "font-family": "Helvetica Neue, sans-serif",
-                  "font-weight": "normal",
-                  "font-size": "14px",
-                  "color": "#4c4c4c"
-                }
-              },
-              "googleFonts": [
-                "Oxygen"
-              ],
-              "text": {
-                "button": "Add to cart"
-              }
-            },
-            "option": {},
-            "cart": {
-              "styles": {
-                "button": {
-                  "font-family": "Oxygen, sans-serif",
-                  "color": "#f3f4f6",
-                  ":hover": {
-                    "color": "#f3f4f6",
-                    "background-color": "#131f24"
-                  },
-                  "background-color": "#0b1215",
-                  ":focus": {
-                    "background-color": "#131f24"
-                  },
-                  "border-radius": "40px"
-                },
-                "title": {
-                  "color": "#0b1215"
-                },
-                "header": {
-                  "color": "#0b1215"
-                },
-                "lineItems": {
-                  "color": "#0b1215"
-                },
-                "subtotalText": {
-                  "color": "#0b1215"
-                },
-                "subtotal": {
-                  "color": "#0b1215"
-                },
-                "notice": {
-                  "color": "#0b1215"
-                },
-                "currency": {
-                  "color": "#0b1215"
-                },
-                "close": {
-                  "color": "#0b1215",
-                  ":hover": {
-                    "color": "#0b1215"
-                  }
-                },
-                "empty": {
-                  "color": "#0b1215"
-                },
-                "noteDescription": {
-                  "color": "#0b1215"
-                },
-                "discountText": {
-                  "color": "#0b1215"
-                },
-                "discountIcon": {
-                  "fill": "#0b1215"
-                },
-                "discountAmount": {
-                  "color": "#0b1215"
-                },
-                "cart": {
-                  "background-color": "#f3f4f6"
-                },
-                "footer": {
-                  "background-color": "#f3f4f6"
-                }
-              },
-              "text": {
-                "total": "Subtotal"
-              },
-              "googleFonts": [
-                "Oxygen"
-              ]
-            },
-            "toggle": {
-              "styles": {
-                "toggle": {
-                  "font-family": "Oxygen, sans-serif",
-                  "background-color": "#0b1215",
-                  ":hover": {
-                    "background-color": "#131f24"
-                  },
-                  ":focus": {
-                    "background-color": "#131f24"
-                  }
-                },
-                "count": {
-                  "color": "#f3f4f6",
-                  ":hover": {
-                    "color": "#f3f4f6"
-                  }
-                },
-                "iconPath": {
-                  "fill": "#f3f4f6"
-                }
-              },
-              "googleFonts": [
-                "Oxygen"
-              ]
-            },
-            "lineItem": {
-              "styles": {
-                "variantTitle": {
-                  "color": "#0b1215"
-                },
-                "title": {
-                  "color": "#0b1215"
-                },
-                "price": {
-                  "color": "#0b1215"
-                },
-                "fullPrice": {
-                  "color": "#0b1215"
-                },
-                "discount": {
-                  "color": "#0b1215"
-                },
-                "discountIcon": {
-                  "fill": "#0b1215"
-                },
-                "quantity": {
-                  "color": "#0b1215"
-                },
-                "quantityIncrement": {
-                  "color": "#0b1215",
-                  "border-color": "#0b1215"
-                },
-                "quantityDecrement": {
-                  "color": "#0b1215",
-                  "border-color": "#0b1215"
-                },
-                "quantityInput": {
-                  "color": "#0b1215",
-                  "border-color": "#0b1215"
-                }
-              }
-            }
-          },
-                });
-              });
-            }
-          })();
-          /*]]>*/
-          </script>
+        <div class="product-details">
+          <h1 class="product-title">OF COURSE I WILL</h1>
+          <h2 class="product-artist">Cryhard</h2>
+          <p class="release-date">Release Date: July 19, 2024</p>
+          <hr class="separator">
+          <div class="price-and-button">
+            <span class="product-price">$30</span>
+            <div class="product-buy-button" data-product-id="7723835195446">
+              <div id="product-add-to-cart"></div>
+            </div>
+          </div>
+          <hr class="separator">
+          <div class="track-list">
+            <h3>Track List</h3>
+            <ol>
+              <li>Mind Flayer</li>
+              <li>Dementors</li>
+              <li>Fallout New Vegas</li>
+              <li>Nerf Case</li>
+              <li>Aftermath</li>
+              <li>Legends</li>
+              <li>Working Hard on the Fish Farm</li>
+              <li>Flying With a Gun</li>
+              <li>Low Riffer</li>
+            </ol>
+          </div>
+          <hr class="separator">
+          <div class="pressing-info">
+            <h3>Pressing Info:</h3>
+            <p>First Pressing<br>Black Vinyl x100<br>MCR002</p>
+          </div>
+          <hr class="separator wide-separator">
         </div>
-      </section>
+      </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-logo-container">
-          <div class="footer-logo">
-            <img src="../../images/footer-logo.svg" alt="Footer Logo">
-          </div>
-          <div class="footer-vertical-separator">
-            <img src="../../images/footer-vertical-separator.svg" alt="Footer Vertical Separator">
-          </div>
-        </div>
-        <nav class="footer-nav">
-          <a href="../../store">STORE</a>
-          <a href="../../artists">ARTISTS</a>
-          <a href="../../about">ABOUT</a>
-        </nav>
+    <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo-container">
+      <div class="footer-logo">
+        <img src="../../images/footer-logo.svg" alt="Footer Logo">
       </div>
-      <div class="footer-horizontal-separator">
-        <img src="../../images/footer-horizontal-separator.svg" alt="Footer Horizontal Separator">
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-tagline">
-          <p>UNEXPLAINABLY GOOD MUSIC.</p>
-          <img src="../../images/footer-icon.svg" alt="Footer Icon">
-        </div>
-        <div class="footer-copyright">
-          <p>© COPYRIGHT 2024 MYSTERY CLASS RECORDS</p>
-        </div>
-        <div class="footer-social">
-          <img src="../../images/social-icons.svg" alt="Social Icons">
-        </div>
-      </div>
-    </footer>
+      <div class="footer-vertical-separator"></div>
+    </div>
+    <nav class="footer-nav">
+      <a href="../../store">STORE</a>
+      <a href="../../artists">ARTISTS</a>
+      <a href="../../about">ABOUT</a>
+    </nav>
+  </div>
+  <div class="footer-horizontal-separator"></div>
+  <div class="footer-bottom">
+    <div class="footer-tagline">
+      <p>UNEXPLAINABLY GOOD MUSIC.</p>
+      <img src="../../images/footer-icon.svg" alt="Footer Icon">
+    </div>
+    <div class="footer-copyright">
+      <p>© COPYRIGHT 2024 MYSTERY CLASS RECORDS</p>
+    </div>
+    <div class="footer-social">
+      <img src="../../images/social-icons.svg" alt="Social Icons">
+    </div>
+  </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="../../scripts/load-header-footer.js"></script>
-    <script src="../../scripts/header-scroll.js"></script>
+    <!-- Import Scripts -->
+    <script src="../../scripts/carousel.js"></script>
+    <script src="../../scripts/add-to-cart.js"></script>
   </body>
 </html>
