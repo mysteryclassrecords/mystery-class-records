@@ -25,17 +25,21 @@ Quick Checklist for Mobile Responsiveness
 ✔ Make text and buttons easily readable and touch-friendly.
 
 Font Details:
+
+Ringold
+font-family: "ringold-sans", sans-serif;
+font-weight: 400;
+text-decoration: none;  
+
 Articulat CF - Regular
 font-family: "articulat-cf", sans-serif;
 font-weight: 500;
 font-style: normal;
 
-
 Articulat CF - Regular Oblique
 font-family: "articulat-cf", sans-serif;
 font-weight: 500;
 font-style: italic;
-
 
 Coolvetica - Bold
 font-family: "coolvetica", sans-serif;

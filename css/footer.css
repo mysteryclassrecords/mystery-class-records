@@ -31,7 +31,7 @@
 .footer-vertical-separator {
   width: 2px;
   height: 122px;
-  background-color: #FFFFFF;
+  background-color: #F3F4F6;
   margin-left: 40px;
 }
 
@@ -63,7 +63,7 @@
 .footer-horizontal-separator {
   width: calc(100% + 40px); /* Extend slightly beyond the parent's width */
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #F3F4F6;
   margin-left: -20px; /* Center it with 20px of space on both sides */
   border: none;
 }

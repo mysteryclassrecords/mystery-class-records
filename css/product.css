@@ -27,19 +27,27 @@
 }
 
 .product-title {
-  font-family: 'coolvetica', sans-serif;
-  font-size: 2.5rem;
+  font-family: "ringold-sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 72px;
   margin-bottom: 10px;
   color: #0B1215;
 }
 
 .product-artist {
-  font-size: 1.5rem;
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
   color: #0B1215;
   margin-bottom: 20px;
 }
 
 .release-date {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1rem;
   color: #0B1215;
   margin-bottom: 20px;
@@ -47,7 +55,7 @@
 
 .separator {
   border: none;
-  border-top: 2px solid #000;
+  border-top: 3px solid #0B1215;
   margin: 20px 0;
 }
 
@@ -58,24 +66,12 @@
 }
 
 .product-price {
-  font-size: 2rem;
-  font-weight: bold;
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 72px;
   color: #0B1215;
   margin: 0; /* Ensure no extra margin on the price */
-}
-
-#product-buy-button {
-  display: flex; /* Ensure button takes part in the flex container */
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* Remove any unnecessary margin */
-}
-
-.product-buy-button {
-  display: flex; /* Ensure button takes part in the flex container */
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* Remove any unnecessary margin */
 }
 
 .track-list {
@@ -83,23 +79,37 @@
 }
 
 .track-list h3 {
-  font-size: 1.2rem;
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 48px;
   margin-bottom: 10px;
   color: #0B1215;
 }
 
 .track-list ol {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
   padding-left: 20px;
   color: #0B1215;
 }
 
 .pressing-info h3 {
-  font-size: 1.2rem;
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
   margin-bottom: 10px;
   color: #0B1215;
 }
 
 .pressing-info p {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24;
   line-height: 1.5;
   color: #0B1215;
 }
