@@ -1,3 +1,7 @@
+General:
+How do the product id and div id work? Where can i easily find them from shopify?
+What is the difference between product and collection buy buttons?
+
 All Pages:
 check footer size to be accurate
 
@@ -8,7 +12,7 @@ get product images on home page merch section to load from shopify
 Product Page:
 fix button style and font
 increase carousel size
-add description section to product page
+add recommended items section to product page
 check on sku number formatting (mcr002 or mcr-002)
 add drop-down menu to link to other versions of product
 
