@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page - Mystery Class Records</title>
     <base href="/mystery-class-records/">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/chq5wda.css"> <!-- Adobe Fonts Embed Code -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/product.css">
   </head>
   <body>  
     
     <!-- Header -->
     <header class="header">
       <div class="logo">
-        <img src="/images/header-logo.svg" alt="Logo">
+        <img src="../images/header-logo.svg" alt="Logo">
       </div>
       <nav class="nav">
-        <a href="/store">STORE</a>
-        <a href="/artists">ARTISTS</a>
-        <a href="/about">ABOUT</a>
+        <a href="../store">STORE</a>
+        <a href="../artists">ARTISTS</a>
+        <a href="../about">ABOUT</a>
         <a href="#" class="cart">CART</a>
       </nav>
       <div class="rainbow-strip">
-        <img src="/images/rainbow-strip.svg" alt="Rainbow Strip">
+        <img src="../images/rainbow-strip.svg" alt="Rainbow Strip">
       </div>
       <div class="hamburger-icon">
-        <img src="/images/hamburger-icon.svg" alt="Hamburger Menu">
+        <img src="../images/hamburger-icon.svg" alt="Hamburger Menu">
       </div>
     </header>
     
@@ -43,7 +43,7 @@
         <div class="product-container">
           <div class="product-images">
             <!-- Placeholder for product images or gallery -->
-            <img src="/images/product-placeholder.png" alt="Product Image">
+            <img src="../images/product-placeholder.png" alt="Product Image">
           </div>
           <div class="product-info">
             <!-- Placeholder for product description -->
@@ -367,37 +367,37 @@
       <div class="footer-top">
         <div class="footer-logo-container">
           <div class="footer-logo">
-            <img src="/images/footer-logo.svg" alt="Footer Logo">
+            <img src="../images/footer-logo.svg" alt="Footer Logo">
           </div>
           <div class="footer-vertical-separator">
-            <img src="/images/footer-vertical-separator.svg" alt="Footer Vertical Separator">
+            <img src="../images/footer-vertical-separator.svg" alt="Footer Vertical Separator">
           </div>
         </div>
         <nav class="footer-nav">
-          <a href="/store">STORE</a>
-          <a href="/artists">ARTISTS</a>
-          <a href="/about">ABOUT</a>
+          <a href="../store">STORE</a>
+          <a href="../artists">ARTISTS</a>
+          <a href="../about">ABOUT</a>
         </nav>
       </div>
       <div class="footer-horizontal-separator">
-        <img src="/images/footer-horizontal-separator.svg" alt="Footer Horizontal Separator">
+        <img src="../images/footer-horizontal-separator.svg" alt="Footer Horizontal Separator">
       </div>
       <div class="footer-bottom">
         <div class="footer-tagline">
           <p>UNEXPLAINABLY GOOD MUSIC.</p>
-          <img src="/images/footer-icon.svg" alt="Footer Icon">
+          <img src="../images/footer-icon.svg" alt="Footer Icon">
         </div>
         <div class="footer-copyright">
           <p>© COPYRIGHT 2024 MYSTERY CLASS RECORDS</p>
         </div>
         <div class="footer-social">
-          <img src="/images/social-icons.svg" alt="Social Icons">
+          <img src="../images/social-icons.svg" alt="Social Icons">
         </div>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="/scripts/load-header-footer.js"></script>
-    <script src="/scripts/header-scroll.js"></script>
+    <script src="../scripts/load-header-footer.js"></script>
+    <script src="../scripts/header-scroll.js"></script>
   </body>
 </html>
