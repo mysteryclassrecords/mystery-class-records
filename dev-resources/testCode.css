@@ -1,12 +1,46 @@
-<div class="merch-block" data-product-id="7723835195446">
-    <div class="block-frame">
-        <div class="image-placeholder"></div> <!-- Placeholder for the product image -->
-    </div>
-    <div class="merch-details">
-        <div class="merch-info">
-            <p class="artist-name">Cryhard</p>
-            <p class="item-name">OF COURSE I WILL - Cassette</p>
-        </div>
-        <div class="price">$10</div>
-    </div>
-</div>
+.merch-details {
+    display: flex;
+    justify-content: space-between; /* Space between text and price */
+    align-items: center; /* Vertically center all items */
+    padding: 10px;
+    position: relative;
+    height: 80px; /* Fixed height for the details section */
+}
+
+.vertical-divider {
+    width: 4px; /* Set divider width */
+    height: calc(100% - 20px); /* Subtract padding to fit perfectly within the container */
+    background-color: #0B1215; /* Divider color */
+    margin: 0 10px; /* Add spacing around the divider */
+    flex-shrink: 0; /* Prevent the divider from shrinking */
+}
+
+.merch-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically align the text */
+    text-align: left;
+    gap: 4px;
+}
+
+.artist-name {
+    font-family: "coolvetica", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B1215;
+}
+
+.item-name {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0B1215;
+}
+
+.price {
+    font-family: "ringold-sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0B1215;
+    text-align: right; /* Align the price to the right */
+}
