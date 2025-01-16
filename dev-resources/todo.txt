@@ -1,20 +1,32 @@
 General:
-How do the product id and div id work? Where can i easily find them from shopify?
-What is the difference between product and collection buy buttons?
+how do the product id and div id work? Where can i easily find them from shopify?
+move to custom domain
 
 All Pages:
-check footer size to be accurate
 
 Home Page:
-add link to mcr002 on merch page
-get product images on home page merch section to load from shopify
+get merch grid to behave optimally
+get side quests image for latest-release section
 
 Product Page:
-fix button style and font
-increase carousel size
 add recommended items section to product page
-check on sku number formatting (mcr002 or mcr-002)
-add drop-down menu to link to other versions of product
+
+Store Page:
+start store page
+
+Artist Page:
+start artist page
+
+About Page:
+start about page
+
+Cart:
+customize cart sidebar styling to fit website styling
+ask if cart in header should link to a separate cart page or open sidebar
+add badge icon to cart in header
+
+Footer:
+add individual social icons and links
 
 Responsive Design:
 learn how to view live server on mobile and laptop

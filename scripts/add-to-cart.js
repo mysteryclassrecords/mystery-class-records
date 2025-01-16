@@ -54,6 +54,7 @@
                               "border-radius": "50px",
                               "padding": "12px 24px",
                               "text-transform": "none",
+                              "transition": "color 0.3s ease",
                               "letter-spacing": "0.5px", // Add slight spacing for better rendering
                               ":hover": {
                                   "background-color": "#0B1215", // Invert colors on hover

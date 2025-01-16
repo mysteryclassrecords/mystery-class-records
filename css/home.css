@@ -140,14 +140,9 @@
   max-width: calc(4 * 425px + 3 * 40px); /* Allow space for 4 columns and 3 gaps */
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr)); /* Maintain 4 columns maximum */
   justify-content: center; /* Center the grid */
-}
-
-.merch-grid {
   padding: 30px 0px;
 }
 
-/* Merch Block */
-/* Merch Block */
 .merch-block {
   width: 425px;
   height: 425px;
@@ -157,8 +152,7 @@
   border: 4px solid #0B1215; /* Outer border for the entire block */
 }
 
-/* Image Section */
-.image-section {
+.merch-block-image-container {
   flex: 1; /* Take up the top square section */
   position: relative;
   overflow: hidden; /* Ensure the image doesn't overflow the section */
@@ -167,14 +161,23 @@
   align-items: center;
 }
 
-.product-image {
+.merch-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+}
+
+.merch-link:hover {
+  color: #FF0000; /* Optional: Add hover effect, like changing the text color */
+  cursor: pointer;
+}
+
+.merch-block-product-image {
   width: 100%; /* Fill the width of the parent container */
   height: 100%; /* Fill the height of the parent container */
   object-fit: cover; /* Ensure the image fills the section neatly */
 }
 
-/* Merch Details Section */
-.merch-details {
+.merch-block-details-container {
   display: flex;
   justify-content: space-between; /* Space between details and price */
   align-items: stretch; /* Ensure both containers fill the height */
@@ -182,46 +185,47 @@
   border-top: 4px solid #0B1215; /* Divider between the image and details */
 }
 
-/* Details Container (Artist Name and Item Name) */
-.details-container {
+.merch-block-names-container {
   flex: 3; /* Take up most of the horizontal space */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically align the text */
+  justify-content: flex-start; /* Align items to the start of the container */
   padding: 10px;
   border-right: 4px solid #0B1215; /* Vertical divider between text and price */
 }
 
-.artist-name {
+.merch-block-artist-name {
   font-family: "coolvetica", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 24px;
   color: #0B1215;
+  margin-bottom: 8px; /* Add space below the artist name */
 }
 
-.item-name {
+.merch-block-product-name {
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   color: #0B1215;
 }
 
-/* Price Container */
-.price-container {
-  flex: 1; /* Adjust width for spacing */
+.merch-block-price-container {
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text alignment */
+  position: relative; /* Allows finer adjustments */
 }
 
-.price {
+.merch-block-price {
   font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 40px;
   color: #0B1215;
   text-align: center;
+  margin-top: 9px;
 }
-
 
 /* Mobile Styles (<= 768px) */
 @media (max-width: 768px) {

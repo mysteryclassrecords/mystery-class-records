@@ -31,10 +31,6 @@
   text-decoration: none;  
 }
 
-.nav a:hover {
-  color: #ccc;
-}
-
 .nav .cart {
   margin-right: 60px;
 }
@@ -131,8 +127,7 @@
       position: absolute;
       right: 30px;
       top: 50%;
-      transform: translateY(-50%);
-    
+      transform: translateY(-50%);    
     }
     
     .header.expanded .hamburger-icon {
