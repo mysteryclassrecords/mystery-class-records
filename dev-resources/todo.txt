@@ -9,16 +9,17 @@ get merch grid to behave optimally
 get side quests image for latest-release section
 
 Product Page:
-add recommended items section to product page
 
 Store Page:
-start store page
+format store page
 
 Artist Page:
-start artist page
+format artist page
+add links to artist pages
+create cryhard page
 
 About Page:
-start about page
+format about page
 
 Cart:
 customize cart sidebar styling to fit website styling
@@ -29,7 +30,6 @@ Header:
 get rainbow underline to stretch full length of header
 
 Footer:
-add individual social icons and links
 
 Responsive Design:
 learn how to view live server on mobile and laptop
