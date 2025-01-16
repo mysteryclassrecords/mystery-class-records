@@ -29,6 +29,11 @@
   font-weight: 400;
   color: #F3F4F6;
   text-decoration: none;  
+  transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.nav a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .nav .cart {

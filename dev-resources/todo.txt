@@ -25,6 +25,9 @@ customize cart sidebar styling to fit website styling
 ask if cart in header should link to a separate cart page or open sidebar
 add badge icon to cart in header
 
+Header:
+get rainbow underline to stretch full length of header
+
 Footer:
 add individual social icons and links
 

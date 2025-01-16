@@ -1,46 +1,102 @@
-.merch-details {
-    display: flex;
-    justify-content: space-between; /* Space between text and price */
-    align-items: center; /* Vertically center all items */
-    padding: 10px;
+/* Related Merch Section */
+.related-merch-section {
+    background-color: #0B1215;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .related-merch-content {
     position: relative;
-    height: 80px; /* Fixed height for the details section */
-}
-
-.vertical-divider {
-    width: 4px; /* Set divider width */
-    height: calc(100% - 20px); /* Subtract padding to fit perfectly within the container */
-    background-color: #0B1215; /* Divider color */
-    margin: 0 10px; /* Add spacing around the divider */
-    flex-shrink: 0; /* Prevent the divider from shrinking */
-}
-
-.merch-info {
+    max-width: 1200px; /* Limit the content width */
+    margin: 0 auto;
+  }
+  
+  .rainbow-container-top img,
+  .rainbow-container-bottom img {
+    width: 100%; /* Ensure full width */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .related-merch-box {
+    position: relative;
+    z-index: 2; /* Ensure it’s above the rainbow containers */
+    padding: 20px 40px; /* Add space inside */
+  }
+  
+  .related-merch-heading {
+    font-family: "ringold-sans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #F3F4F6;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .merch-block {
+    background-color: #F3F4F6;
+    border: 4px solid #0B1215;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically align the text */
-    text-align: left;
-    gap: 4px;
-}
-
-.artist-name {
+    height: 300px;
+  }
+  
+  .merch-block-image-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .merch-block-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .merch-block-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #0B1215;
+    padding: 10px;
+  }
+  
+  .merch-block-names-container {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .merch-block-artist-name {
     font-family: "coolvetica", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #0B1215;
-}
-
-.item-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .merch-block-product-name {
     font-family: "articulat-cf", sans-serif;
-    font-weight: 500;
     font-size: 14px;
-    color: #0B1215;
-}
-
-.price {
+  }
+  
+  .merch-block-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .merch-block-price {
     font-family: "ringold-sans", sans-serif;
-    font-weight: 400;
     font-size: 20px;
-    color: #0B1215;
-    text-align: right; /* Align the price to the right */
-}
+    font-weight: bold;
+  }
+  

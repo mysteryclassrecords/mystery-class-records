@@ -25,6 +25,7 @@
 .footer-logo img {
   width: 414px;
   height: 145px;
+  transition: transform 0.2s ease; /* Add hover effect */
 }
 
 /* Vertical Separator */
@@ -52,11 +53,12 @@
   font-size: clamp(28px, 2vw, 40px);
   font-weight: 400;
   color: #F3F4F6;
-  text-decoration: none;  
+  text-decoration: none;
+  transition: transform 0.2s ease; /* Add hover effect */
 }
 
 .footer-nav a:hover {
-  color: #ccc;
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 /* Horizontal Separator */
@@ -105,9 +107,22 @@
   color: #F3F4F6;
 }
 
-.footer-social img {
-  width: 304px;
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 20px; /* Add spacing between individual icons */
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-social a img {
+  width: 40px;
   height: 40px;
+  transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2); /* Slight zoom on hover */
 }
 
 /* Responsive Styles Section */
@@ -135,5 +150,16 @@
   .footer-horizontal-separator {
     width: 100%; /* Fit the mobile screen */
     margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 15px;
   }
 }
