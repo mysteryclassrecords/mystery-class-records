@@ -144,63 +144,57 @@
 
 /* Related Merch Section */
 .related-merch-section {
-  background-color: #0B1215; /* Background color for the section */
+  background-color: #0B1215;
   overflow: hidden;
   padding: 0;
 }
 
 .related-merch-content {
   position: relative;
-  max-width: 95%; /* Ensure the content is responsive */
+  max-width: 95%;
   margin: 0 auto;
 }
 
-/* Rainbow Containers */
 .rainbow-container-top img,
 .rainbow-container-bottom img {
-  width: 100%; /* Full width for rainbow containers */
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-/* Content Inside the Rainbow Containers */
 .related-merch-box {
   position: relative;
-  z-index: 2; /* Ensure it appears above the rainbow containers */
+  z-index: 2;
   padding: 20px;
 }
 
-/* "RELATED" Heading */
 .related-merch-heading {
-  font-family: "ringold-sans", sans-serif; /* Maintain font family */
-  font-size: 48px; /* Keep consistent size */
+  font-family: "ringold-sans", sans-serif;
+  font-size: 48px;
   font-weight: 400;
-  color: #F3F4F6; /* Keep the default color */
-  text-align: left; /* Align text to the top left */
-  margin: 0 0 20px 10px; /* Adjust margins to place it correctly */
+  color: #F3F4F6;
+  text-align: left;
+  margin: 0 0 20px 10px;
 }
 
-/* Merch Grid */
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 columns with flexible widths */
-  gap: 20px; /* Space between grid items */
-  justify-content: center; /* Center the grid */
-  width: 100%; /* Match the rainbow container width */
-  margin: 0 auto; /* Center the grid */
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Merch Block */
 .merch-block {
-  background-color: #F3F4F6; /* Block background */
+  background-color: #F3F4F6;
   width: 100%;
-  aspect-ratio: 1; /* Maintain a square aspect ratio */
+  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-/* Image Section of the Merch Block */
 .merch-block-image-container {
   flex: 1;
   overflow: hidden;
@@ -212,65 +206,60 @@
 .merch-block-product-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image fills neatly */
+  object-fit: cover;
 }
 
-/* Merch Block Details Section */
 .merch-block-details-container {
   display: flex;
-  justify-content: space-between; /* Space between names and price */
+  justify-content: space-between;
   align-items: stretch;
-  border-top: 4px solid #0B1215; /* Divider between image and details */
-  height: 80px; /* Fixed height for the details section */
+  border-top: 4px solid #0B1215;
+  height: 80px;
 }
 
-/* Name Section in Merch Block */
 .merch-block-names-container {
-  flex: 3; /* Take up most of the space */
+  flex: 3;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align text to the top */
+  justify-content: flex-start;
   padding: 10px;
-  border-right: 4px solid #0B1215; /* Divider between names and price */
+  border-right: 4px solid #0B1215;
 }
 
 .merch-block-artist-name {
-  font-family: "coolvetica", sans-serif; /* Artist name font */
+  font-family: "coolvetica", sans-serif;
   font-weight: bold;
-  font-size: 24px; /* Keep original size */
-  color: #0B1215; /* Default text color */
-  margin-bottom: 8px; /* Space below the artist name */
+  font-size: 24px;
+  color: #0B1215;
+  margin-bottom: 8px;
 }
 
 .merch-block-product-name {
-  font-family: "articulat-cf", sans-serif; /* Product name font */
+  font-family: "articulat-cf", sans-serif;
   font-weight: 500;
-  font-size: 16px; /* Keep original size */
-  color: #0B1215; /* Default text color */
+  font-size: 16px;
+  color: #0B1215;
 }
 
-/* Price Section in Merch Block */
 .merch-block-price-container {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative; /* Allows fine-tuned adjustments */
+  position: relative;
 }
 
 .merch-block-price {
-  font-family: "ringold-sans", sans-serif; /* Price font */
+  font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 40px; /* Keep original size */
-  color: #0B1215; /* Default text color */
+  font-size: 40px;
+  color: #0B1215;
   text-align: center;
 }
 
-/* Links Styling */
 .merch-link {
-  text-decoration: none; /* Remove underlines for links */
-  color: inherit; /* Inherit the text color */
+  color: #0B1215;
 }
 
 .merch-link:hover {

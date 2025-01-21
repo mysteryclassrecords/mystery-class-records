@@ -8,7 +8,6 @@
   padding: 20px 60px;
 }
 
-/* Footer Top Section */
 .footer-top {
   display: flex;
   flex-direction: row;
@@ -25,10 +24,9 @@
 .footer-logo img {
   width: 414px;
   height: 145px;
-  transition: transform 0.2s ease; /* Add hover effect */
+  transition: transform 0.2s ease;
 }
 
-/* Vertical Separator */
 .footer-vertical-separator {
   width: 2px;
   height: 122px;
@@ -36,7 +34,6 @@
   margin-left: 40px;
 }
 
-/* Navigation Links */
 .footer-nav {
   margin-left: 80px;
   margin-right: 80px;
@@ -53,7 +50,6 @@
   font-size: clamp(28px, 2vw, 40px);
   font-weight: 400;
   color: #F3F4F6;
-  text-decoration: none;
   transition: transform 0.2s ease; /* Add hover effect */
 }
 
@@ -61,7 +57,6 @@
   transform: scale(1.1); /* Slight zoom on hover */
 }
 
-/* Horizontal Separator */
 .footer-horizontal-separator {
   width: calc(100% + 40px); /* Extend slightly beyond the parent's width */
   height: 2px;
@@ -70,7 +65,6 @@
   border: none;
 }
 
-/* Footer Bottom Section */
 .footer-bottom {
   display: flex;
   flex-direction: row;
@@ -107,7 +101,6 @@
   color: #F3F4F6;
 }
 
-/* Social Icons */
 .footer-social {
   display: flex;
   gap: 20px; /* Add spacing between individual icons */
@@ -125,7 +118,7 @@
   transform: scale(1.2); /* Slight zoom on hover */
 }
 
-/* Responsive Styles Section */
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;

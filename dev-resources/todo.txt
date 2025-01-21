@@ -1,36 +1,46 @@
 General:
-how do the product id and div id work? Where can i easily find them from shopify?
+learn how to view live server on mobile and laptop
+how do the shopify product ids and div ids work? Where can i easily find them from shopify?
 move to custom domain
 
-All Pages:
-
 Home Page:
-get merch grid to behave optimally
-get side quests image for latest-release section
-
-Product Page:
+get latest release image in a general location
+implement responsive design
+add video to header
 
 Store Page:
-format store page
+implement responsive design
+
+Product Page:
+fix add to cart button shrinking
+implement responsive design
+create pages for other products based off finished first product
 
 Artist Page:
-format artist page
-add links to artist pages
-create cryhard page
+fix artist boxes to look like figma
+get images for all artists
+
+Cryhard Page:
+implement responsive design
+add "listen now" feature
+create artist pages for other artists based off finished cryhard page
 
 About Page:
-format about page
+fix html layout to resemble figma better
+get image for MCR about
+get descriptioon for MCR about
+implement responsive design
 
 Cart:
-customize cart sidebar styling to fit website styling
-ask if cart in header should link to a separate cart page or open sidebar
+add cart page
+customize cart sidebar styling
 add badge icon to cart in header
 
 Header:
+adjust header height based on viewport
 get rainbow underline to stretch full length of header
+add script back for mobile hamburger menu
+implement responsive design
 
 Footer:
-
-Responsive Design:
-learn how to view live server on mobile and laptop
-make header smaller on mobile
+implement responsive design
