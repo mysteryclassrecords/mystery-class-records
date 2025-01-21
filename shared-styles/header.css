@@ -1,0 +1,148 @@
+/* Header Section */
+.header {
+  background-color: #0B1215;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 110px;
+  transition: transform 0.3s ease;
+}
+
+.header .logo img {
+  width: 68px;
+  height: 56px;
+}
+
+.nav {
+  display: flex;
+  gap: 60px;
+  padding-left: 60px;
+}
+
+.nav a {
+  font-family: "ringold-sans", sans-serif;
+  font-size: clamp(28px, 2vw, 40px);
+  font-weight: 400;
+  color: #F3F4F6;
+  text-decoration: none;  
+  transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.nav a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.nav .cart {
+  margin-right: 60px;
+}
+
+.hamburger-icon {
+  display: none; /* Hidden by default */
+}
+
+.rainbow-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.rainbow-strip img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-spacer {
+  height: 110px;
+  width: 100%;
+}
+
+/* Responsive Styles Section */
+@media (max-width: 768px) {
+  
+    /* Mobile Header */
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 110px;
+      width: 100%;
+      padding: 20px;
+      transition: height 0.3s ease;
+      position: fixed;
+    }
+    
+    .header.expanded {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 20px;
+    }
+    
+    .header .logo {
+      align-self: flex-start;
+      position: relative;
+      top: 5px;
+    }
+    
+    .header .logo img {
+      width: 68px;
+      height: 56px;
+      margin-bottom: 0;
+    }
+    
+    .nav {
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      order: 2;
+    }
+    
+    .nav.active {
+      display: flex; /* Show nav when active */
+    }
+    
+    .nav a {
+      font-size: 28px;
+      text-align: center;
+    }
+    
+    .nav .cart {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .hamburger-icon {
+      display: block; /* Ensure visibility in mobile mode */
+      cursor: pointer;
+      order: 3;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);    
+    }
+    
+    .header.expanded .hamburger-icon {
+      top: auto; /* Reset top positioning */
+      bottom: 30px; /* Place in the bottom-right corner */
+      transform: none; /* Remove vertical centering */
+    }
+    
+    .hamburger-icon img {
+      width: 40px;
+      height: 26px;
+    }
+}

@@ -1,0 +1,317 @@
+/* Hero Section */
+.hero {
+  background-color: #FF0000;
+  height: 1026px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.hero-title {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  color: #F3F4F6;
+  line-height: 0.95;
+}
+
+.hero-detail {
+  font-family: "articulat-cf", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  color: #F3F4F6;
+  margin-left: 5px;
+}
+
+.hero-star {
+  position: absolute;
+  top: 50%;
+  right: clamp(50px, 9.3vw, 180px);
+  transform: translateY(-50%);
+}
+.hero-star img {
+  width: clamp(500px, 50.3vw, 966px);
+  height: clamp(455px, 45.8vw, 880px);
+}
+
+/* Latest Release Section */
+.latest-release {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+  background-color: #0B1215;
+  height: 757px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tape-stack {
+  position: absolute;
+  left: -140px;
+  width: 1000px;
+  top: -80px;
+  z-index: 0;
+}
+
+.tape-stack img {
+  width: 100%;
+  height: 100%;
+}
+
+.release-text {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.release-heading {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: italic;
+  color: #F3F4F6;
+  text-shadow: 2px 2px 4px #0B1215;
+  z-index: 1;
+}
+
+.release-title {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  color: #F3F4F6;
+  text-shadow: 2px 2px 4px #0B1215;
+  z-index: 1;
+}
+
+.rainbow-underline {
+  width: clamp(600px, 5vw, 945px);
+  width: clamp(600px, 80vw, 759px);
+  padding-left: 90px;
+  height: 10px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.release-text p {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #F3F4F6;
+  width: clamp(700px, 100%, 1000px);
+  padding-left: 540px;
+  margin-top: 20px;
+}
+
+.pre-order {
+  margin-top: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pre-order img {
+  width: 200px;
+}
+
+/* Store Section */
+.store-section {
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.store-grid {
+  display: grid;
+  gap: 40px; /* Space between grid items */
+  width: 100%;
+  max-width: calc(4 * 425px + 3 * 40px); /* Allow space for 4 columns and 3 gaps */
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr)); /* Maintain 4 columns maximum */
+  justify-content: center; /* Center the grid */
+  padding: 30px 0px;
+}
+
+.merch-block {
+  width: 425px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 4px solid #0B1215; /* Outer border for the entire block */
+}
+
+.merch-block-image-container {
+  flex: 1; /* Take up the top square section */
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+}
+
+.merch-link:hover {
+  cursor: pointer;
+}
+
+.merch-block-product-image {
+  width: 100%; /* Fill the width of the parent container */
+  height: 100%; /* Fill the height of the parent container */
+  object-fit: cover; /* Ensure the image fills the section neatly */
+}
+
+.merch-block-details-container {
+  display: flex;
+  justify-content: space-between; /* Space between details and price */
+  align-items: stretch; /* Ensure both containers fill the height */
+  height: 80px; /* Fixed height for the details section */
+  border-top: 4px solid #0B1215; /* Divider between the image and details */
+}
+
+.merch-block-names-container {
+  flex: 3; /* Take up most of the horizontal space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start of the container */
+  padding: 10px;
+  border-right: 4px solid #0B1215; /* Vertical divider between text and price */
+}
+
+.merch-block-artist-name {
+  font-family: "coolvetica", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #0B1215;
+  margin-bottom: 8px; /* Add space below the artist name */
+}
+
+.merch-block-product-name {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0B1215;
+}
+
+.merch-block-price-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text alignment */
+  position: relative; /* Allows finer adjustments */
+}
+
+.merch-block-price {
+  font-family: "ringold-sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #0B1215;
+  text-align: center;
+  margin-top: 9px;
+}
+
+/* Mobile Styles (<= 768px) */
+@media (max-width: 768px) {
+
+  /* Mobile Hero*/
+  .hero {
+    height: 480px;
+    padding: 20px;
+  }
+
+  .hero-title {
+    position: relative;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .hero-title img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .hero-star {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .hero-star img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  /* Mobile Latest Release*/
+  .latest-release {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .tape-stack {
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    width: clamp(300px, 70vw, 600px);
+    height: auto;
+  }
+
+  .release-text {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rainbow-underline {
+    width: clamp(200px, 50vw, 400px);
+    padding-left: 0;
+  }
+
+  .pre-order img {
+    width: clamp(100px, 30vw, 200px);
+  }
+
+  .release-heading {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+
+  .release-title {
+    font-size: clamp(24px, 4vw, 36px);
+  }
+
+  .release-text p {
+    font-size: clamp(12px, 1.2vw, 16px);
+    padding-left: 0;
+    width: 20vw;
+  }
+}
+
+/* Laptop Styles (769px to 1024px) */
+@media (max-width: 1024px) {
+  
+  /* Hero Section */
+  .hero {
+    height: 768px;
+  }
+
+}
