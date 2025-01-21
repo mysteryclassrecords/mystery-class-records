@@ -57,10 +57,10 @@
                               "transition": "color 0.3s ease",
                               "letter-spacing": "0.5px", // Add slight spacing for better rendering
                               ":hover": {
-                                  "background-color": "#0B1215", // Invert colors on hover
-                                  "color": "#ccc", // Adjust hover text color
-                                  "font-weight": "400", // Explicitly set weight
-                                  "font-style": "italic", // Explicitly set style
+                                  "background-color": "#2e2e2e",
+                                  "color": "#F3F4F6",
+                                  "font-weight": "400",
+                                  "font-style": "italic",
                               },
                               ":focus": {
                                   "background-color": "#0B1215",
