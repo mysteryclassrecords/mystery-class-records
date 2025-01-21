@@ -2,6 +2,7 @@ General:
 learn how to view live server on mobile and laptop
 how do the shopify product ids and div ids work? Where can i easily find them from shopify?
 move to custom domain
+how to make pages load more gracefully?
 
 Home Page:
 get latest release image in a general location
