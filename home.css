@@ -1,9 +1,27 @@
 /* Hero Section */
 .hero {
-  background-color: #FF0000;
+  background-color: #FF0000; /* Fallback red background */
   height: 1026px;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the hero section */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Keeps video behind the content */
+  pointer-events: none; /* Prevents the video from being interacted with */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures content is above the video */
 }
 
 .hero-text {
@@ -18,6 +36,7 @@
   font-weight: 400;
   color: #F3F4F6;
   line-height: 0.95;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added drop shadow */
 }
 
 .hero-detail {
@@ -27,18 +46,24 @@
   font-style: italic;
   color: #F3F4F6;
   margin-left: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added drop shadow */
 }
 
 .hero-star {
-  position: absolute;
-  top: 50%;
-  right: clamp(50px, 9.3vw, 180px);
-  transform: translateY(-50%);
+  flex-shrink: 0; /* Prevent shrinking */
+  max-width: 500px; /* Limit the maximum size */
+  width: clamp(150px, 20vw, 500px); /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: clamp(600px, 50.3vw, 1000px);
+  margin-top: 300px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Added drop shadow */
 }
+
 .hero-star img {
-  width: clamp(500px, 50.3vw, 966px);
-  height: clamp(455px, 45.8vw, 880px);
+  width: clamp(500px, 50.3vw, 800px);
+  height: auto;
 }
+
 
 /* Latest Release Section */
 .latest-release {
