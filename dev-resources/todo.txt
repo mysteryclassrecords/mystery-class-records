@@ -1,47 +1,47 @@
 General:
-learn how to view live server on mobile and laptop
-how do the shopify product ids and div ids work? Where can i easily find them from shopify?
-move to custom domain
-how to make pages load more gracefully?
+learn how to view live server on mobile and laptop  S
+how do the shopify product ids and div ids work? Where can i easily find them from shopify? S
+move to custom domain   M
+how to make pages load more gracefully? M
 
 Home Page:
-get latest release image in a general location
-implement responsive design
-add video to header
+get latest release image in a general location  S
+implement responsive design L
+workaround for video autoplay for firefox M
 
 Store Page:
-implement responsive design
+implement responsive design L
 
 Product Page:
-fix add to cart button shrinking
-implement responsive design
-create pages for other products based off finished first product
+fix add to cart button shrinking M
+implement responsive design L
+create pages for other products based off finished first product L
 
 Artist Page:
-fix artist boxes to look like figma
-get images for all artists
+fix artist boxes to look like figma M
+get images for all artists S
 
 Cryhard Page:
-implement responsive design
-add "listen now" feature
-create artist pages for other artists based off finished cryhard page
+implement responsive design L
+add "listen now" feature L
+create artist pages for other artists based off finished cryhard page L
 
 About Page:
-fix html layout to resemble figma better
-get image for MCR about
-get descriptioon for MCR about
-implement responsive design
+fix html layout to resemble figma better M
+get image for MCR about S
+get descriptioon for MCR about S
+implement responsive design L
 
 Cart:
-add cart page
-customize cart sidebar styling
-add badge icon to cart in header
+add cart page L
+customize cart sidebar styling L
+add badge icon to cart in header L
 
 Header:
-adjust header height based on viewport
-get rainbow underline to stretch full length of header
-add script back for mobile hamburger menu
-implement responsive design
+adjust header height based on viewport M
+get rainbow underline to stretch full length of header S
+add script back for mobile hamburger menu M
+implement responsive design L
 
 Footer:
-implement responsive design
+implement responsive design L
