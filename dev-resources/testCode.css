@@ -1,60 +1,55 @@
-/* Hero Section */
-.hero {
-  background-color: #FF0000; /* Fallback red background */
-  height: 1026px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+/* Header */
+.header {
+  background-color: #0B1215;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: space-between; /* Space out content vertically */
+  justify-content: space-between;
+  align-items: center; /* Center logo and navigation text */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: var(--header-height); /* Dynamic header height */
+  transition: transform 0.3s ease, height 0.3s ease;
+  padding: 0 20px; /* Ensure consistent spacing inside the header */
 }
 
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures video covers the hero section */
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Keeps video behind the content */
-  pointer-events: none; /* Prevents the video from being interacted with */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensures content is above the video */
-  width: 90%; /* Responsive width */
-  max-width: 1200px; /* Maximum width */
+.header .logo {
   display: flex;
-  justify-content: space-between; /* Space between text and star */
-  align-items: center;
+  align-items: center; /* Align logo within its container */
 }
 
-.hero-text {
-  max-width: 60%; /* Ensure text doesn't overflow */
+.header .logo img {
+  margin-left: 0; /* Remove extra margin */
+  width: 68px;
+  height: 56px;
+  vertical-align: middle; /* Align with text in nav */
 }
 
-.hero-title {
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center; /* Align nav text with the logo */
+}
+
+.nav a {
   font-family: "ringold-sans", sans-serif;
-  font-size: clamp(48px, 8vw, 100px); /* Responsive font size */
   font-weight: 400;
+  font-size: 40px;
   color: #F3F4F6;
-  line-height: 0.95;
+  transition: transform 0.2s ease;
 }
 
-.hero-detail {
-  font-family: "articulat-cf", sans-serif;
-  font-size: clamp(18px, 3vw, 30px); /* Responsive font size */
-  font-weight: 500;
-  font-style: italic;
-  color: #F3F4F6;
-  margin-top: 20px;
+.nav a:hover {
+  transform: scale(1.1);
 }
 
-.hero-star {
-  flex-shrink: 0; /* Prevent shrinking */
-  width: clamp(200px, 25%, 500px); /* Responsive width */
+.nav .cart {
+  margin-right: 60px;
+}
+
+/* Header Spacer */
+.header-spacer {
+  height: calc(var(--header-height) + var(--rainbow-height)); /* Matches header + rainbow strip */
+  width: 100%;
+  transition: height 0.3s ease; /* Smoothly transition when header height changes */
 }
