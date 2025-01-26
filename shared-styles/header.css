@@ -25,6 +25,7 @@
   margin-left: 20px;
   width: 68px;
   height: 56px;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .nav {
@@ -38,7 +39,7 @@
   font-weight: 400;
   font-size: 40px;
   color: #F3F4F6;
-  transition: transform 0.2s ease;
+  transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
 .nav a:hover {
@@ -51,28 +52,33 @@
 
 .hamburger-icon {
   margin-top: var(--rainbow-height);
+  margin-right: 10px;
   display: none; /* Hidden by default */
   cursor: pointer;
 }
 
-/* Rainbow Strip */
 .rainbow-strip {
   position: fixed;
   top: var(--header-height);
+  left: 0;
   width: 100%;
   height: var(--rainbow-height);
-  z-index: 1001;  /* Above header */
+  background: linear-gradient(
+    to right,
+    #FF0000 0%,
+    #FFB300 24%,
+    #FFFF00 41%,
+    #00FF00 51.5%,
+    #00FFF7 63%,
+    #0000FF 74%,
+    #8E00FF 100%
+  );
+  z-index: 1001; /* Above header */
+  transition: top 0.3s ease, height 0.3s ease; /* Add transition */
 }
 
-.rainbow-strip img {
-  width: 100%; /* Ensures the rainbow strip covers the full width */
-  height: 100%;
-  object-fit: cover;
-  display: block; /* Removes inline spacing issues */
-}
-
-/* Header Spacer */
 .header-spacer {
+  background-color: black;
   height: calc(var(--header-height) + var(--rainbow-height)); /* Matches header + rainbow strip */
   width: 100%;
   transition: height 0.3s ease; /* Smoothly transition when header height changes */
@@ -112,11 +118,26 @@
     align-items: center;
   }
 
-  .header.expanded {
+  .header[data-expanded="true"] {
     height: auto;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 20px;
+    transition: height 0.3s ease;
+  }
+  
+  .header[data-expanded="true"] .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .header[data-expanded="true"] .header-spacer {
+    height: calc(var(--header-height) + var(--rainbow-height) + 200px); /* Adjust for expanded nav */
   }
 
   .header .logo img {
@@ -126,17 +147,13 @@
 
   .nav {
     display: none; /* Hidden by default */
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    order: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
-
+  
   .nav.active {
-    display: flex; /* Show nav when active */
+    display: flex;
+    opacity: 1;
   }
 
   .nav a {
@@ -150,22 +167,29 @@
   }
 
   .hamburger-icon {
-    display: block;
+    display: block; /* Overwrites the desktop display: none */
     order: 3;
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
   }
-
-  .header.expanded .hamburger-icon {
-    top: auto;
-    bottom: 20px;
-    transform: none;
+  
+  .hamburger-icon button {
+    all: unset; /* Resets all default button styles */
+    cursor: pointer; /* Ensures the cursor indicates interactivity */
+    display: inline-flex; /* Ensures the button takes the size of the icon */
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Matches the icon's width */
+    height: 20px; /* Matches the icon's height */
   }
-
+  
   .hamburger-icon img {
+    display: block; /* Ensures the image displays without spacing issues */
     width: 30px;
     height: 20px;
   }
+  
 }

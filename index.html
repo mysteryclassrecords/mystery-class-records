@@ -20,7 +20,7 @@
 
   <body>      
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" data-expanded="false">
       <div class="logo">
         <a href="index.html">
           <img src="images/header/header-logo.svg" alt="Logo">
@@ -33,16 +33,12 @@
         <a href="#" class="cart">CART</a>
       </nav>
       <div class="hamburger-icon">
-        <img src="images/header/hamburger-icon.svg" alt="Hamburger Menu">
+        <button aria-label="Toggle Menu">
+          <img src="images/header/hamburger-icon.svg" alt="Hamburger Menu">
+        </button>
       </div>
     </header>
-
-    <!-- Rainbow Strip -->
-    <div class="rainbow-strip">
-      <img src="images/header/header-rainbow-strip.svg" alt="Rainbow Strip">
-    </div>
-
-    <!-- Header Spacer -->
+    <div class="rainbow-strip"></div>
     <div class="header-spacer"></div>
 
 
@@ -215,6 +211,6 @@
     </footer>
 
     <!-- Scripts -->
-     
+    <script src="scripts/MobileHeaderExpand.js"></script>
   </body>
 </html>
