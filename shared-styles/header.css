@@ -86,7 +86,7 @@
 }
 
 /* Laptop Media Query */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   :root {
     --header-height: 85px; /* Adjusted header height for laptops */
     --rainbow-height: 4px; /* Adjusted rainbow strip height */
@@ -103,6 +103,9 @@
 
   .nav a {
     font-size: 30px;
+  }
+  .nav .cart {
+    margin-right: 40px;
   }
 }
 

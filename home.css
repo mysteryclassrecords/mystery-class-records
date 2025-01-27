@@ -5,17 +5,19 @@
   height: 80vh;
   position: relative;
   overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-text {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 50px;
 }
 
@@ -26,6 +28,7 @@
   color: #F3F4F6;
   line-height: 0.95;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: font-size 0.3s ease;
 }
 
 .hero-detail {
@@ -36,91 +39,109 @@
   color: #F3F4F6;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+  transition: font-size 0.3s ease;
 }
 
 /* Latest Release Section */
 .latest-release {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 70px;
+  width: 100%;
+  height: 750px;
   background-color: #0B1215;
-  height: 757px;
-  width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   overflow: hidden;
+  align-items: center;
+  transition: height 0.3s ease;
 }
 
-.tape-stack {
-  position: absolute;
-  left: -140px;
-  width: 1000px;
-  top: -80px;
-  z-index: 0;
+.side-quests-vol-1-hero {
+  flex-shrink: 1;
+  width: 950px;
+  height: auto;
+  margin-left: 5vw;
 }
 
-.tape-stack img {
+.side-quests-vol-1-hero img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .release-text {
   flex: 1;
-  gap: 20px;
+  text-align: right;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
-  text-align: right;
+  padding-right: 5vw;
+  align-self: flex-start;
 }
 
 .release-heading {
+  margin-top: 20px;
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-size: 30px;
   font-style: italic;
   color: #F3F4F6;
-  text-shadow: 2px 2px 4px #0B1215;
-  z-index: 1;
+  transition: font-size 0.3s ease;
 }
 
 .release-title {
+  margin-top: 30px;
   font-family: "ringold-sans", sans-serif;
   font-size: 90px;
   font-weight: 400;
   color: #F3F4F6;
-  text-shadow: 2px 2px 4px #0B1215;
-  z-index: 1;
+  white-space: nowrap; /* Disable text wrapping */
+  transition: font-size 0.3s ease;
 }
 
 .rainbow-underline {
-  width: clamp(600px, 5vw, 945px);
-  width: clamp(600px, 80vw, 759px);
-  padding-left: 90px;
-  height: 10px;
-  margin-top: -20px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 668px;
+  height: 5px;
+  transition: width 0.3s ease;
+  background: linear-gradient(
+    to right,
+    rgba(243, 244, 246, 0) 0%, /* Transparent start */
+    #FF0000 10%,               /* Red */
+    #FFB300 25%,               /* Orange */
+    #FFFF00 40%,               /* Yellow */
+    #00FF00 55%,               /* Green */
+    #00FFF7 70%,               /* Cyan */
+    #0000FF 85%,               /* Blue */
+    #8E00FF 90%,               /* Purple starts */
+    #8E00FF 100%               /* Distinct purple end */
+  );
 }
 
 .release-text p {
+  margin-top: 80px;
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 24px;
   color: #F3F4F6;
-  width: clamp(700px, 100%, 1000px);
-  padding-left: 540px;
-  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+  transition: font-size 0.3s ease;
 }
 
 .pre-order {
-  margin-top: 30px;
+  margin-top: 80px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .pre-order img {
-  width: 200px;
+  width: 200px; /* Set specific width for button */
+  height: auto; /* Maintain aspect ratio */
+  transition: width 0.3s ease;
 }
+
 
 /* Store Section */
 .store-section {
@@ -225,10 +246,14 @@
 }
 
 /* Laptop Media Query */
-@media (max-width: 1024px) {
-
+@media (max-width: 1280px) {
   .hero {
-    height: 70vh;
+    height: 80vh;
+  }
+
+  .hero-text {
+    top: 40px;
+    left: 40px;
   }
 
   .hero-title {
@@ -237,75 +262,136 @@
 
   .hero-detail {
     font-size: 24px;
+    margin-top: 15px;
   }
 
+  .latest-release {
+    height: 700px;
+  }
+
+  .side-quests-vol-1-hero {
+    width: 600px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 3vw;
+  }
+
+  .release-text {
+    padding-right: 3vw;
+    z-index: 1;
+  }
+
+  .release-heading {
+    font-size: 24px;
+  }
+
+  .release-title {
+    font-size: 70px;
+    margin-top: 10px;
+  }
+
+  .rainbow-underline {
+    margin-top: 10px;
+    width: 525px;
+    height: 4px;
+  }
+
+  .release-text p {
+    margin-top: 40px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+  }
+
+  .pre-order {
+    margin-top: 100px;
+  }
+
+  .pre-order img {
+    width: 150px;
+  }
 }
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
   .hero {
-
-  }
-
-  .hero-video {
-  }
-
-  .hero-content {
+    height: 66vh;
   }
 
   .hero-text {
+    top: 10px;
+    left: 8px;
   }
 
   .hero-title {
-    font-size: 50px; /* Further reduced font size for mobile */
-    line-height: 1; /* Maintain proportional spacing */
+    font-size: 40px;
   }
 
   .hero-detail {
-    font-size: 16px; /* Smaller font for detail text */
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 5px;
   }
 
   .latest-release {
+    height: auto;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
   }
 
-  .tape-stack {
-    position: absolute;
-    top: -20px;
-    left: -60px;
-    width: clamp(300px, 70vw, 600px);
-    height: auto;
+  .side-quests-vol-1-hero {
+    width: 66vw;
+    position: relative;
+    order: 2;
+    margin: 20px 0;
   }
 
   .release-text {
-    padding-right: 0;
-    align-items: center;
+    align-self: center;
     text-align: center;
-  }
-
-  .rainbow-underline {
-    width: clamp(200px, 50vw, 400px);
-    padding-left: 0;
-  }
-
-  .pre-order img {
-    width: clamp(100px, 30vw, 200px);
+    align-items: center;
+    order: 1;
+    z-index: 0;
   }
 
   .release-heading {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   .release-title {
-    font-size: clamp(24px, 4vw, 36px);
+    font-size: 40px;
+    margin-top: 5px;
+  }
+
+  .rainbow-underline {
+    width: 300px;
+    height: 3px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+    to right,
+    #FF0000 0%,
+    #FFB300 24%,
+    #FFFF00 41%,
+    #00FF00 51.5%,
+    #00FFF7 63%,
+    #0000FF 74%,
+    #8E00FF 100%
+    );
   }
 
   .release-text p {
-    font-size: clamp(12px, 1.2vw, 16px);
-    padding-left: 0;
-    width: 20vw;
+    font-size: 14px;
+    max-width: clamp(100px, 66vw, 300px);
+    margin-top: 10px;
+    line-height: 1;
   }
+
+  .pre-order {
+    margin-top: 20px;
+  }
+
+  .pre-order img {
+    width: 125px;
+  }
+
 }
