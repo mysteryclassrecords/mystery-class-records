@@ -44,7 +44,7 @@
 
 /* Latest Release Section */
 .latest-release {
-  width: 100%;
+  width: 100vw;
   height: 750px;
   background-color: #0B1215;
   display: flex;
@@ -95,7 +95,7 @@
   font-size: 90px;
   font-weight: 400;
   color: #F3F4F6;
-  white-space: nowrap; /* Disable text wrapping */
+  white-space: nowrap;
   transition: font-size 0.3s ease;
 }
 
@@ -333,23 +333,30 @@
   }
 
   .latest-release {
-    height: auto;
+    height: 420px;
     flex-direction: column;
+    position: relative;
   }
 
   .side-quests-vol-1-hero {
     width: 66vw;
-    position: relative;
+    position: absolute;
     order: 2;
-    margin: 20px 0;
+    margin-left: 0;
+    margin-top: 0;
+    bottom: 10px;
+    left: 3vw;
+    align-self: flex-start;
+    
   }
 
   .release-text {
-    align-self: center;
-    text-align: center;
-    align-items: center;
+    text-align: right;
     order: 1;
     z-index: 0;
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 3vw;
   }
 
   .release-heading {
@@ -359,14 +366,14 @@
 
   .release-title {
     font-size: 40px;
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .rainbow-underline {
     width: 300px;
     height: 3px;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
     background: linear-gradient(
     to right,
     #FF0000 0%,
