@@ -1,140 +1,55 @@
-/* General Footer Styles */
-.footer {
-  background-color: #0B1215;
+/* Hero Section */
+.hero {
+  background-color: #000000;
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  padding-top: 56.25%; /* Aspect ratio: 16:9 */
+  overflow: hidden; /* Ensures no content spills out */
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100%; /* Automatically adjusts to maintain aspect ratio */
+  object-fit: cover; /* Ensures video covers the hero area */
+  z-index: 1; /* Keeps video behind the content */
+}
+
+.hero-content {
+  position: absolute; /* Overlays content on the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Matches the hero's height */
+  z-index: 2; /* Ensures content is above the video */
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 20px 60px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px;
 }
 
-.footer-top,
-.footer-middle,
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero-text {
+  position: relative; /* Positioned within the .hero-content container */
 }
 
-.footer-top {
-  margin-bottom: 10px;
-}
-
-.footer-horizontal-separator {
-  width: 100%;
-  height: 2px;
-  background-color: #F3F4F6;
-  margin: 10px 0;
-}
-
-.footer-logo img {
-  width: 414px;
-  height: 145px;
-  transition: transform 0.2s ease;
-}
-
-.footer-nav a,
-.footer-tagline p {
+.hero-title {
   font-family: "ringold-sans", sans-serif;
-  color: #F3F4F6;
-}
-
-.footer-nav a {
-  font-size: clamp(28px, 2vw, 40px);
+  font-size: 100px;
   font-weight: 400;
-  transition: font-size 0.3s ease, transform 0.3s ease;
+  color: #F3F4F6;
+  line-height: 0.95;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.footer-nav a:hover {
-  transform: scale(1.1);
-}
-
-.footer-social a img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
-}
-
-.footer-social a:hover img {
-  transform: scale(1.2);
-}
-
-.footer-tagline p {
+.hero-detail {
+  font-family: "articulat-cf", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
   font-style: italic;
-  font-size: clamp(24px, 1.5vw, 32px);
-}
-
-.footer-tagline img {
-  width: 60px;
-  height: 50px;
-}
-
-.footer-copyright p {
-  font-size: 14px;
-  text-align: center;
-}
-
-.mobile-only {
-  display: none;
-}
-
-/* Mobile Layout (max-width: 768px) */
-@media (max-width: 768px) {
-  .footer {
-    padding: 20px 30px;
-  }
-
-  .footer-top {
-    order: 1;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-horizontal-separator {
-    order: 2;
-  }
-
-  .footer-middle {
-    order: 3;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer-bottom {
-    order: 5;
-    justify-content: center;
-  }
-
-  .footer-horizontal-separator.mobile-only {
-    display: block;
-    order: 4;
-  }
-
-  .footer-logo-container {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .footer-tagline {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .footer-nav {
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .footer-social {
-    justify-content: flex-end;
-    gap: 10px;
-  }
-
-  .footer-copyright p {
-    font-size: 12px;
-  }
+  color: #F3F4F6;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

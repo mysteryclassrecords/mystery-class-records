@@ -1,29 +1,16 @@
 /* Hero Section */
 .hero {
   background-color: #000000;
-  height: 1026px;
   width: 100%;
+  height: 80vh;
   position: relative;
   overflow: hidden;
-
 }
 
 .hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; /* Ensures video covers the hero section */
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1; /* Keeps video behind the content */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensures content is above the video */
+  object-fit: cover;
 }
 
 .hero-text {
@@ -38,7 +25,7 @@
   font-weight: 400;
   color: #F3F4F6;
   line-height: 0.95;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added drop shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-detail {
@@ -47,21 +34,15 @@
   font-weight: 500;
   font-style: italic;
   color: #F3F4F6;
-  margin-left: 5px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added drop shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 /* Latest Release Section */
 .latest-release {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding-right: 70px;
   background-color: #0B1215;
   height: 757px;
@@ -84,20 +65,11 @@
 }
 
 .release-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -152,16 +124,11 @@
 
 /* Store Section */
 .store-section {
+  width: 100%;
   background-color: #F3F4F6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -171,41 +138,26 @@
   width: 100%;
   max-width: calc(4 * 425px + 3 * 40px);
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 30px 0px;
 }
 
 .merch-block {
   width: 425px;
   height: 425px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   border: 4px solid #0B1215;
 }
 
 .merch-block-image-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   position: relative;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .merch-link {
@@ -219,38 +171,22 @@
 .merch-block-product-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .merch-block-details-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
   height: 80px;
   border-top: 4px solid #0B1215;
 }
 
 .merch-block-names-container {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 3;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 10px;
   border-right: 4px solid #0B1215;
 }
@@ -271,18 +207,10 @@
 }
 
 .merch-block-price-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
 }
@@ -296,37 +224,51 @@
   margin-top: 9px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Laptop Media Query */
+@media (max-width: 1024px) {
 
-  /* Mobile Hero*/
   .hero {
-    height: 480px;
-    padding: 20px;
+    height: 70vh;
   }
 
   .hero-title {
-    position: relative;
-    margin-bottom: 20px;
-    top: 0;
-    left: 0;
-    text-align: center;
+    font-size: 80px;
   }
 
-  .hero-title img {
-    max-width: 80%;
-    height: auto;
+  .hero-detail {
+    font-size: 24px;
   }
 
-  /* Mobile Latest Release*/
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+  .hero {
+
+  }
+
+  .hero-video {
+  }
+
+  .hero-content {
+  }
+
+  .hero-text {
+  }
+
+  .hero-title {
+    font-size: 50px; /* Further reduced font size for mobile */
+    line-height: 1; /* Maintain proportional spacing */
+  }
+
+  .hero-detail {
+    font-size: 16px; /* Smaller font for detail text */
+    margin-top: 10px;
+  }
+
   .latest-release {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
   }
 
@@ -340,9 +282,7 @@
 
   .release-text {
     padding-right: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
   }
 

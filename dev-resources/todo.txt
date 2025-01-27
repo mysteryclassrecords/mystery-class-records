@@ -53,6 +53,9 @@ create a pre-order button M
 
 
 -- LATER WORK --
+General:
+higher resolution images for mobile using srcset tag
+
 Cart:
 add cart page L
 customize cart sidebar styling L
