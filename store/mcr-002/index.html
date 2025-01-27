@@ -20,26 +20,26 @@
   
   <body>
     <!-- Header Section -->
-    <header class="header">
-      <div class="logo">
-        <a href="../../index.html">
-          <img src="../../images/header/header-logo.svg" alt="Logo">
-        </a>
-      </div>
-      <nav class="nav">
-        <a href="../../store">STORE</a>
-        <a href="../../artists">ARTISTS</a>
-        <a href="../../about">ABOUT</a>
-        <a href="#" class="cart">CART</a>
-      </nav>
-      <div class="rainbow-strip">
-        <img src="../../images/header/header-rainbow-strip.svg" alt="Rainbow Strip">
-      </div>
-      <div class="hamburger-icon">
+  <header class="header" data-expanded="false">
+    <div class="logo">
+      <a href="../../../index.html">
+        <img src="../../images/header/header-logo.svg" alt="Logo">
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="../../store">STORE</a>
+      <!-- <a href="artists">ARTISTS</a> -->
+      <a href="../../about">ABOUT</a>
+      <a href="#" class="cart">CART</a>
+    </nav>
+    <div class="hamburger-icon">
+      <button aria-label="Toggle Menu">
         <img src="../../images/header/hamburger-icon.svg" alt="Hamburger Menu">
-      </div>
-    </header>
-    <div class="header-spacer"></div>
+      </button>
+    </div>
+  </header>
+  <div class="rainbow-strip"></div>
+  <div class="header-spacer"></div>
 
     <!-- Product Section -->
     <main class="product-section">
@@ -242,6 +242,7 @@
 
     <!-- Import Scripts -->
     <script src="../../scripts/AddToCart.js"></script>
+    <script src="../../scripts/MobileHeaderExpand.js"></script>
 
   </body>
 </html>
