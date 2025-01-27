@@ -45,6 +45,7 @@ how to make pages load more gracefully? M
 Home Page:
 get cover for hero video
 workaround for video autoplay for firefox M
+remove 'pop-out video' prompt from firefox M
 
 Product Page:
 create a pre-order button M
