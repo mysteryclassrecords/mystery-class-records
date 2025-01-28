@@ -2,9 +2,6 @@
 General:
 move to custom domain   M
 
-Home Page:
-implement responsive design L
-
 Store Page:
 implement responsive design L
 
