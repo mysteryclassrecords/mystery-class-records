@@ -166,6 +166,7 @@
   .store-heading {
     font-size: 60px;
     margin-bottom: clamp(1px, 9vw, 40px);
+    text-align: center;
   }
 
   .store-grid {
