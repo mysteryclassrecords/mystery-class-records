@@ -1,20 +1,20 @@
 -- URGENT WORK --
-General:
-move to custom domain M
-how to make pages load more gracefully? M
-
 Product Page:
 fix add to cart button shrinking M
 implement responsive design L
 create pages for other products based off finished first product L
 
 Home Page:
-link pre-order button to product S
-link latest release title to product and grow on hover S
+link pre-order button to side quests product page S
 
 Cart:
 get cart inventory to be on every page M
-create responsive cart page L
+create a cart page L
+
+General:
+move to custom domain M
+how to make pages load more gracefully? M
+
 
 
 
@@ -46,7 +46,6 @@ General:
 higher resolution images for mobile using srcset tag
 
 Cart:
-add cart page L
 customize cart sidebar styling L
 add badge icon to cart in header L
 
