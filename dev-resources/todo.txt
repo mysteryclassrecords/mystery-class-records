@@ -2,6 +2,10 @@
 General:
 move to custom domain   M
 
+Home Page:
+link pre-order button to product S
+link latest release title to product and grow on hover S
+
 Store Page:
 implement responsive design L
 
