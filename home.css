@@ -167,13 +167,21 @@
   justify-content: center;
 }
 
+.merch-link {
+  display: block;
+}
+
+.merch-link:hover {
+  cursor: pointer;
+}
+
 .merch-block {
   width: 100%;
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   position: relative;
-  border: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
+  border: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
   font-size: 175%;
   transition: transform 0.3s ease;
 }
@@ -202,7 +210,7 @@
   justify-content: space-between;
   align-items: stretch;
   height: 20%;
-  border-top: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
+  border-top: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
 }
 
 .merch-block-names-container {
@@ -212,7 +220,7 @@
   justify-content: center;
   align-items: left;
   padding: 1vw;
-  border-right: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
+  border-right: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
   text-align: left;
 }
 
@@ -326,16 +334,16 @@
 
   .merch-block {
     font-size: 125%;
-    border: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    border: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
   }
 
   .merch-block-details-container {
-    border-top: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    border-top: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
   }
 
   .merch-block-names-container {
     padding: 1.5vw;
-    border-right: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    border-right: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
   }
 
   .merch-block-artist-name {
@@ -433,16 +441,16 @@
 
   .merch-block {
     font-size: clamp(15px, 125%, 16px);
-    border: 3px solid #0B1215;
+    /* border: 3px solid #0B1215; */
   }
 
   .merch-block-details-container {
-    border-top: 3px solid #0B1215;
+    /* border-top: 3px solid #0B1215; */
   }
 
   .merch-block-names-container {
     padding: 1.5vw;
-    border-right: 3px solid #0B1215;
+    /* border-right: 3px solid #0B1215; */
   }
 
   .merch-block-artist-name {
