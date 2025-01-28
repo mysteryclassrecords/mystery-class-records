@@ -6,9 +6,6 @@ Home Page:
 link pre-order button to product S
 link latest release title to product and grow on hover S
 
-Store Page:
-implement responsive design L
-
 Product Page:
 fix add to cart button shrinking M
 implement responsive design L
@@ -21,7 +18,8 @@ get descriptioon for MCR about S
 implement responsive design L
 
 Cart:
-get cart inventory to be on every page
+get cart inventory to be on every page M
+create responsive cart page L
 
 
 

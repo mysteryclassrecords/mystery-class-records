@@ -423,13 +423,11 @@
   }
 
   .store-section {
-    padding: 9vw 13vw;
     padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
   }
 
   .store-grid {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    gap: 9vw;
     gap: clamp(1px, 9vw, 30px);
   }
 

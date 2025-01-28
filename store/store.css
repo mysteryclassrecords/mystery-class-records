@@ -1,10 +1,21 @@
 /* Store Section */
+.store-section {
+  width: 100vw;
+  background-color: #F3F4F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 5vw;
+}
+
 .store-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -12,21 +23,11 @@
   font-family: "ringold-sans", sans-serif;
   font-size: 128px;
   font-weight: 400;
-  margin-bottom: 40px;
   color: #0B1215;
   text-align: center;
   transition: font-size 0.3s ease;
-}
-
-.store-section {
-  width: 100vw;
-  background-color: #F3F4F6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 5vw;
-  overflow: hidden;
-  position: relative;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .store-grid {
@@ -121,13 +122,13 @@
 
 /* Laptop Media Query */
 @media (max-width: 1280px) {  
-  .store-heading {
-    font-size: 100px;
-    margin-bottom: 30px;
-  }
-
   .store-section {
     padding: 40px 6vw;
+  }
+
+  .store-heading {
+    font-size: 100px;
+    margin-bottom: 40px;
   }
 
   .store-grid {
@@ -156,14 +157,13 @@
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
-  .store-heading {
-    font-size: 60px;
-    margin-bottom: 20px;
+  .store-section {
+    padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
   }
 
-  .store-section {
-    padding: 9vw 13vw;
-    padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
+  .store-heading {
+    font-size: 60px;
+    margin-bottom: clamp(1px, 9vw, 40px);
   }
 
   .store-grid {
