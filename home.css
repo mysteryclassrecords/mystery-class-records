@@ -137,8 +137,8 @@
 }
 
 .pre-order img {
-  width: 200px; /* Set specific width for button */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px;
+  height: auto;
   transition: width 0.3s ease;
 }
 
@@ -150,26 +150,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 3vw;
+  padding: 40px 5vw;
   overflow: hidden;
   position: relative;
 }
 
 .store-grid {
   display: grid;
-  gap: 40px;
+  gap: 2.5vw;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   justify-content: center;
 }
 
 .merch-block {
-  width: 425px;
-  height: 425px;
+  width: 100%;
+  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 4px solid #0B1215;
+  border: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
+  font-size: 175%;
 }
 
 .merch-block-image-container {
@@ -179,14 +180,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.merch-link {
-  color: #0B1215;
-}
-
-.merch-link:hover {
-  cursor: pointer;
 }
 
 .merch-block-product-image {
@@ -199,51 +192,54 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: 80px;
-  border-top: 4px solid #0B1215;
+  height: 20%;
+  border-top: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
 }
 
 .merch-block-names-container {
   flex: 3;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-  border-right: 4px solid #0B1215;
+  justify-content: center;
+  align-items: left;
+  padding: 1vw;
+  border-right: clamp(4px, 0.5vw + 4px, 5px) solid #0B1215;
+  text-align: left;
 }
 
 .merch-block-artist-name {
   font-family: "coolvetica", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1em;
   color: #0B1215;
-  margin-bottom: 8px;
+  margin: 0 0 0.2em;
 }
 
 .merch-block-product-name {
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.7em;
   color: #0B1215;
+  margin: 0;
 }
 
 .merch-block-price-container {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure the text is centered */
 }
 
 .merch-block-price {
   font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 1.5em; /* Scales with the parent merch block */
   color: #0B1215;
+  margin: 0; /* No margin ensures perfect centering */
   text-align: center;
-  margin-top: 9px;
 }
+
 
 /* Laptop Media Query */
 @media (max-width: 1280px) {
@@ -310,7 +306,46 @@
   .pre-order img {
     width: 150px;
   }
+
+
+
+
+
+
+  .store-section {
+    padding: 40px 6vw;
+  }
+
+  .store-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3vw;
+  }
+
+  .merch-block {
+    font-size: 125%;
+    border: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+  }
+
+  .merch-block-details-container {
+    border-top: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+  }
+
+  .merch-block-names-container {
+    padding: 1.5vw;
+    border-right: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+  }
+
+  .merch-block-artist-name {
+    margin: 0 0 0.4em;
+  }
+
 }
+
+
+
+
+
+
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
@@ -391,4 +426,48 @@
     width: 125px;
   }
 
+
+
+
+
+
+  .store-section {
+    padding: 9vw 13vw;
+    padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
+  }
+
+  .store-grid {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 9vw;
+    gap: clamp(1px, 9vw, 30px);
+  }
+
+  .merch-block {
+    font-size: clamp(15px, 125%, 16px);
+    border: 3px solid #0B1215;
+  }
+
+  .merch-block-details-container {
+    border-top: 3px solid #0B1215;
+  }
+
+  .merch-block-names-container {
+    padding: 1.5vw;
+    border-right: 3px solid #0B1215;
+  }
+
+  .merch-block-artist-name {
+    margin: 0 0 0.45em;
+  }
+
+}
+
+@media (max-width: 589px) {
+  .merch-block {
+    font-size: clamp(15px, 150%, 20px);
+  }
+
+  .merch-block-artist-name {
+    margin: 0 0 0.4em;
+  }
 }

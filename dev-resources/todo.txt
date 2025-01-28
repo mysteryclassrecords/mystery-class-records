@@ -1,10 +1,8 @@
 -- URGENT WORK --
 General:
-learn how to view live server on mobile and laptop  S
 move to custom domain   M
 
 Home Page:
-get latest release image in a general location  S
 implement responsive design L
 
 Store Page:
@@ -24,16 +22,6 @@ implement responsive design L
 Cart:
 get cart inventory to be on every page
 
-Header:
-remove artists from all pages s
-adjust header height based on media queries M
-add script back for mobile hamburger menu M
-implement responsive design L
-
-Footer:
-remove artists from all pages s
-implement responsive design L
-
 
 
 
@@ -46,6 +34,7 @@ Home Page:
 get cover for hero video
 workaround for video autoplay for firefox M
 remove 'pop-out video' prompt from firefox M
+force video to load before page S
 
 Product Page:
 create a pre-order button M
