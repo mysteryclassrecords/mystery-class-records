@@ -54,6 +54,12 @@
   padding: 0;
 }
 
+.mcr-signature {
+  text-align: left;
+  display: block;
+  margin-top: 20px;
+}
+
 /* Laptop Media Query */
 @media (max-width: 1280px) {
   .about-section {
@@ -90,14 +96,14 @@
   }
 
   .about-image-container {
-    width: 250px; /* Scale down the image */
+    width: 250px;
     margin-bottom: 40px;
   }
 
   .about-text {
-    font-size: 18px; /* Smaller text for mobile devices */
+    font-size: 18px;
     line-height: 1.5;
-    max-width: 100%; /* Remove width constraints for mobile */
-    padding: 0 5vw; /* Add side padding for better spacing */
+    max-width: 100%;
+    padding: 0 5vw;
   }
 }
