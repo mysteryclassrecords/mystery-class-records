@@ -195,11 +195,11 @@
   transition: font-size 0.3s ease;
 }
 
-/* Related Merch Section */
+/* Related Merch Section - Updated with Store Section Styles */
 .related-merch-section {
   background-color: #0B1215;
   overflow: hidden;
-  padding: 40px;
+  padding: 60px 6vw;
 }
 
 .related-merch-content {
@@ -216,28 +216,39 @@
   margin: 0;
 }
 
-.related-merch-box {
+/* Store Section Styles from home.css */
+.store-section {
+  width: 100vw;
+  background-color: #F3F4F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 6vw;
+  overflow: hidden;
   position: relative;
-  z-index: 2;
-  padding: 20px;
 }
 
-.related-merch-heading {
+.store-heading {
   font-family: "ringold-sans", sans-serif;
   font-size: 48px;
   font-weight: 400;
-  color: #F3F4F6;
-  text-align: left;
-  margin: 0 0 20px 10px;
+  color: #0B1215;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.merch-grid {
+.store-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  gap: 20px;
-  justify-content: center;
+  gap: 2.5vw;
   width: 100%;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.merch-link {
+  display: block;
+  text-decoration: none;
 }
 
 .merch-block {
@@ -247,10 +258,17 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 4px solid #0B1215;
+  transition: transform 0.3s ease;
+}
+
+.merch-block:hover {
+  transform: scale(1.05);
 }
 
 .merch-block-image-container {
   flex: 1;
+  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -261,37 +279,57 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.default-image {
+  opacity: 1;
+}
+
+.hover-image {
+  opacity: 0;
+}
+
+.merch-block:hover .default-image {
+  opacity: 0;
+}
+
+.merch-block:hover .hover-image {
+  opacity: 1;
 }
 
 .merch-block-details-container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  height: 20%;
   border-top: 4px solid #0B1215;
-  height: 80px;
 }
 
 .merch-block-names-container {
   flex: 3;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
+  justify-content: center;
+  padding: 1vw;
   border-right: 4px solid #0B1215;
+  text-align: left;
 }
 
 .merch-block-artist-name {
   font-family: "coolvetica", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1em;
   color: #0B1215;
-  margin-bottom: 8px;
 }
 
 .merch-block-product-name {
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.7em;
   color: #0B1215;
 }
 
@@ -300,25 +338,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  position: relative;
 }
 
 .merch-block-price {
   font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 1.5em;
   color: #0B1215;
   text-align: center;
 }
 
-.merch-link {
-  color: #0B1215;
-}
-
-.merch-link:hover {
-  cursor: pointer;
-}
 
 /* Laptop Media Query */
 @media (max-width: 1280px) {

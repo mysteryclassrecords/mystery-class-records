@@ -1,6 +1,8 @@
 -- URGENT WORK --
 
 Product Page:
+update related merch section html and css to work with mobile script
+fix related merch section M
 fix product image responsiveness M
 implement responsive design L
 fix add to cart button M
