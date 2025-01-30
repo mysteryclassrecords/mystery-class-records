@@ -8,14 +8,13 @@ create pages for other products based off finished first product L
 Home Page:
 link pre-order button to side quests product page S
 
-Cart:
-get cart inventory to be on every page M
-create a cart page L
-
 General:
 move to custom domain M
 how to make pages load more gracefully? M
 
+Cart:
+get cart inventory to be on every page M
+create a cart page L
 
 
 
