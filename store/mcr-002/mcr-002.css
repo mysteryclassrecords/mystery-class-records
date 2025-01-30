@@ -122,9 +122,6 @@
   margin-bottom: 20px;
 }
 
-#product-add-to-cart iframe {
-}
-
 .track-list {
   margin: 0;
   padding: 0;
@@ -190,18 +187,19 @@
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 48px;
+  font-size: 28px;
   padding: 50px;
   text-align: left;
-  display: none;
+  height: auto;
+  line-height: 1.5;
+  transition: font-size 0.3s ease;
 }
 
 /* Related Merch Section */
 .related-merch-section {
   background-color: #0B1215;
   overflow: hidden;
-  padding: 0;
-  display: none;
+  padding: 40px;
 }
 
 .related-merch-content {
@@ -213,8 +211,9 @@
 .rainbow-container-top img,
 .rainbow-container-bottom img {
   width: 100%;
+  height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .related-merch-box {
@@ -325,7 +324,7 @@
 @media (max-width: 1280px) {
   .product-section {
     padding: 60px 40px;
-    height: 800px
+    height: 800px;
   }
 
   .product-content-container {
@@ -364,11 +363,18 @@
   
   .pressing-info h3 {
     font-size: 20px;
-  }
-  
+    }
+    
   .pressing-info p {
     font-size: 14px;
   }
+
+  .description-section {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+}
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
@@ -436,5 +442,10 @@
   
   .wide-separator {
     display: none;
+  }
+
+  .description-section {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }

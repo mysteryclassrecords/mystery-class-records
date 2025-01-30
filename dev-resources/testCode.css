@@ -1,0 +1,102 @@
+<!-- Related Merch Section -->
+    <section class="related-merch-section">
+      <div class="related-merch-content">
+        <!-- Rainbow Container Top -->
+        <div class="rainbow-container-top">
+          <img src="../../images/rainbow-container-top.png" alt="Rainbow Container Top">
+        </div>
+
+        <!-- Merch Content -->
+        <div class="related-merch-box">
+          <h2 class="related-merch-heading">RELATED</h2>
+          <div class="merch-grid">
+
+            <!-- Merch Block 1 -->
+            <div class="merch-block">
+              <div class="merch-block-image-container">
+                <a href="../../store/mcr-002/" class="merch-link">
+                  <img src="../../images/products/mcr-002.png" alt="Cryhard - Of Course I Will Cassette" class="merch-block-product-image">
+                </a>
+              </div>
+              <div class="merch-block-details-container">
+                <div class="merch-block-names-container">
+                  <a href="../../store/mcr-002/" class="merch-link">
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">OF COURSE I WILL - Cassette</p>
+                  </a>
+                </div>
+                <div class="merch-block-price-container">
+                  <div class="merch-block-price">$10</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Block 2 -->
+            <div class="merch-block">
+              <div class="merch-block-image-container">
+                <a href="../../store/mcr-002/" class="merch-link">
+                  <img src="../../images/products/mcr-002.png" alt="Cryhard - Of Course I Will Cassette" class="merch-block-product-image">
+                </a>
+              </div>
+              <div class="merch-block-details-container">
+                <div class="merch-block-names-container">
+                  <a href="../../store/mcr-002/" class="merch-link">
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">OF COURSE I WILL - Cassette</p>
+                  </a>
+                </div>
+                <div class="merch-block-price-container">
+                  <div class="merch-block-price">$10</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Block 3 -->
+            <div class="merch-block">
+              <div class="merch-block-image-container">
+                <a href="../../store/mcr-002/" class="merch-link">
+                  <img src="../../images/products/mcr-002.png" alt="Cryhard - Of Course I Will Cassette" class="merch-block-product-image">
+                </a>
+              </div>
+              <div class="merch-block-details-container">
+                <div class="merch-block-names-container">
+                  <a href="../../store/mcr-002/" class="merch-link">
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">OF COURSE I WILL - Cassette</p>
+                  </a>
+                </div>
+                <div class="merch-block-price-container">
+                  <div class="merch-block-price">$10</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Merch Block 4 -->
+            <div class="merch-block">
+              <div class="merch-block-image-container">
+                <a href="../../store/mcr-002/" class="merch-link">
+                  <img src="../../images/products/mcr-002.png" alt="Cryhard - Of Course I Will Cassette" class="merch-block-product-image">
+                </a>
+              </div>
+              <div class="merch-block-details-container">
+                <div class="merch-block-names-container">
+                  <a href="../../store/mcr-002/" class="merch-link">
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">OF COURSE I WILL - Cassette</p>
+                  </a>
+                </div>
+                <div class="merch-block-price-container">
+                  <div class="merch-block-price">$10</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Rainbow Container Bottom -->
+        <div class="rainbow-container-bottom">
+          <img src="../../images/rainbow-container-bottom.png" alt="Rainbow Container Bottom">
+        </div>
+      </div>
+    </section>
