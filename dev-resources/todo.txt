@@ -1,6 +1,7 @@
 -- URGENT WORK --
 
 Product Page:
+fix product image responsiveness M
 implement responsive design L
 fix add to cart button M
 create pages for other products based off finished first product L
