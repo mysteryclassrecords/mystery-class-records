@@ -1,16 +1,16 @@
 /* Product Section */
 .product-section {
-  padding: 60px;
   background-color: #f3f4f6;
   width: 100vw;
   height: 1000px;
   overflow: hidden; /* Prevent overflow of content */
+  padding: 60px 60px;
 }
 
 .product-content-container {
   display: flex;
   flex-direction: row;
-  gap: clamp(5px, 5vw, 300px);
+  gap: clamp(0px, 3vw, 300px);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -20,18 +20,22 @@
 }
 
 .product-image {
-  width: clamp(0px, 50vw, 650px);
-  height: clamp(0px, 50vw, 650px);
+  width: clamp(0px, 40vw, 650px);
+  height: clamp(0px, 40vw, 650px);
   aspect-ratio: 1;
   border: solid 4px #0B1215;
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.2s ease-out;
 }
 
 .product-details-container {
@@ -189,6 +193,7 @@
   font-size: 48px;
   padding: 50px;
   text-align: left;
+  display: none;
 }
 
 /* Related Merch Section */
@@ -196,6 +201,7 @@
   background-color: #0B1215;
   overflow: hidden;
   padding: 0;
+  display: none;
 }
 
 .related-merch-content {
@@ -319,17 +325,17 @@
 @media (max-width: 1280px) {
   .product-section {
     padding: 60px 40px;
+    height: 800px
   }
 
   .product-content-container {
     gap: clamp(10px, 3vw, 300px);
   }
   
-  .product-image {}
-  
-  .product-image img {}
-  
-  .product-details-container {}
+  .product-image {
+    width: clamp(0px, 40vw, 650px);
+    height: clamp(0px, 40vw, 650px);
+  }
   
   .product-title {
     font-size: 66px;
@@ -341,21 +347,12 @@
   
   .release-date {
     font-size: 16px;
+    margin-top: 2px;
   }
-  
-  .separator {}
-  
-  .price-and-button {}
   
   .product-price {
     font-size: 48px;
   }
-  
-  .product-buy-button {}
-  
-  #product-add-to-cart iframe {}
-  
-  .track-list {}
   
   .track-list h3 {
     font-size: 32px;
@@ -372,47 +369,72 @@
   .pressing-info p {
     font-size: 14px;
   }
-  
-  .wide-separator {}
-}
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
-  .product-section {}
+  .product-section {
+    padding: 40px 40px 30px;
+    height: auto;
+  }
 
-  .product-content-container {}
+  .product-content-container {
+    gap: clamp(10px, 2.5vw, 300px);
+    flex-direction: column;
+  }
   
-  .product-image {}
+  .product-image {
+    width: clamp(0px, 80vw, 500px);
+    height: clamp(0px, 80vw, 500px);
+  }
   
-  .product-image img {}
+  .product-details-container {
+    text-align: center;
+    gap: clamp(4px, 1.5vw, 40px);
+  }
   
-  .product-details-container {}
+  .product-title {
+    font-size: 64px;
+  }
   
-  .product-title {}
+  .product-artist {
+    font-size: 30px;
+  }
   
-  .product-artist {}
+  .release-date {
+    font-size: 15px;
+  }
   
-  .release-date {}
+  .price-and-button {
+    flex-direction: column;
+    gap: 0;
+  }
   
-  .separator {}
+  .product-price {
+    font-size: 46px;
+    margin-top: 5px;
+  }
   
-  .price-and-button {}
+  .product-buy-button {
+    margin-bottom: 10px;
+  }
   
-  .product-price {}
+  .track-list h3 {
+    font-size: 30px;
+  }
   
-  .product-buy-button {}
+  .track-list ol {
+    font-size: 16px;
+  }
   
-  #product-add-to-cart iframe {}
+  .pressing-info h3 {
+    font-size: 18px;
+  }
   
-  .track-list {}
+  .pressing-info p {
+    font-size: 14px;
+  }
   
-  .track-list h3 {}
-  
-  .track-list ol {}
-  
-  .pressing-info h3 {}
-  
-  .pressing-info p {}
-  
-  .wide-separator {}
+  .wide-separator {
+    display: none;
+  }
 }

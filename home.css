@@ -154,7 +154,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 5vw;
+  padding: 60px 6vw;
   overflow: hidden;
   position: relative;
 }
@@ -231,6 +231,7 @@
   align-items: stretch;
   height: 20%;
   border-top: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+  transition: font-size 0.3s ease;
 }
 
 .merch-block-names-container {
@@ -344,7 +345,7 @@
   }
 
   .store-section {
-    padding: 40px 6vw;
+    padding: 60px 6vw;
   }
 
   .store-grid {
@@ -451,7 +452,7 @@
   }
 
   .store-section {
-    padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
+    padding: 60px clamp(1px, 13vw, 45px);
   }
 
   .store-grid {
