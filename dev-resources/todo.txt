@@ -1,19 +1,19 @@
 -- URGENT WORK --
 
-Product Page:
-fix add to cart button M
-create pages for other products based off finished first product L
+Product Pages:
+fix add to cart button for each page M
+update descriptions for each page M
 
 Home Page:
-link pre-order button to side quests product page S
+find way to make text dynamically fit in merchbox S
+
+Cart:
+get cart sidebar to follow the user to every page M
+create a cart page M
 
 General:
 move to custom domain M
 how to make pages load more gracefully? M
-
-Cart:
-get cart inventory to be on every page M
-create a cart page L
 
 
 
