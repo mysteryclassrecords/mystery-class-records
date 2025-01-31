@@ -1,8 +1,5 @@
 -- URGENT WORK --
 
-Product Pages:
-fix add to cart button for each page M
-
 Cart:
 get cart sidebar to follow the user to every page M
 create a cart page M
