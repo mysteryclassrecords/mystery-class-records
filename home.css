@@ -184,6 +184,7 @@
   border: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
   font-size: 175%;
   transition: transform 0.3s ease;
+  text-transform: uppercase;
 }
 
 .merch-block:hover {
