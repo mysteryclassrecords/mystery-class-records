@@ -32,6 +32,9 @@ Product Page:
 create a pre-order button M
 center product images in product section M
 
+About Page:
+add email
+
 
 
 

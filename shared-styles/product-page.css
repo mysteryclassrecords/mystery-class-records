@@ -100,7 +100,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: clamp(1px, 4vw, 40px);
+    gap: 0;
     margin: 0;
     padding: 0;
     align-self: left;
@@ -206,7 +206,7 @@
   .related-merch-section {
     background-color: #0B1215;
     overflow: hidden;
-    padding: 60px 6vw;
+    padding: 0 100px 200px;
   }
   
   .related-merch-content {
@@ -433,6 +433,10 @@
       font-size: 24px;
       line-height: 1.5;
     }
+
+    .related-merch-section {
+      padding: 0 20px 150px;
+    }
   
     .store-section {
       padding: 0 5vw;
@@ -502,7 +506,6 @@
     }
     
     .price-and-button {
-      flex-direction: column;
       gap: 0;
     }
     
@@ -517,18 +520,22 @@
     
     .track-list h3 {
       font-size: 30px;
+      text-align: left;
     }
     
     .track-list ol {
       font-size: 16px;
+      text-align: left;
     }
     
     .pressing-info h3 {
       font-size: 18px;
+      text-align: left;
     }
     
     .pressing-info p {
       font-size: 14px;
+      text-align: left;
     }
     
     .wide-separator {
@@ -538,6 +545,11 @@
     .description-section {
       font-size: 20px;
       line-height: 1.8;
+      align-self: center;
+    }
+
+    .related-merch-section {
+      padding: 0 20px 100px;
     }
   
     .store-section {
