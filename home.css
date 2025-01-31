@@ -264,17 +264,17 @@
 .merch-block-price-container {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  text-align: center; /* Ensure the text is centered */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .merch-block-price {
   font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 1.5em; /* Scales with the parent merch block */
+  font-size: 1.5em;
   color: #0B1215;
-  margin: 0; /* No margin ensures perfect centering */
+  margin: 0;
   text-align: center;
 }
 
@@ -479,8 +479,8 @@
   }
 
   .merch-block .hover-image {
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .merch-block.scrolled .default-image {
