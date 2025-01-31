@@ -4,7 +4,7 @@
   width: 100vw;
   overflow: hidden;
   margin-bottom: 100px;
-  padding: 40px 5vw;
+  padding: 60px 6vw;
 }
 
 .about-heading {
@@ -63,7 +63,7 @@
 /* Laptop Media Query */
 @media (max-width: 1280px) {
   .about-section {
-    padding: 40px 6vw;
+    padding: 60px 6vw;
   }
 
   .about-heading {
@@ -86,7 +86,7 @@
 /* Mobile Media Query */
 @media (max-width: 768px) {
   .about-section {
-    padding: clamp(1px, 9vw, 40px) clamp(1px, 13vw, 45px);
+    padding: 60px clamp(1px, 13vw, 45px);
   }
 
   .about-heading {
