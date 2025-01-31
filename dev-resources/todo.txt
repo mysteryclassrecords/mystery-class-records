@@ -1,12 +1,7 @@
 -- URGENT WORK --
 
 Product Pages:
-add cassette player page S
 fix add to cart button for each page M
-update descriptions for each page M
-
-Home Page:
-find way to make text dynamically fit in merchbox S
 
 Cart:
 get cart sidebar to follow the user to every page M
@@ -27,6 +22,7 @@ General:
 how do the shopify product ids and div ids work? Where can i easily find them from shopify? S
 
 Home Page:
+find way to make text dynamically fit in merchbox S
 get cover for hero video
 workaround for video autoplay for firefox M
 remove 'pop-out video' prompt from firefox M

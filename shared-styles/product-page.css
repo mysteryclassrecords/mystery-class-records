@@ -2,9 +2,9 @@
 .product-section {
     background-color: #f3f4f6;
     width: 100vw;
-    height: 1000px;
+    height: auto;
     overflow: hidden; /* Prevent overflow of content */
-    padding: 60px 60px;
+    padding: 60px 60px 40px;
   }
   
   .product-content-container {
@@ -190,10 +190,16 @@
     font-style: normal;
     font-size: 28px;
     padding: 50px;
+    margin: 0;
     text-align: left;
     height: auto;
     line-height: 1.5;
     transition: font-size 0.3s ease;
+  }
+
+  .description-section p {
+    max-width: 1600px;
+    margin: auto;
   }
   
   /* Related Merch Section - Updated with Store Section Styles */
@@ -368,7 +374,7 @@
   /* Laptop Media Query */
   @media (max-width: 1280px) {
     .product-section {
-      padding: 60px 60px 20px;
+      padding: 60px 60px 40px;
       height: auto;
     }
   
@@ -465,7 +471,7 @@
   /* Mobile Media Query */
   @media (max-width: 768px) {
     .product-section {
-      padding: 40px 40px 30px;
+      padding: 40px 40px 20px;
       height: auto;
     }
   
