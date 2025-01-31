@@ -34,7 +34,7 @@ force video to load before page S
 
 Product Page:
 create a pre-order button M
-
+add max size to remmonded merch blocks
 
 
 
