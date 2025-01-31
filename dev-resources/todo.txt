@@ -1,6 +1,7 @@
 -- URGENT WORK --
 
 Product Pages:
+add cassette player page S
 fix add to cart button for each page M
 update descriptions for each page M
 
