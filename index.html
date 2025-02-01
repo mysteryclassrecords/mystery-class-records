@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/chq5wda.css"> <!-- Adobe Fonts Embed Code -->
     <link rel="stylesheet" href="shared-styles/global.css">
     <link rel="stylesheet" href="shared-styles/header.css">
+    <link rel="stylesheet" href="shared-styles/cart-outline.css">
     <link rel="stylesheet" href="shared-styles/footer.css">
     <link rel="stylesheet" href="home.css"> 
      
@@ -30,7 +31,7 @@
       <nav class="nav">
         <a href="store">STORE</a>
         <a href="about">ABOUT</a>
-        <a href="" id="cart-link" class="cart">CART</a> <!-- Updated: Added ID -->
+        <a href="cart" class="cart">CART</a>
       </nav>
       <div class="hamburger-icon">
         <button aria-label="Toggle Menu">
@@ -219,44 +220,7 @@
     <!-- Scripts -->
     <script src="scripts/MobileHeaderExpand.js"></script>
     <script src="scripts/MerchBlockScrollSwap.js"></script>
-    <script src="scripts/CartDrawer.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          var cartLink = document.getElementById("cart-link");
-  
-          function openCart() {
-              if (window.ShopifyBuy && window.ShopifyBuy.UI && window.ShopifyBuy.UI.instance) {
-                  let cartComponent = window.ShopifyBuy.UI.instance.components.cart;
-                  if (cartComponent && cartComponent[0]) {
-                      cartComponent[0].open(); // Open the Shopify cart
-                  } else {
-                      console.warn("Cart component not found.");
-                  }
-              } else {
-                  console.warn("Shopify Buy Button UI not loaded yet.");
-              }
-          }
-  
-          // Ensure the cart is available before clicking
-          function waitForCartAndBindClick() {
-              if (window.ShopifyBuy && window.ShopifyBuy.UI && window.ShopifyBuy.UI.instance) {
-                  cartLink.addEventListener("click", function (event) {
-                      event.preventDefault(); // Prevent navigation
-                      openCart();
-                  });
-              } else {
-                  console.warn("Waiting for Shopify cart to load...");
-                  setTimeout(waitForCartAndBindClick, 500); // Retry after 500ms
-              }
-          }
-  
-          waitForCartAndBindClick();
-      });
-  </script>
-  
-  
-  
+    <script src="scripts/CartDrawer.js"></script>  
 
   </body>
 </html>

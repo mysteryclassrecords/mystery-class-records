@@ -110,6 +110,8 @@
                     "toggle": {
                         "styles": {
                             "toggle": {
+                                "opacity": "1", // Ensure visibility
+                                "visibility": "visible", // Prevent it from being hidden
                                 "font-family": "Raleway, sans-serif",
                                 "font-weight": "bold",
                                 "background-color": "#0b1215",
@@ -130,6 +132,10 @@
                             "iconPath": {
                                 "fill": "#f3f4f6"
                             }
+                        },
+                        "popup": true, // This prevents the toggle from being disabled in popup mode
+                        "contents": {
+                            "toggle": true // Ensures that the toggle is rendered
                         },
                         "googleFonts": [
                             "Raleway"

@@ -1,0 +1,36 @@
+/* Ensure the cart container is centered */
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+/* Override Shopify's default floating cart styles */
+.shopify-buy__cart {
+    position: relative !important; /* Remove fixed positioning */
+    width: 60% !important; /* Adjust width */
+    max-width: 800px !important;
+    margin: auto !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    right: auto !important;
+    left: auto !important;
+    transform: none !important;
+    top: auto !important;
+    bottom: auto !important;
+}
+
+/* Remove fixed styling on cart container */
+.shopify-buy-frame--cart {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Hide Shopify's Close Button */
+.shopify-buy__cart__header .shopify-buy__btn--close {
+    display: none !important;
+    visibility: hidden !important;
+}
