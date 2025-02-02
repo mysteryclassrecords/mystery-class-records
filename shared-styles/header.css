@@ -34,6 +34,11 @@
   display: flex;
   gap: 40px;
   order: 3;
+  overflow: visible;
+
+  display: flex;
+  align-items: center; /* Ensures vertical centering */
+  margin-top: 0; /* Remove the margin pushing it down */
 }
 
 .nav a {
@@ -42,14 +47,98 @@
   font-size: 40px;
   color: #F3F4F6;
   transition: font-size 0.3s ease, transform 0.3s ease;
+  overflow: visible;
 }
 
 .nav a:hover {
   transform: scale(1.1);
 }
 
-.nav .cart {
+.nav .cart-container {
+  display: flex;
+  align-items: center; /* Centers the cart container contents */
   margin-right: 60px;
+  align-self: center;
+  position: static;
+}
+
+.shopify-buy__cart-toggle {
+  cursor: pointer;
+  margin: 0;
+  gap: 0;
+  align-self: center;
+  transition: transform 0.3s ease;
+  position: relative;
+
+  border: 1px solid blue; /* Debug */
+  background: rgba(0, 0, 255, 0.1); /* Debug */
+
+  min-width: 60px; /* Make sure it's big enough */
+
+  position: relative !important;
+
+  position: relative;
+  display: flex; /* Ensures contents are visible */
+  align-items: center;
+  justify-content: center;
+  min-width: 80px; /* Adjust to ensure enough space */
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px; /* Increased width */
+  min-height: 60px; /* Increased height */
+  padding: 15px; /* More breathing room */
+}
+
+.shopify-buy__cart-toggle:hover {
+  transform: scale(1.1);
+}
+
+.shopify-buy__cart-toggle__count {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F3F4F6;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  transform-origin: center;
+  z-index: 10;
+
+  overflow: visible !important;
+
+  position: absolute;
+  width: 22px; /* Slightly larger for better visibility */
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  z-index: 9999; /* Make sure it's above everything */
+  overflow: visible !important;
+
+  position: absolute;
+  top: 2px; /* Slightly higher */
+  right: 2px; /* Slightly further */
+  width: 24px; /* Increased size */
+  height: 24px;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+.shopify-buy__cart-toggle__title{
+  font-family: "ringold-sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #F3F4F6;
 }
 
 .hamburger-icon {
@@ -105,7 +194,7 @@
   .nav a {
     font-size: 30px;
   }
-  .nav .cart {
+  .nav .cart-container {
     margin-right: 40px;
   }
 }
@@ -163,7 +252,7 @@
     text-align: center;
   }
 
-  .nav .cart {
+  .nav .cart-container {
     margin-right: 0;
     margin-bottom: 10px;
   }
