@@ -44,7 +44,6 @@
     <div class="cart-container">
       <div id="cart-page"></div>
     </div>
-
     <!-- Shopify Buy Button Script -->
     <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
     <script>
@@ -59,10 +58,6 @@
             node: document.getElementById('cart-page'),
             options: {
               "cart": {
-                "popup": false, // Always open, not a popup
-                "startOpen": true, // Open by default
-                "position": "relative", // Override Shopify’s fixed cart
-                "modal": false,
                 "styles": {
                   "cart": {
                     "background-color": "#f3f4f6",
@@ -74,17 +69,21 @@
                     "font-family": "Raleway, sans-serif"
                   }
                 }
+              },
+              'toggle': {
+                'iframe': false,
+                'sticky': false,
+                'contents': {
+                  'count': true,
+                  'icon': false,
+                  'title': true,
+                },
+                'text': {
+                  'title': 'CART'
+                }
               }
             }
           });
-    
-          // Remove close button after Shopify loads the cart
-          setTimeout(function () {
-            let closeButton = document.querySelector(".shopify-buy__cart__header .shopify-buy__btn--close");
-            if (closeButton) {
-              closeButton.remove();
-            }
-          }, 1500); // Wait for Shopify to render cart
         });
       })();
     </script>
