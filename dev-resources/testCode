@@ -1,41 +1,22 @@
-
-(function () {
-    var client = ShopifyBuy.buildClient({
-        domain: '3eyau1-rk.myshopify.com',
-        storefrontAccessToken: '6dbf61b263e46db8a392d40ccdbf8901',
-    });
-    
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('cart', {
-        node: document.getElementById('cart-button'),
-        options: {
-            "cart": {
-            "styles": {
-                "cart": {
-                "background-color": "#f3f4f6",
-                "color": "#0b1215",
-                "overflow": "visible"
-                },
-                "button": {
-                "background-color": "#0b1215",
-                "color": "#ffffff",
-                "font-family": "Raleway, sans-serif"
-                }
-            }
-            },
-            'toggle': {
-            'iframe': false,
-            'sticky': false,
-            'contents': {
-                'count': true,
-                'icon': false,
-                'title': true,
-            },
-            'text': {
-                'title': 'CART'
-            }
-            }
-        }
-        });
-    });
-    })();
+.merch-block-names-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1vw;
+    border-right: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    text-align: left;
+    height: 100%; /* Ensures it fills the assigned space */
+    overflow: hidden; /* Prevents text from overflowing */
+  }
+  
+  .merch-block-artist-name,
+  .merch-block-product-name {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides any overflow text */
+    text-overflow: ellipsis; /* Adds "..." to overflowing text */
+    max-height: 1.2em; /* Adjust based on font size to prevent excessive growth */
+    line-height: 1.2; /* Ensures consistent spacing */
+  }
+  
