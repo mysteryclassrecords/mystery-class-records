@@ -1,12 +1,9 @@
 -- URGENT WORK --
 Cart:
 get cart sidebar to follow the user to every page M
-create a cart page M
 
 General:
 move to custom domain M
-how to make pages load more gracefully? M
-make SQ 1 listing and page clarify that it is a pre order
 
 
 
