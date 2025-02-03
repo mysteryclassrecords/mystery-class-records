@@ -272,7 +272,8 @@
     position: relative;
     font-size: 133%;
     transition: transform 0.3s ease;
-    border: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    border: 4px solid #0B1215;
+    transition: transform 0.3s ease;
     text-transform: uppercase;
     max-width: 500px;
     margin: auto;
@@ -322,35 +323,43 @@
     justify-content: space-between;
     align-items: stretch;
     height: 20%;
-    border-top: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
+    border-top: 4px solid #0B1215;
     transition: font-size 0.3s ease;
   }
   
   .merch-block-names-container {
     flex: 3;
     display: flex;
+    gap: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding: 1vw;
-    border-right: clamp(3px, 0.5vw + 3px, 4px) solid #0B1215;
-    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px;
+    border-right: 4px solid #0B1215;
+    position: relative;
+    overflow: hidden;
   }
   
   .merch-block-artist-name {
     font-family: "coolvetica", sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 26px;
     color: #0B1215;
-    margin: 0 0 0.2em;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   .merch-block-product-name {
     font-family: "articulat-cf", sans-serif;
     font-weight: 500;
-    font-size: 0.7em;
+    font-size: 18px;
     color: #0B1215;
-    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   .merch-block-price-container {
@@ -364,10 +373,8 @@
   .merch-block-price {
     font-family: "ringold-sans", sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 40px;
     color: #0B1215;
-    margin: 0;
-    text-align: center;
   }
   
   
@@ -453,23 +460,30 @@
     }
   
     .merch-block {
-      font-size: 125%;
-      border: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
+      border: 3px solid #0B1215;
     }
   
     .merch-block-details-container {
-      border-top: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
+      border-top: 3px solid #0B1215;
     }
   
     .merch-block-names-container {
-      padding: 1.5vw;
-      border-right: clamp(2px, 0.5vw + 2px, 3px) solid #0B1215;
+      padding: 6px;
+      border-right: 3px solid #0B1215;
+    }
+    
+    .merch-block-artist-name {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    
+    .merch-block-product-name {
+      font-size: 12px;
     }
   
-    .merch-block-artist-name {
-      margin: 0 0 0.4em;
-    } 
-  
+    .merch-block-price {
+      font-size: 30px;
+    }  
   }
   
   /* Mobile Media Query */
@@ -567,10 +581,6 @@
       gap: clamp(1px, 9vw, 30px);
     }
   
-    .merch-block {
-      font-size: 100%;
-    }
-  
     .merch-block:hover .default-image {
       opacity: 1;
     }
@@ -597,24 +607,20 @@
         opacity: 1;
     }
   
-    .merch-block-details-container {
-      /* border-top: 3px solid #0B1215; */
-    }
-  
     .merch-block-names-container {
-      padding: 1.5vw;
-      /* border-right: 3px solid #0B1215; */
+      padding: 4px;
     }
-  
+    
     .merch-block-artist-name {
-      margin: 0 0 0.1em;
+      font-size: 18px;
+      margin-bottom: 4px;
     }
-  }
-  
-  @media (max-width: 589px) {
-    .merch-block {
+    
+    .merch-block-product-name {
+      font-size: 10px;
     }
   
-    .merch-block-artist-name {
+    .merch-block-price {
+      font-size: 26px;
     }
   }
