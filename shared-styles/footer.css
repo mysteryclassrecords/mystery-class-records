@@ -169,6 +169,12 @@
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
+  .footer {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   .footer-top {
     flex-direction: column;
     gap: 0;
