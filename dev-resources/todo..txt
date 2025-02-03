@@ -1,30 +1,6 @@
--- URGENT WORK --
-Cart:
-get cart sidebar to follow the user to every page M
-
+-- CURRENT WORK --
 General:
 move to custom domain M
-
-
-
-
-
-
-
--- OPTIONAL WORK --
-General:
-how do the shopify product ids and div ids work? Where can i easily find them from shopify?
-
-Home Page:
-find way to make text dynamically fit in merchbox
-get cover for hero video
-workaround for video autoplay for firefox
-remove 'pop-out video' prompt from firefox
-force video to load before page
-
-Product Page:
-create a pre-order button
-center product images in product section
 
 About Page:
 add email
@@ -32,9 +8,7 @@ add email
 
 
 
-
-
--- LATER WORK --
+-- FUTURE WORK --
 General:
 higher resolution images for mobile using srcset tag
 

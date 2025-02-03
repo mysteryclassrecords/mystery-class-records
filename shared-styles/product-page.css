@@ -498,8 +498,8 @@
     }
     
     .product-image {
-      width: clamp(0px, 80vw, 500px);
-      height: clamp(0px, 80vw, 500px);
+      width: clamp(0px, 70vw, 300px);
+      height: clamp(0px, 70vw, 300px);
     }
     
     .product-details-container {
@@ -508,11 +508,12 @@
     }
     
     .product-title {
-      font-size: 64px;
+      font-size: 48px;
     }
     
     .product-artist {
-      font-size: 30px;
+      font-size: 24px;
+      line-height: 1;
     }
     
     .release-date {
@@ -524,31 +525,32 @@
     }
     
     .product-price {
-      font-size: 46px;
+      font-size: 48px;
       margin-top: 5px;
     }
     
     .product-buy-button {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     
     .track-list h3 {
-      font-size: 30px;
+      font-size: 24px;
       text-align: left;
     }
     
     .track-list ol {
       font-size: 16px;
       text-align: left;
+      margin-bottom: 6px;
     }
     
     .pressing-info h3 {
-      font-size: 18px;
+      font-size: 16px;
       text-align: left;
     }
     
     .pressing-info p {
-      font-size: 14px;
+      font-size: 12px;
       text-align: left;
     }
     
@@ -557,13 +559,14 @@
     }
   
     .description-section {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.8;
       align-self: center;
+      padding: 50px 40px;
     }
 
     .related-merch-section {
-      padding: 0 20px 100px;
+      padding: 0 4px 100px;
     }
   
     .store-section {
@@ -573,7 +576,7 @@
   
     .store-heading {
       font-size: 40px;
-      align-self: center;
+      align-self: left;
     }
   
     .store-grid {
