@@ -27,7 +27,6 @@
 
         ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('cart', {
-                node: document.getElementById('cart-button'),
                 options: {
                     "cart": {
                         "styles": {
@@ -109,16 +108,32 @@
                         ]
                     },
                     "toggle": {
-                        'iframe': false,
-                        'sticky': false,
-                        'contents': {
-                            'count': true,
-                            'icon': false,
-                            'title': true,
+                        "styles": {
+                            "toggle": {
+                                "font-family": "Raleway, sans-serif",
+                                "font-weight": "bold",
+                                "background-color": "#0b1215",
+                                ":hover": {
+                                    "background-color": "#131f24"
+                                },
+                                ":focus": {
+                                    "background-color": "#131f24"
+                                }
+                            },
+                            "count": {
+                                "font-size": "18px",
+                                "color": "#f3f4f6",
+                                ":hover": {
+                                    "color": "#f3f4f6"
+                                }
+                            },
+                            "iconPath": {
+                                "fill": "#f3f4f6"
+                            }
                         },
-                        'text': {
-                            'title': 'CART'
-                        }
+                        "googleFonts": [
+                            "Raleway"
+                        ]
                     },
                     "lineItem": {
                         "styles": {
