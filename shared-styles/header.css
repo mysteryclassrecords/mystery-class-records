@@ -31,14 +31,10 @@
 
 .nav {
   margin-top: var(--rainbow-height);
-  display: flex;
   gap: 40px;
   order: 3;
-  overflow: visible;
-
   display: flex;
-  align-items: center; /* Ensures vertical centering */
-  margin-top: 0; /* Remove the margin pushing it down */
+  align-items: center;
 }
 
 .nav a {
@@ -47,7 +43,6 @@
   font-size: 40px;
   color: #F3F4F6;
   transition: font-size 0.3s ease, transform 0.3s ease;
-  overflow: visible;
 }
 
 .nav a:hover {
@@ -56,89 +51,66 @@
 
 .nav .cart-container {
   display: flex;
-  align-items: center; /* Centers the cart container contents */
-  margin-right: 60px;
+  align-items: center;
   align-self: center;
   position: static;
+  padding: 0;
+  margin: 0 33px 0 -7px;
+  transform-origin: center center;
 }
 
 .shopify-buy__cart-toggle {
   cursor: pointer;
-  margin: 0;
   gap: 0;
   align-self: center;
   transition: transform 0.3s ease;
   position: relative;
-
-  border: 1px solid blue; /* Debug */
-  background: rgba(0, 0, 255, 0.1); /* Debug */
-
-  min-width: 60px; /* Make sure it's big enough */
-
-  position: relative !important;
-
-  position: relative;
-  display: flex; /* Ensures contents are visible */
-  align-items: center;
-  justify-content: center;
-  min-width: 80px; /* Adjust to ensure enough space */
-
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 90px; /* Increased width */
-  min-height: 60px; /* Increased height */
-  padding: 15px; /* More breathing room */
-}
-
-.shopify-buy__cart-toggle:hover {
-  transform: scale(1.1);
+  min-width: 90px;
+  min-height: 60px;
+  margin: 0;
+  padding: 15px 15px 15px 0;
+  transform-origin: center center;
 }
 
 .shopify-buy__cart-toggle__count {
   font-family: sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
   color: #F3F4F6;
   background-color: red;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
-
   position: absolute;
-  transform-origin: center;
-  z-index: 10;
-
-  overflow: visible !important;
-
-  position: absolute;
-  width: 22px; /* Slightly larger for better visibility */
+  top: 1px;
+  right: 0px;
+  width: 22px;
   height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  z-index: 9999; /* Make sure it's above everything */
-  overflow: visible !important;
-
-  position: absolute;
-  top: 2px; /* Slightly higher */
-  right: 2px; /* Slightly further */
-  width: 24px; /* Increased size */
-  height: 24px;
-  font-size: 14px;
-  z-index: 9999;
+  font-size: 16px;
+  transform-origin: center center;
+  will-change: transform, top, right;
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
 
 .shopify-buy__cart-toggle__title{
   font-family: "ringold-sans", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 41px !important;
   color: #F3F4F6;
+  transform-origin: center center;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.shopify-buy__cart-toggle:hover .shopify-buy__cart-toggle__count,
+.shopify-buy__cart-toggle:hover .shopify-buy__cart-toggle__title {
+  transform: scale(1.1);
+  transform-origin: center center;
 }
 
 .hamburger-icon {
@@ -164,13 +136,13 @@
     #0000FF 74%,
     #8E00FF 100%
   );
-  z-index: 1001; /* Above header */
+  z-index: 500;
   transition: top 0.3s ease, height 0.3s ease;
 }
 
 .header-spacer {
   background-color: black;
-  height: calc(var(--header-height) + var(--rainbow-height)) !important; /* Matches header + rainbow strip */
+  height: calc(var(--header-height) + var(--rainbow-height)) !important;
   width: 100%;
   transition: height 0.3s ease;
 }
@@ -178,8 +150,8 @@
 /* Laptop Media Query */
 @media (max-width: 1280px) {
   :root {
-    --header-height: 85px; /* Adjusted header height for laptops */
-    --rainbow-height: 4px; /* Adjusted rainbow strip height */
+    --header-height: 85px;
+    --rainbow-height: 4px;
   }
 
   .header .logo img {
@@ -194,16 +166,35 @@
   .nav a {
     font-size: 30px;
   }
+
   .nav .cart-container {
-    margin-right: 40px;
+    margin: 0 20px 0 -14px;
+  }
+  
+  .shopify-buy__cart-toggle {
+    min-width: 90px;
+    min-height: 60px;
+    padding: 15px 15px 15px 0;
+  }
+  
+  .shopify-buy__cart-toggle__count {
+    top: 2px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  
+  .shopify-buy__cart-toggle__title{
+    font-size: 31px !important;
   }
 }
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
   :root {
-    --header-height: 75px; /* Adjusted header height for mobile */
-    --rainbow-height: 3px; /* Adjusted rainbow strip height */
+    --header-height: 75px;
+    --rainbow-height: 3px;
   }
 
   .header {
@@ -253,8 +244,25 @@
   }
 
   .nav .cart-container {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin: -22px 0px -11.5px 13.5px;
+  }
+  
+  .shopify-buy__cart-toggle {
+    min-width: 90px;
+    min-height: 60px;
+    padding: 15px 15px 15px 0;
+  }
+  
+  .shopify-buy__cart-toggle__count {
+    top: 8px;
+    right: 14px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+  }
+  
+  .shopify-buy__cart-toggle__title{
+    font-size: 21px !important;
   }
 
   .hamburger-icon {
@@ -271,13 +279,13 @@
   }
 
   .hamburger-icon button {
-    all: unset; /* Resets all default button styles */
-    cursor: pointer; /* Ensures the cursor indicates interactivity */
-    display: inline-flex; /* Ensures the button takes the size of the icon */
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px; /* Matches the icon's width */
-    height: 20px; /* Matches the icon's height */
+    width: 30px;
+    height: 20px;
   }
 
   .header[data-expanded="true"] ~ .rainbow-strip {

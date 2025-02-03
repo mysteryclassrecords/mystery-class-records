@@ -27,159 +27,138 @@
 
         ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('cart', {
-                options: {
-                    "cart": {
-                        "styles": {
-                            "button": {
-                                "font-family": "Raleway, sans-serif",
-                                "font-weight": "bold",
-                                "font-size": "18px",
-                                "padding-top": "17px",
-                                "padding-bottom": "17px",
-                                "color": "#f3f4f6",
-                                ":hover": {
+                node: document.getElementById('cart-button'),
+                    options: {
+                        "cart": {
+                            "styles": {
+                                "button": {
+                                    "font-family": "Raleway, sans-serif",
+                                    "font-weight": "bold",
+                                    "font-size": "18px",
+                                    "padding-top": "17px",
+                                    "padding-bottom": "17px",
                                     "color": "#f3f4f6",
-                                    "background-color": "#131f24"
+                                    ":hover": {
+                                        "color": "#f3f4f6",
+                                        "background-color": "#131f24"
+                                    },
+                                    "background-color": "#0b1215",
+                                    ":focus": {
+                                        "background-color": "#131f24"
+                                    },
+                                    "border-radius": "40px"
                                 },
-                                "background-color": "#0b1215",
-                                ":focus": {
-                                    "background-color": "#131f24"
-                                },
-                                "border-radius": "40px"
-                            },
-                            "title": {
-                                "color": "#0b1215"
-                            },
-                            "header": {
-                                "color": "#0b1215"
-                            },
-                            "lineItems": {
-                                "color": "#0b1215"
-                            },
-                            "subtotalText": {
-                                "color": "#0b1215"
-                            },
-                            "subtotal": {
-                                "color": "#0b1215"
-                            },
-                            "notice": {
-                                "color": "#0b1215"
-                            },
-                            "currency": {
-                                "color": "#0b1215"
-                            },
-                            "close": {
-                                "color": "#0b1215",
-                                ":hover": {
+                                "title": {
                                     "color": "#0b1215"
-                                }
-                            },
-                            "empty": {
-                                "color": "#0b1215"
-                            },
-                            "noteDescription": {
-                                "color": "#0b1215"
-                            },
-                            "discountText": {
-                                "color": "#0b1215"
-                            },
-                            "discountIcon": {
-                                "fill": "#0b1215"
-                            },
-                            "discountAmount": {
-                                "color": "#0b1215"
-                            },
-                            "cart": {
-                                "background-color": "#f3f4f6"
-                            },
-                            "footer": {
-                                "background-color": "#f3f4f6"
-                            }
-                        },
-                        "text": {
-                            "total": "Subtotal"
-                        },
-                        "contents": {
-                            "note": true
-                        },
-                        "popup": false,
-                        "googleFonts": [
-                            "Raleway"
-                        ]
-                    },
-                    "toggle": {
-                        "styles": {
-                            "toggle": {
-                                "opacity": "1", // Ensure visibility
-                                "visibility": "visible", // Prevent it from being hidden
-                                "font-family": "Raleway, sans-serif",
-                                "font-weight": "bold",
-                                "background-color": "#0b1215",
-                                ":hover": {
-                                    "background-color": "#131f24"
                                 },
-                                ":focus": {
-                                    "background-color": "#131f24"
+                                "header": {
+                                    "color": "#0b1215"
+                                },
+                                "lineItems": {
+                                    "color": "#0b1215"
+                                },
+                                "subtotalText": {
+                                    "color": "#0b1215"
+                                },
+                                "subtotal": {
+                                    "color": "#0b1215"
+                                },
+                                "notice": {
+                                    "color": "#0b1215"
+                                },
+                                "currency": {
+                                    "color": "#0b1215"
+                                },
+                                "close": {
+                                    "color": "#0b1215",
+                                    ":hover": {
+                                        "color": "#0b1215"
+                                    }
+                                },
+                                "empty": {
+                                    "color": "#0b1215"
+                                },
+                                "noteDescription": {
+                                    "color": "#0b1215"
+                                },
+                                "discountText": {
+                                    "color": "#0b1215"
+                                },
+                                "discountIcon": {
+                                    "fill": "#0b1215"
+                                },
+                                "discountAmount": {
+                                    "color": "#0b1215"
+                                },
+                                "cart": {
+                                    "background-color": "#f3f4f6"
+                                },
+                                "footer": {
+                                    "background-color": "#f3f4f6"
                                 }
                             },
-                            "count": {
-                                "font-size": "18px",
-                                "color": "#f3f4f6",
-                                ":hover": {
-                                    "color": "#f3f4f6"
-                                }
+                            "text": {
+                                "total": "Subtotal"
                             },
-                            "iconPath": {
-                                "fill": "#f3f4f6"
+                            "contents": {
+                                "note": true
+                            },
+                            "popup": false,
+                            "googleFonts": [
+                                "Raleway"
+                            ]
+                        },
+                        "toggle": {
+                            'iframe': false,
+                            'sticky': false,
+                            'contents': {
+                                'count': true,
+                                'icon': false,
+                                'title': true,
+                            },
+                            'text': {
+                                'title': 'CART'
                             }
                         },
-                        "popup": true, // This prevents the toggle from being disabled in popup mode
-                        "contents": {
-                            "toggle": true // Ensures that the toggle is rendered
-                        },
-                        "googleFonts": [
-                            "Raleway"
-                        ]
-                    },
-                    "lineItem": {
-                        "styles": {
-                            "variantTitle": {
-                                "color": "#0b1215"
-                            },
-                            "title": {
-                                "color": "#0b1215"
-                            },
-                            "price": {
-                                "color": "#0b1215"
-                            },
-                            "fullPrice": {
-                                "color": "#0b1215"
-                            },
-                            "discount": {
-                                "color": "#0b1215"
-                            },
-                            "discountIcon": {
-                                "fill": "#0b1215"
-                            },
-                            "quantity": {
-                                "color": "#0b1215"
-                            },
-                            "quantityIncrement": {
-                                "color": "#0b1215",
-                                "border-color": "#0b1215"
-                            },
-                            "quantityDecrement": {
-                                "color": "#0b1215",
-                                "border-color": "#0b1215"
-                            },
-                            "quantityInput": {
-                                "color": "#0b1215",
-                                "border-color": "#0b1215"
+                        "lineItem": {
+                            "styles": {
+                                "variantTitle": {
+                                    "color": "#0b1215"
+                                },
+                                "title": {
+                                    "color": "#0b1215"
+                                },
+                                "price": {
+                                    "color": "#0b1215"
+                                },
+                                "fullPrice": {
+                                    "color": "#0b1215"
+                                },
+                                "discount": {
+                                    "color": "#0b1215"
+                                },
+                                "discountIcon": {
+                                    "fill": "#0b1215"
+                                },
+                                "quantity": {
+                                    "color": "#0b1215"
+                                },
+                                "quantityIncrement": {
+                                    "color": "#0b1215",
+                                    "border-color": "#0b1215"
+                                },
+                                "quantityDecrement": {
+                                    "color": "#0b1215",
+                                    "border-color": "#0b1215"
+                                },
+                                "quantityInput": {
+                                    "color": "#0b1215",
+                                    "border-color": "#0b1215"
+                                }
                             }
                         }
                     }
-                }
+                });
             });
-        });
-    }
-})();
+        }
+    })();
