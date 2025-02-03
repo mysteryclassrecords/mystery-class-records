@@ -16,18 +16,18 @@ make SQ 1 listing and page clarify that it is a pre order
 
 -- OPTIONAL WORK --
 General:
-how do the shopify product ids and div ids work? Where can i easily find them from shopify? S
+how do the shopify product ids and div ids work? Where can i easily find them from shopify?
 
 Home Page:
-find way to make text dynamically fit in merchbox S
+find way to make text dynamically fit in merchbox
 get cover for hero video
-workaround for video autoplay for firefox M
-remove 'pop-out video' prompt from firefox M
-force video to load before page S
+workaround for video autoplay for firefox
+remove 'pop-out video' prompt from firefox
+force video to load before page
 
 Product Page:
-create a pre-order button M
-center product images in product section M
+create a pre-order button
+center product images in product section
 
 About Page:
 add email
@@ -42,14 +42,13 @@ General:
 higher resolution images for mobile using srcset tag
 
 Cart:
-customize cart sidebar styling L
-add badge icon to cart in header L
+make cart badge only appear if there are items in cart
 
 Artist Page:
-fix artist boxes to look like figma M
-get images for all artists S
+fix artist boxes to look like figma
+get images for all artists
 
 Cryhard Page:
-implement responsive design L
-add "listen now" feature L
-create artist pages for other artists based off finished cryhard page L
+implement responsive design
+add "listen now" feature
+create artist pages for other artists based off finished cryhard page
