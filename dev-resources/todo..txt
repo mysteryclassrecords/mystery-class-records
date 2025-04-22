@@ -1,6 +1,4 @@
 -- CURRENT WORK --
-General:
-move to custom domain M
 
 About Page:
 add email
