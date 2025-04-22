@@ -26,7 +26,7 @@
   
   <body>
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" data-expanded="false">
       <div class="logo">
         <a href="../">
           <img src="../images/header/header-logo.svg" alt="Logo">
@@ -34,15 +34,19 @@
       </div>
       <nav class="nav">
         <a href="../store">STORE</a>
-        <a href="../artists">ARTISTS</a>
+        <a href="../roster">ROSTER</a>
         <a href="../about">ABOUT</a>
-        <a href="" class="cart">CART</a>
+        <!-- <div class="cart-container">
+          <div id="cart-button"></div>
+        </div> -->
       </nav>
-      <div class="rainbow-strip"></div>
       <div class="hamburger-icon">
-        <img src="../images/header/hamburger-icon.svg" alt="Hamburger Menu">
+        <button aria-label="Toggle Menu">
+          <img src="../images/header/hamburger-icon.svg" alt="Hamburger Menu">
+        </button>
       </div>
     </header>
+    <div class="rainbow-strip"></div>
     <div class="header-spacer"></div>
 
     <!-- Artists Section -->
@@ -101,10 +105,9 @@
           <div class="footer-vertical-separator"></div>
         </div>
         <nav class="footer-nav">
-          <a href="store">STORE</a>
-          <!-- <a href="artists">ARTISTS</a> -->
-          <a href="about">ABOUT</a>
-          <a href="">CART</a>
+          <a href="../store">STORE</a>
+          <a href="../roster">ROSTER</a>
+          <a href="../about">ABOUT</a>
         </nav>
       </div>
       <div class="footer-horizontal-separator"></div>
