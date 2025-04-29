@@ -72,7 +72,7 @@
   align-items: center;
 }
 
-.artist-block-product-image {
+.artist-block-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -82,33 +82,16 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.default-image {
-  opacity: 1;
-}
-
-.hover-image {
-  opacity: 0;
-}
-
-.artist-block:hover .default-image {
-  opacity: 0;
-}
-
-.artist-block:hover .hover-image {
-  opacity: 1;
-}
-
 .artist-block-details-container {
   background-color: #F3F4F6;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   height: 20%;
-  border-top: 4px solid #0B1215;
   transition: font-size 0.3s ease;
 }
 
-.artist-block-names-container {
+.artist-block-name-container {
   flex: 3;
   display: flex;
   gap: 0;
@@ -116,7 +99,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding: 8px;
-  border-right: 4px solid #0B1215;
+  border: 4px solid #0B1215;
   position: relative;
   overflow: hidden;
 }
@@ -130,32 +113,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.artist-block-product-name {
-  font-family: "articulat-cf", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #0B1215;
-  max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.artist-block-price-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.artist-block-price {
-  font-family: "ringold-sans", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  color: #0B1215;
 }
 
 /* Laptop Media Query */
