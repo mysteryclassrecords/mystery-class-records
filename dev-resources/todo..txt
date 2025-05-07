@@ -1,4 +1,13 @@
 -- CURRENT WORK --
+
+New Products:
+update all buy button links
+update all related merch on each page
+update merch blocks on other product's related merch
+update store page
+update home page store section
+
+
 Artist Page:
 fix artist boxes to look like figma
 get images for all artists
