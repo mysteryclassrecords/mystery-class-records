@@ -1,7 +1,6 @@
 -- CURRENT WORK --
 
 New Products:
-update home page store section
 make photos smaller
 update stock amounts on shopify
 
