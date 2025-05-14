@@ -402,16 +402,16 @@
   }
 
   .hero-title {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   .hero-detail {
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 5px;
   }
 
   .latest-release {
-    height: 420px;
+    height: 500px;
     flex-direction: column;
     position: relative;
   }
@@ -438,35 +438,36 @@
   }
 
   .release-heading {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 0;
   }
 
   .release-title {
-    font-size: 40px;
+    font-size: 42px;
     margin-top: 0px;
   }
 
   .rainbow-underline {
-    width: 300px;
+    width: 320px;
     height: 3px;
     padding: 0;
     margin-top: 0;
   }
 
   .release-text p {
-    font-size: 14px;
-    max-width: clamp(100px, 66vw, 300px);
-    margin-top: 10px;
-    line-height: 1;
+    font-size: 16px;
+    max-width: clamp(100px, 80vw, 300px);
+    margin-top: 15px;
+    line-height: 1.5;
   }
 
   .pre-order-button {
     margin-top: 20px;
-    width: 125px;
-    height: 40px;
+    width: 140px;
+    height: 45px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .store-section {
@@ -514,10 +515,10 @@
   }
   
   .merch-block-product-name {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .merch-block-price {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
