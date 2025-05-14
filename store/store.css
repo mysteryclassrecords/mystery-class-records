@@ -207,7 +207,7 @@
   }
 
   .store-heading {
-    font-size: 60px;
+    font-size: 42px;
     margin-bottom: clamp(1px, 9vw, 40px);
     text-align: center;
   }
@@ -254,10 +254,10 @@
   }
   
   .merch-block-product-name {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .merch-block-price {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
