@@ -207,7 +207,7 @@
   }
 
   .store-heading {
-    font-size: 60px;
+    font-size: 42px;
     margin-bottom: clamp(1px, 9vw, 40px);
     text-align: center;
   }
