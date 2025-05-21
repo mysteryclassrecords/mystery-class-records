@@ -1,25 +1,14 @@
 -- CURRENT WORK --
 
-New Products:
-make photos smaller
-update stock amounts on shopify
-
-
-Artist Page:
-fix artist boxes to look like figma
-get images for all artists
+Roster Page:
+fix outlines of artist boxes
 
 Cryhard Page:
-implement responsive design
+make look like figma
+fix text sizes
 add "listen now" feature
+implement responsive design
 create artist pages for other artists based off finished cryhard page
-
-About Page:
-add email
-
-
-
-
 
 -- FUTURE WORK --
 General:
