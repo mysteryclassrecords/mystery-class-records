@@ -117,16 +117,16 @@
 
 /* Laptop Media Query */
 @media (max-width: 1280px) {  
-  .store-section {
+  .roster-section {
     padding: 60px 6vw;
   }
 
-  .store-heading {
+  .roster-heading {
     font-size: 100px;
     margin-bottom: 40px;
   }
 
-  .store-grid {
+  .roster-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3vw;
   }
@@ -160,17 +160,17 @@
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
-  .store-section {
+  .roster-section {
     padding: 60px clamp(1px, 13vw, 45px);
   }
 
-  .store-heading {
+  .roster-heading {
     font-size: 60px;
     margin-bottom: clamp(1px, 9vw, 40px);
     text-align: center;
   }
 
-  .store-grid {
+  .roster-grid {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     gap: 9vw;
     gap: clamp(1px, 9vw, 30px);
