@@ -4,6 +4,7 @@ Roster Page:
 fix outlines of artist boxes
 
 Cryhard Page:
+update header and footer to match current of a product page
 make look like figma
 fix text sizes
 add "listen now" feature
