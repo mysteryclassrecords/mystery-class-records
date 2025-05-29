@@ -3,7 +3,7 @@
   background-color: #0b1215;
   width: 100vw;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin: 0;
   padding: 60px 6vw;
 }
 
@@ -12,7 +12,7 @@
   font-size: 128px;
   font-weight: 400;
   color: #F3F4F6;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   text-align: left;
 }
@@ -21,6 +21,7 @@
 font-family: "ringold-sans", sans-serif;
 font-size: 128px;
 font-weight: 400;
+margin: 0;
 }
 
 .artist-location {
@@ -28,16 +29,11 @@ Font-family: "coolvetica", sans-serif;
 font-size: 32px;
 font-style: italic;
 font-weight: 400;
-}
-
-.artist-image-container {
-display: flex;
-justify-content: center;
-margin: 20px 0;
+margin: 0;
 }
 
 .artist-image {
-max-width: 100%;
+width: 100%;
 height: auto;
 border-radius: 10px;
 }
