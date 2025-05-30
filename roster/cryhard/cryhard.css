@@ -3,8 +3,12 @@
   background-color: #0b1215;
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   margin: 0;
-  padding: 60px 6vw;
+  padding: 60px 20vw;
+  align-items: center;
 }
 
 .artist-heading {
@@ -12,56 +16,78 @@
   font-size: 128px;
   font-weight: 400;
   color: #F3F4F6;
-  margin: 0 0 20px 0;
+  margin: 0 0 45px 0;
   padding: 0;
   text-align: left;
+  align-self: flex-start;
 }
 
 .artist-name {
-font-family: "ringold-sans", sans-serif;
-font-size: 128px;
-font-weight: 400;
-margin: 0;
+  font-family: "ringold-sans", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 0.66;
 }
 
 .artist-location {
-Font-family: "coolvetica", sans-serif;
-font-size: 32px;
-font-style: italic;
-font-weight: 400;
-margin: 0;
+  Font-family: "coolvetica", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .artist-image {
-width: 100%;
-height: auto;
-border-radius: 10px;
+  width: 100%;
 }
 
 .artist-interactables {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 20px 0;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px 0 0 0;
+  gap: 20px;
 }
 
-.artist-player {
+.player-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.bandcamp-player {
+  width: 70%;
+  background-color: #FFFFFF;
+  height: 42px;
+}
+
+.player-spacer{
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 42px;
+  border-top: #d2d2d2 1px solid;
+  border-bottom: #d2d2d2 1px solid;
+  border-right: #d2d2d2 1px solid;
+  gap: 0;
 }
 
 .artist-social-icons {
-display: flex;
-gap: 10px;
+  align-self: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 15%;
 }
 
 .artist-social-icons a img {
-width: 40px;
-height: 40px;
-transition: transform 0.2s ease;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
 }
 
 .artist-social-icons a:hover img {
-transform: scale(1.2);
+  transform: scale(1.2); 
 }
 
   /* Description Section */
@@ -71,9 +97,8 @@ transform: scale(1.2);
     font-family: "articulat-cf", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 28px;
-    padding: 50px;
-    margin: 0;
+    font-size: 32px;
+    margin: 60px 0 0 0;
     text-align: left;
     height: auto;
     line-height: 1.5;
@@ -85,7 +110,7 @@ transform: scale(1.2);
     margin: auto;
   }
 
- /* Related Merch Section - Updated with Store Section Styles */
+ /* Related Merch Section */
   .related-merch-section {
     background-color: #0B1215;
     overflow: hidden;
