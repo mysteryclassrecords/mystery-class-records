@@ -11,6 +11,9 @@ add "listen now" feature
 implement responsive design
 create artist pages for other artists based off finished cryhard page
 
+All:
+Update Dfunk Page
+
 -- FUTURE WORK --
 General:
 higher resolution images for mobile using srcset tag
