@@ -7,15 +7,15 @@
     <title>Mystery Class Records</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="dev-resources/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="dev-resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <!-- Fonts and Stylesheets -->
     <link rel="stylesheet" href="https://use.typekit.net/chq5wda.css"> <!-- Adobe Fonts Embed Code -->
-    <link rel="stylesheet" href="dev-resources/shared-styles/global.css">
-    <link rel="stylesheet" href="dev-resources/shared-styles/header.css">
-    <link rel="stylesheet" href="dev-resources/shared-styles/cart-outline.css">
-    <link rel="stylesheet" href="dev-resources/shared-styles/footer.css">
+    <link rel="stylesheet" href="assets/shared-styles/global.css">
+    <link rel="stylesheet" href="assets/shared-styles/header.css">
+    <link rel="stylesheet" href="assets/shared-styles/cart-outline.css">
+    <link rel="stylesheet" href="assets/shared-styles/footer.css">
     <link rel="stylesheet" href="home.css">     
   </head>
 
@@ -24,7 +24,7 @@
     <header class="header" data-expanded="false">
       <div class="logo">
         <a href="">
-          <img src="dev-resources/images/header/header-logo.svg" alt="Logo">
+          <img src="assets/images/header/header-logo.svg" alt="Logo">
         </a>
       </div>
       <nav class="nav">
@@ -37,7 +37,7 @@
       </nav>
       <div class="hamburger-icon">
         <button aria-label="Toggle Menu">
-          <img src="dev-resources/images/header/hamburger-icon.svg" alt="Hamburger Menu">
+          <img src="assets/images/header/hamburger-icon.svg" alt="Hamburger Menu">
         </button>
       </div>
     </header>
@@ -47,7 +47,7 @@
     <!-- Hero Section -->
     <div class="hero">
       <video class="hero-video" autoplay muted loop playsinline preload="auto" loading="lazy">
-        <source src="dev-resources/images/home/home-hero-video-resized.mp4" type="video/mp4">
+        <source src="assets/videos/home/hero-video-resized.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div class="hero-text">
@@ -56,23 +56,43 @@
       </div>
     </div>
     
-    <!-- Latest Release Section -->
-    <div class="latest-release">
-
-      <div class="side-quests-vol-1-hero">
-      <img src="dev-resources/images/home/side-quests-vol-1-hero.png" alt="Side Quests Vol. 1 Hero">
+    <!-- Featured Release Section -->
+    <div class="featured-release">
+      <div class="featured-release-hero">
+      <img src="assets/images/products/mcr-007/mcr-007.webp" alt="Featured Release">
       </div>
+
+      <div class="falling-shapes">
+        <img src="assets/images/effects/powdr/falling-piece1.webp" class="shape" style="--i:1;">
+        <img src="assets/images/effects/powdr/falling-piece2.webp" class="shape" style="--i:2;">
+        <img src="assets/images/effects/powdr/falling-piece3.webp" class="shape" style="--i:3;">
+        <img src="assets/images/effects/powdr/falling-piece4.webp" class="shape" style="--i:4;">
+        <img src="assets/images/effects/powdr/falling-piece5.webp" class="shape" style="--i:5;">
+        <img src="assets/images/effects/powdr/falling-piece6.webp" class="shape" style="--i:6;">
+        <img src="assets/images/effects/powdr/falling-piece7.webp" class="shape" style="--i:7;">
+        <img src="assets/images/effects/powdr/falling-piece8.webp" class="shape" style="--i:8;">
+        <img src="assets/images/effects/powdr/falling-piece9.webp" class="shape" style="--i:9;">
+        <img src="assets/images/effects/powdr/falling-piece10.webp" class="shape" style="--i:10;">
+        <img src="assets/images/effects/powdr/falling-piece11.webp" class="shape" style="--i:11;">
+        <img src="assets/images/effects/powdr/falling-piece12.webp" class="shape" style="--i:12;">
+        <img src="assets/images/effects/powdr/falling-piece13.webp" class="shape" style="--i:13;">
+        <img src="assets/images/effects/powdr/falling-piece14.webp" class="shape" style="--i:14;">
+        <img src="assets/images/effects/powdr/falling-piece15.webp" class="shape" style="--i:15;">
+      </div>
+
 
       <div class="release-text">
         <h2 class="release-heading">LATEST RELEASE</h2>
-        <h3 class="release-title">SIDE QUESTS VOL. 1</h3>
+        <h3 class="release-title">SETTLE PAIN</h3>
         <div class="rainbow-underline"></div>
         <p>
-          The first ever Mystery Class Records release. Nine tracks by Oklahoma artists compiled by our team to show off the massive talent in our community.
+          The highly anticipated debut release from powdr is here and we couldn’t be more excited.
+          <br> <br>
+          Settle Pain provides an insane experience of indie, psych, kroutrock, and synth rock
         </p>
-        <p><strong>Limited to 25 copies.</strong></p>
-        <button class="pre-order-button" onclick="location.href='store/mcr-001/'">
-          ADD TO CART
+        <p><strong>Limited to 40 copies.</strong></p>
+        <button class="pre-order-button" onclick="location.href='store/mcr-007/'">
+          PRE-ORDER
         </button>        
       </div>
     </div>
@@ -81,16 +101,34 @@
     <div class="store-section">
       <div class="store-grid">
 
+        <a href="store/mcr-007/" class="merch-link">
+          <div class="merch-block">
+            <div class="merch-block-image-container">
+              <img src="assets/images/products/mcr-007/mcr-007.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-007/mcr-007-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+            </div>
+            <div class="merch-block-details-container">
+              <div class="merch-block-names-container">
+                <p class="merch-block-artist-name">powdr</p>
+                <p class="merch-block-product-name">Settle Pain - CASSETTE</p>
+              </div>
+              <div class="merch-block-price-container">
+                <div class="merch-block-price">$10</div>
+              </div>
+            </div>
+          </div>
+        </a>
+
         <a href="store/mcr-006/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-006/mcr-006.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-006/mcr-006-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-006/mcr-006.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-006/mcr-006-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
                 <p class="merch-block-artist-name">Donovan Funk</p>
-                <p class="merch-block-product-name">Promo</p>
+                <p class="merch-block-product-name">Promo - CASSETTE</p>
               </div>
               <div class="merch-block-price-container">
                 <div class="merch-block-price">$10</div>
@@ -102,8 +140,8 @@
         <a href="store/mcr-005/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-005/mcr-005.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-005/mcr-005-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-005/mcr-005.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-005/mcr-005-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -120,8 +158,8 @@
         <a href="store/mcr-004/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-004/mcr-004.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-004/mcr-004-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-004/mcr-004.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-004/mcr-004-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -138,8 +176,8 @@
         <a href="store/new-005/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/new-005/new-005.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/new-005/new-005-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/new-005/new-005.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/new-005/new-005-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -156,8 +194,8 @@
         <a href="store/mcr-003/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-003/mcr-003.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-003/mcr-003-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-003/mcr-003.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-003/mcr-003-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -174,8 +212,8 @@
         <a href="store/mcr-001/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-001/mcr-001.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-001/mcr-001-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-001/mcr-001.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-001/mcr-001-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -192,8 +230,8 @@
         <a href="store/mcr-002/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/mcr-002/mcr-002.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/mcr-002/mcr-002-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/mcr-002/mcr-002.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/mcr-002/mcr-002-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -210,8 +248,8 @@
         <a href="store/new-001/" class="merch-link">
           <div class="merch-block">
             <div class="merch-block-image-container">
-              <img src="dev-resources/images/products/new-001/new-001.webp" alt="Product Image" class="merch-block-product-image default-image">
-              <img src="dev-resources/images/products/new-001/new-001-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
+              <img src="assets/images/products/new-001/new-001.webp" alt="Product Image" class="merch-block-product-image default-image">
+              <img src="assets/images/products/new-001/new-001-hover.webp" alt="Product Hover Image" class="merch-block-product-image hover-image">
             </div>
             <div class="merch-block-details-container">
               <div class="merch-block-names-container">
@@ -234,7 +272,7 @@
         <div class="footer-logo-container">
           <div class="footer-logo">
             <a href="">
-              <img src="dev-resources/images/footer/footer-logo.svg" alt="Footer Logo">
+              <img src="assets/images/footer/footer-logo.svg" alt="Footer Logo">
             </a>
           </div>
           <div class="footer-vertical-separator"></div>
@@ -249,32 +287,32 @@
       <div class="footer-bottom">
         <div class="footer-tagline">
           <p>UNEXPLAINABLY GOOD MUSIC.</p>
-          <img src="dev-resources/images/footer/footer-icon.svg" alt="Footer Icon">
+          <img src="assets/images/footer/footer-icon.svg" alt="Footer Icon">
         </div>
         <div class="footer-copyright">
           <p>© COPYRIGHT 2024 MYSTERY CLASS RECORDS</p>
         </div>
         <div class="footer-social">
           <a href="https://www.facebook.com/profile.php?id=61571429339039" target="_blank">
-            <img src="dev-resources/images/social-icons/facebook-icon.svg" alt="Facebook Icon">
+            <img src="assets/images/social-icons/facebook-icon.svg" alt="Facebook Icon">
           </a>
           <a href="https://www.instagram.com/mysteryclass/" target="_blank">
-            <img src="dev-resources/images/social-icons/instagram-icon.svg" alt="Instagram Icon">
+            <img src="assets/images/social-icons/instagram-icon.svg" alt="Instagram Icon">
           </a>
           <a href="https://www.youtube.com/@mysteryclassrecords9824" target="_blank">
-            <img src="dev-resources/images/social-icons/youtube-icon.svg" alt="YouTube Icon">
+            <img src="assets/images/social-icons/youtube-icon.svg" alt="YouTube Icon">
           </a>
           <a href="https://www.tiktok.com/@mysteryclassrecords" target="_blank">
-            <img src="dev-resources/images/social-icons/tiktok-icon.svg" alt="TikTok Icon">
+            <img src="assets/images/social-icons/tiktok-icon.svg" alt="TikTok Icon">
           </a>
         </div>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="dev-resources/scripts/CartToggleSticky.js" async></script>
-    <script src="dev-resources/scripts/MobileHeaderExpand.js"></script>
-    <script src="dev-resources/scripts/MerchBlockScrollSwap.js"></script>
+    <script src="assets/scripts/CartToggleSticky.js" async></script>
+    <script src="assets/scripts/MobileHeaderExpand.js"></script>
+    <script src="assets/scripts/MerchBlockScrollSwap.js"></script>
 
   </body>
 </html>
