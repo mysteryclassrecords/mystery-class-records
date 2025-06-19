@@ -45,11 +45,43 @@
 
 .artist-image-carousel {
   flex: 1;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
 }
 
 .artist-image {
-  width: 100%;
+  min-width: 100%;
   height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
 }
 
 .artist-interactables {
