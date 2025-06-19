@@ -496,12 +496,18 @@
     width: 66vw;
     position: absolute;
     order: 2;
-    margin-left: 0;
-    margin-top: 0;
-    bottom: 20px;
-    left: 3vw;
+    margin: 0;
+    bottom: -25px;
+    left: 0;
     align-self: flex-start;
-    
+  }
+
+  .falling-shapes {
+    width: 70%;
+  }
+
+  .shape {
+    width: 6px;
   }
 
   .release-text {
@@ -535,7 +541,6 @@
     font-size: 16px;
     max-width: clamp(100px, 80vw, 300px);
     margin-top: 15px;
-    line-height: 1.5;
   }
 
   .pre-order-button {
