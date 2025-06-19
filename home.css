@@ -42,7 +42,7 @@
   transition: font-size 0.3s ease;
 }
 
-/* Latest Release Section */
+/* Featured Release Section */
 .featured-release {
   width: 100vw;
   height: 750px;
@@ -53,20 +53,90 @@
   overflow: hidden;
   align-items: center;
   transition: height 0.3s ease;
+  position: relative;
 }
 
-.side-quests-vol-1-hero {
+.featured-release-hero {
   flex-shrink: 1;
   width: 950px;
   height: auto;
   margin-left: 5vw;
 }
 
-.side-quests-vol-1-hero img {
+.featured-release-hero img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
+.falling-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  top: -50px;
+  left: calc(var(--i) * 8%);
+  opacity: 0.7;
+  animation: fallAnim 9s linear infinite;
+  animation-delay: calc(var(--i) * -2s);
+}
+
+.shape:nth-child(3n) {
+  animation-delay: -2s;
+}
+
+.shape:nth-child(3n+1) {
+  animation-delay: -6s;
+}
+
+.shape:nth-child(3n+2) {
+  animation-delay: -4s;
+}
+
+.shape:nth-child(4n) {
+  animation-delay: -1s;
+}
+
+.shape:nth-child(4n+1) {
+  animation-delay: -7s;
+}
+
+.shape:nth-child(5n) {
+  animation-delay: -3s;
+}
+
+
+@keyframes fallAnim {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-10px) translateY(200px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(10px) translateY(400px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-10px) translateY(600px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0px) translateY(800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
 
 .release-text {
   flex: 1;
@@ -77,6 +147,7 @@
   align-items: flex-end;
   padding-right: 5vw;
   align-self: flex-start;
+  z-index: 2;
 }
 
 .release-heading {
@@ -87,6 +158,7 @@
   font-style: italic;
   color: #F3F4F6;
   transition: font-size 0.3s ease;
+  z-index: 2;
 }
 
 .release-title {
@@ -97,9 +169,11 @@
   color: #F3F4F6;
   white-space: nowrap;
   transition: font-size 0.3s ease;
+  z-index: 2;
 }
 
 .rainbow-underline {
+  z-index: 2;
   margin-top: 20px;
   width: 668px;
   height: 5px;
@@ -119,14 +193,15 @@
 }
 
 .release-text p {
-  margin-top: 80px;
+  margin-top: 60px;
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-size: 28px;
   color: #F3F4F6;
   max-width: 600px;
-  line-height: 1.5;
+  line-height: 1.2;
   transition: font-size 0.3s ease;
+  z-index: 2;
 }
 
 .pre-order-button {
@@ -144,6 +219,7 @@
   color: #0B1215;
   text-align: center;
   transition: transform 0.3s ease;
+  z-index: 2;
 }
 
 .pre-order-button:hover {
@@ -312,7 +388,7 @@
     height: 700px;
   }
 
-  .side-quests-vol-1-hero {
+  .featured-release-hero {
     width: 600px;
     position: absolute;
     margin-top: 200px;
@@ -416,7 +492,7 @@
     position: relative;
   }
 
-  .side-quests-vol-1-hero {
+  .featured-release-hero {
     width: 66vw;
     position: absolute;
     order: 2;
