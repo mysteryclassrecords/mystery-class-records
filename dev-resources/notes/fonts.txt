@@ -1,9 +1,9 @@
 Font Details:
 
-
 Ringold
 font-family: "ringold-sans", sans-serif;
 font-weight: 400;
+
 
 
 Articulat CF - Regular
@@ -17,6 +17,7 @@ font-weight: 500;
 font-style: italic;
 
 
+
 Coolvetica - Bold
 font-family: "coolvetica", sans-serif;
 font-weight: 700;
@@ -26,9 +27,3 @@ Coolvetica - Book Italic
 font-family: "coolvetica", sans-serif;
 font-weight: 400;
 font-style: italic;
-
-
-Add outline for troubleshooting margins:
-outline: 2px solid red;
-
-storefrontAccessToken: '6dbf61b263e46db8a392d40ccdbf8901'
