@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding: 60px 20vw;
   align-items: center;
+  transition: font-size 0.3s ease;
 }
 
 .artist-heading {
@@ -19,6 +20,7 @@
   margin: 0 0 45px 0;
   padding: 0;
   align-self: flex-start;
+  transition: font-size 0.3s ease;
 }
 
 .artist-name {
@@ -26,6 +28,7 @@
   font-size: 128px;
   font-weight: 400;
   line-height: 0.8;
+  transition: font-size 0.3s ease;
 }
 
 .artist-location {
@@ -33,6 +36,7 @@
   font-size: 32px;
   font-style: italic;
   font-weight: 400;
+  transition: font-size 0.3s ease;
 }
 
 .artist-content {
@@ -41,6 +45,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
+  transition: font-size 0.3s ease;
 }
 
 .artist-image-carousel {
@@ -83,6 +88,7 @@
   cursor: pointer;
   padding: 8px;
   z-index: 2;
+  transition: font-size 0.3s ease;
 }
 
 .carousel-button.left {
@@ -109,7 +115,7 @@
   font-style: normal;
   font-size: 24px;
   color: #F3F4F6;
-
+  transition: font-size 0.3s ease;
 }
 
 .artist-socials {
@@ -146,14 +152,16 @@
 
 .description-section p {
   max-width: 1600px;
-  margin: auto;
+  transition: font-size 0.3s ease;
 }
 
 .video-section {
-  padding: 60px 20vw;
+  padding: 0 20vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: font-size 0.3s ease;
+  margin: 0 0 200px;
 }
 
 .video-heading {
@@ -161,7 +169,7 @@
   font-size: 128px;
   font-weight: 400;
   color: #F3F4F6;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
   text-align: left;
 }
 
@@ -196,7 +204,6 @@
   margin: 0;
 }
 
-/* Store Section Styles from home.css */
 .store-section {
   width: 100%;
   background-color: #0B1215;
@@ -348,4 +355,151 @@
   font-weight: 400;
   font-size: 40px;
   color: #0B1215;
+}
+
+@media (max-width: 1280px) {
+
+  .artist-section {
+    padding: 60px 20vw;
+  }
+
+  .artist-heading {
+    align-self: center;
+    margin: 0 0 30px;
+    text-align: center; 
+  }
+
+  .artist-name {
+    font-size: 100px;
+    align-self: center;
+  }
+
+  .artist-location{
+    font-size: 24px;
+    align-self: center;
+  }
+
+  .artist-content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .carousel-button {
+    font-size: 14px;
+    padding: 7px;
+}
+
+  .artist-interactables {
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bandcamp-player {
+    order: 3;
+  }
+
+  .artist-contact {
+    order: 1;
+    font-size: 20px;
+  }
+
+  .artist-socials {
+    order: 2;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .description-section {
+      font-size: 24px;
+      margin: 40px 0 0;
+      align-self: center;
+    }
+
+  .video-heading {
+    font-size: 100px;
+    text-align: center;
+    align-self: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .artist-section {
+    padding: 60px 8vw;
+  }
+
+  .artist-heading {
+    align-self: center;
+    margin: 0;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .artist-name {
+    font-size: 52px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .artist-location{
+    font-size: 16px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .artist-content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .carousel-button {
+  font-size: 14px;
+  padding: 7px;
+  }
+
+  .artist-interactables {
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .bandcamp-player {
+    order: 3;
+    margin: 0;
+  }
+
+  .artist-contact {
+    order: 1;
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+  }
+
+  .artist-socials {
+    order: 2;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .description-section {
+    font-size: 17px;
+    margin: 40px 0 0;
+    align-self: center;
+  }
+
+  .video-section {
+    margin: 0 0 60px;
+    padding: 0 8vw;
+  }
+
+  .video-heading {
+    font-size: 52px;
+    text-align: flex-start;
+    align-self: flex-start;
+    margin: 0 0 60px;
+  }
 }
