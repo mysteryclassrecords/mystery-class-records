@@ -149,14 +149,33 @@
   margin: auto;
 }
 
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .video-heading {
   font-family: "ringold-sans", sans-serif;
   font-size: 128px;
   font-weight: 400;
   color: #F3F4F6;
-  margin: 0 0 45px 0;
+  margin: 0;
   padding: 0;
-  align-self: flex-start;
+  text-align: left;
+  align-self:flex-start;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.press-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .press-heading {
@@ -166,7 +185,8 @@
   color: #F3F4F6;
   margin: 0 0 45px 0;
   padding: 0;
-  align-self: flex-start;
+  text-align: left;
+  align-self: auto;
 }
 
 /* Related Merch Section */
