@@ -150,6 +150,7 @@
 }
 
 .video-section {
+  padding: 60px 20vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -160,34 +161,19 @@
   font-size: 128px;
   font-weight: 400;
   color: #F3F4F6;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 45px;
   text-align: left;
-  align-self:flex-start;
 }
 
 .video-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
 }
 
-.press-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.press-heading {
-  font-family: "ringold-sans", sans-serif;
-  font-size: 128px;
-  font-weight: 400;
-  color: #F3F4F6;
-  margin: 0 0 45px 0;
-  padding: 0;
-  text-align: left;
-  align-self: auto;
-}
 
 /* Related Merch Section */
 .related-merch-section {
