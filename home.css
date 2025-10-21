@@ -491,7 +491,7 @@
   }
 
   .featured-release {
-    height: 550px;
+    height: 500px;
     flex-direction: column;
     position: relative;
   }
