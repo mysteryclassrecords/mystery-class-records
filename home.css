@@ -45,7 +45,7 @@
 /* Featured Release Section */
 .featured-release {
   width: 100vw;
-  height: 750px;
+  height: auto;
   background-color: #0B1215;
   display: flex;
   flex-direction: row;
@@ -54,6 +54,7 @@
   align-items: center;
   transition: height 0.3s ease;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .featured-release-hero {
@@ -389,7 +390,7 @@
   }
 
   .featured-release {
-    height: 700px;
+    /* height: 700px; */
   }
 
   .featured-release-hero {
@@ -491,7 +492,7 @@
   }
 
   .featured-release {
-    height: 500px;
+    /* height: 500px; */
     flex-direction: column;
     position: relative;
   }
