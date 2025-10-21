@@ -171,6 +171,9 @@
   white-space: nowrap;
   transition: font-size 0.3s ease;
   z-index: 2;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .rainbow-underline {
@@ -488,7 +491,7 @@
   }
 
   .featured-release {
-    height: 550px;
+    height: 500px;
     flex-direction: column;
     position: relative;
   }
@@ -498,9 +501,13 @@
     position: absolute;
     order: 2;
     margin: 0;
-    bottom: 30px;
+    bottom: 0px;
     left: 10px;
     align-self: flex-start;
+  }
+
+  .featured-release-hero img {
+    
   }
 
   .falling-shapes {
