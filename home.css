@@ -45,7 +45,7 @@
 /* Featured Release Section */
 .featured-release {
   width: 100vw;
-  height: 750px;
+  height: 800px;
   background-color: #0B1215;
   display: flex;
   flex-direction: row;
@@ -389,7 +389,7 @@
   }
 
   .featured-release {
-    height: 700px;
+    height: 800px;
   }
 
   .featured-release-hero {
