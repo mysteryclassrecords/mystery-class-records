@@ -113,7 +113,6 @@
   animation-delay: -3s;
 }
 
-
 @keyframes fallAnim {
   0% {
     transform: translateX(0) translateY(0) rotate(0deg);
@@ -137,8 +136,6 @@
   }
 }
 
-
-
 .release-text {
   flex: 1;
   text-align: right;
@@ -146,7 +143,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 5vw;
+  padding-right: 50px;
   align-self: flex-start;
   z-index: 2;
 }
@@ -400,7 +397,7 @@
   }
 
   .release-text {
-    padding-right: 3vw;
+    padding-right: 40px;
     z-index: 1;
   }
 
@@ -477,8 +474,8 @@
   }
 
   .hero-text {
-    top: 10px;
-    left: 8px;
+    top: 15px;
+    left: 15px;
   }
 
   .hero-title {
@@ -524,7 +521,7 @@
     z-index: 0;
     position: absolute;
     align-self: flex-end;
-    margin-right: 3vw;
+    padding-right: 15px;
   }
 
   .release-heading {
