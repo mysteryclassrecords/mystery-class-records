@@ -37,6 +37,7 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   justify-content: center;
+  padding: 0 4vw;
 }
 
 .artist-link {
@@ -174,6 +175,7 @@
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     gap: 9vw;
     gap: clamp(1px, 9vw, 30px);
+    padding: 0 6vw;
   }
 
   .artist-block:hover .default-image {

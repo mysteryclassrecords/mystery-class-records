@@ -246,6 +246,7 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   justify-content: center;
+  padding: 0 4vw;
 }
 
 .merch-link {
@@ -503,10 +504,6 @@
     align-self: flex-start;
   }
 
-  .featured-release-hero img {
-    
-  }
-
   .falling-shapes {
     width: 70%;
   }
@@ -563,6 +560,7 @@
   .store-grid {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     gap: clamp(1px, 9vw, 30px);
+    padding: 0 6vw;
   }
 
   .merch-block:hover .default-image {
