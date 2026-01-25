@@ -1,93 +1,93 @@
 .artist-section {
   background-color: #0b1215;
   width: 100vw;
+  height: auto;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 60px 40px;
   gap: 0;
-  margin: 0;
-  padding: 60px 20vw;
-  align-items: center;
-}
-
-.artist-heading {
-  font-family: "ringold-sans", sans-serif;
-  font-size: 128px;
-  font-weight: 400;
-  color: #F3F4F6;
-  margin: 0 0 45px 0;
-  padding: 0;
-  text-align: left;
-  align-self: flex-start;
 }
 
 .artist-name {
   font-family: "ringold-sans", sans-serif;
-  font-size: 128px;
+  font-size: 80px;
   font-weight: 400;
-  line-height: 0.8;
+  color: #F3F4F6;
+  line-height: 1;
+  transition: font-size 0.3s ease;
+  text-transform: uppercase;
 }
 
 .artist-location {
-  Font-family: "coolvetica", sans-serif;
-  font-size: 32px;
-  font-style: italic;
+  font-family: "coolvetica", sans-serif;
   font-weight: 400;
+  font-style: italic;
+  font-size: 36px;
+  color: #F3F4F6;
+  transition: font-size 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.artist-image {
+.artist-media {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.artist-image.is-landscape {
+  display: block;
   width: 100%;
+  height: auto;
+  margin: 0 auto;  
+  max-height: 6500px;
 }
 
-.artist-interactables {
+.artist-image.is-square {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;  
+  max-height: 650px;
+  max-width: 650px;
+}
+
+.artist-bar {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 20px 0 0 0;
-  gap: 20px;
-}
-
-.player-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 0 0;
 }
 
 .bandcamp-player {
-  width: 100%;
-  max-width: 700px;
-  background-color: #FFFFFF;
-  height: 42px;
+  flex: 1 1 auto;
+  min-width: 0;
+  background-color: white;
 }
 
-.player-spacer{
-  background-color: #FFFFFF;
-  width: 50%;
-  height: 42px;
-  border-top: #d2d2d2 1px solid;
-  border-bottom: #d2d2d2 1px solid;
-  border-right: #d2d2d2 1px solid;
-  gap: 0;
+.bandcamp-player iframe {
+  width: 100%;
+  max-width: 700px;
+  display: block;
 }
 
 .artist-social-icons {
-  align-self: flex-end;
-  justify-content: flex-end;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 15%;
+  align-items: center;
+  gap: 30px;
+  margin: 0 20px;
 }
 
-.artist-social-icons a img {
+.artist-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-social-icons img {
   width: 40px;
   height: 40px;
-  transition: transform 0.2s ease;
-}
-
-.artist-social-icons a:hover img {
-  transform: scale(1.2); 
+  display: block;
 }
 
 .description-section {
@@ -96,7 +96,7 @@
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 32px;
+  font-size: 28px;
   margin: 60px 0 0 0;
   text-align: left;
   height: auto;
