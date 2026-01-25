@@ -1,9 +1,8 @@
-/* Product Section */
 .product-section {
     background-color: #f3f4f6;
     width: 100vw;
     height: auto;
-    overflow: hidden; /* Prevent overflow of content */
+    overflow: hidden;
     padding: 60px 60px 40px;
   }
   
@@ -178,7 +177,6 @@
     margin-top: 20px;
 }
 
-/* Description Section */
 .description-section {
     background-color: #0B1215;
     color: #f3f4f6;
@@ -199,7 +197,6 @@
     margin: auto;
 }
 
-/* Related Merch Section - Updated with Store Section Styles */
 .related-merch-section {
     background-color: #0B1215;
     overflow: hidden;
@@ -220,7 +217,6 @@
     margin: 0;
 }
 
-/* Store Section Styles from home.css */
 .store-section {
     width: 100%;
     background-color: #0B1215;
@@ -279,6 +275,14 @@
 
 .merch-block:hover {
     transform: scale(1.05);
+}
+
+.merch-block:hover .merch-block-details-container{
+  transform: scale(1.001);
+}
+
+.merch-block:hover .merch-block-names-container{
+  transform: scale(1.005);
 }
 
 .merch-block-image-container {

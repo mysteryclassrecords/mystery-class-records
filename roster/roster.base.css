@@ -63,6 +63,10 @@
   transform: scale(1.05);
 }
 
+.artist-block:hover .artist-block-details-container{
+  transform: scale(1.001);
+}
+
 .artist-block-image-container {
   flex: 1;
   position: relative;
