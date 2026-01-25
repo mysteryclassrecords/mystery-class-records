@@ -1,0 +1,62 @@
+/* Mobile Media Query */
+@media (max-width: 768px) {
+  .roster-section {
+    padding: 60px clamp(1px, 13vw, 45px);
+  }
+
+  .roster-heading {
+    font-size: 60px;
+    margin-bottom: clamp(1px, 9vw, 40px);
+    text-align: center;
+  }
+
+  .roster-grid {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 9vw;
+    gap: clamp(1px, 9vw, 30px);
+    padding: 0 6vw;
+  }
+
+  .artist-block:hover .default-image {
+    opacity: 1;
+  }
+
+  .artist-block:hover .hover-image {
+    opacity: 0;
+  }
+
+  .artist-block .default-image {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .artist-block .hover-image {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+
+  .artist-block.scrolled .default-image {
+      opacity: 0;
+  }
+
+  .artist-block.scrolled .hover-image {
+      opacity: 1;
+  }
+
+  .artist-block-names-container {
+    padding: 4px;
+  }
+  
+  .artist-block-artist-name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .artist-block-product-name {
+    font-size: 10px;
+  }
+
+  .artist-block-price {
+    font-size: 26px;
+  }
+}
