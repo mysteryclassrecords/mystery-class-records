@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="../../assets/shared-styles/global.css">
     <link rel="stylesheet" href="../../assets/shared-styles/header.css">
     <link rel="stylesheet" href="../../assets/shared-styles/footer.css">
-    <link rel="stylesheet" href="../../assets/shared-styles/artist-page.css">
+    <link rel="stylesheet" href="../../assets/shared-styles/artist-page.base.css">
+    <link rel="stylesheet" href="../../assets/shared-styles/artist-page.md.css">
+    <link rel="stylesheet" href="../../assets/shared-styles/artist-page.sm.css">
   </head>
   
   <body>
@@ -43,14 +45,14 @@
   <div class="rainbow-strip"></div>
   <div class="header-spacer"></div>
 
-    <!-- Main Content -->
+    <!-- Artist Section -->
     <main class="artist-section">
       <div class="artist-heading">
         <h1 class="artist-name">CRYHARD</h1>
         <p class="artist-location">OKLAHOMA CITY, OK</p>
       </div>
       <div class="artist-image-container">
-        <img src="../../assets/images/artists/cryhard/roster-pic.webp" alt="Artist Photo" class="artist-image">
+        <img src="../../assets/images/artists/cryhard/cryhard-promo.webp" alt="Artist Photo" class="artist-image">
       </div>
       <div class="artist-interactables">
         <div class="player-container">
@@ -78,20 +80,37 @@
       </div>
     </main>
 
-    <!-- Related Merch Section -->
+    <!-- Merchandise Section -->
     <section class="related-merch-section">
       <div class="related-merch-content">
-        <!-- Rainbow Container Top -->
         <div class="rainbow-container-top">
           <img src="../../assets/images/products/rainbow-container-top.png" alt="">
         </div>
 
         <!-- Store Section -->
         <div class="store-section">
-          <h2 class="store-heading">RELATED</h2>
+          <h2 class="store-heading">Merchandise</h2>
           <div class="store-grid">
 
-            <a href="../mcr-002/" class="merch-link">
+            <a href="../../store/cryhrd-001/" class="merch-link">
+              <div class="merch-block">
+                <div class="merch-block-image-container">
+                  <img src="../../assets/images/products/cryhrd-001/cryhrd-001.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/cryhrd-001/cryhrd-001-hover.webp" alt="" class="merch-block-product-image hover-image">
+                </div>
+                <div class="merch-block-details-container">
+                  <div class="merch-block-names-container">
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">OCIW White T-Shirt</p>
+                  </div>
+                  <div class="merch-block-price-container">
+                    <div class="merch-block-price">$20</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="../../store/mcr-002/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
                   <img src="../../assets/images/products/mcr-002/mcr-002.webp" alt="Product Image" class="merch-block-product-image default-image">
@@ -109,55 +128,19 @@
               </div>
             </a>
 
-            <a href="../mcr-005/" class="merch-link">
+            <a href="../../store/mcr-003/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/mcr-005/mcr-005.webp" alt="Product Image" class="merch-block-product-image default-image">
-                  <img src="../../assets/images/products/mcr-005/mcr-005-hover.webp" alt="" class="merch-block-product-image hover-image">
+                  <img src="../../assets/images/products/mcr-003/mcr-003.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/mcr-003/mcr-003-hover.webp" alt="" class="merch-block-product-image hover-image">
                 </div>
                 <div class="merch-block-details-container">
                   <div class="merch-block-names-container">
-                    <p class="merch-block-artist-name">Sweetest Pot</p>
-                    <p class="merch-block-product-name">Burner Tape, Vol. 2 - Cassette</p>
+                    <p class="merch-block-artist-name">CRYHARD</p>
+                    <p class="merch-block-product-name">Stretch Us Outta Here - Cassette</p>
                   </div>
                   <div class="merch-block-price-container">
                     <div class="merch-block-price">$10</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="../mcr-004/" class="merch-link">
-              <div class="merch-block">
-                <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/mcr-004/mcr-004.webp" alt="Product Image" class="merch-block-product-image default-image">
-                  <img src="../../assets/images/products/mcr-004/mcr-004-hover.webp" alt="" class="merch-block-product-image hover-image">
-                </div>
-                <div class="merch-block-details-container">
-                  <div class="merch-block-names-container">
-                    <p class="merch-block-artist-name">Toad Socks</p>
-                    <p class="merch-block-product-name">Pond - CASSETTE</p>
-                  </div>
-                  <div class="merch-block-price-container">
-                    <div class="merch-block-price">$10</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="../new-005/" class="merch-link">
-              <div class="merch-block">
-                <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/new-005/new-005.webp" alt="Product Image" class="merch-block-product-image default-image">
-                  <img src="../../assets/images/products/new-005/new-005-hover.webp" alt="" class="merch-block-product-image hover-image">
-                </div>
-                <div class="merch-block-details-container">
-                  <div class="merch-block-names-container">
-                    <p class="merch-block-artist-name">Mystery Class Hat</p>
-                    <p class="merch-block-product-name">Mystery Class Records</p>
-                  </div>
-                  <div class="merch-block-price-container">
-                    <div class="merch-block-price">$30</div>
                   </div>
                 </div>
               </div>
@@ -165,8 +148,6 @@
 
           </div>
         </div>
-
-        <!-- Rainbow Container Bottom -->
         <div class="rainbow-container-bottom">
           <img src="../../assets/images/products/rainbow-container-bottom.png" alt="">
         </div>
@@ -217,7 +198,8 @@
     </footer>
 
     <!-- Scripts -->
-
-
+    <script src="../../assets/scripts/CartRefresh.js" async></script>
+    <script src="../../assets/scripts/MobileHeaderExpand.js"></script>
+    <script src="../../assets/scripts/MerchBlockScrollSwap.js"></script>
     </body>
 </html>
