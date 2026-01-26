@@ -84,10 +84,15 @@
   justify-content: center;
 }
 
-.artist-social-icons img {
+.artist-social-icons a img {
   width: 40px;
   height: 40px;
   display: block;
+  transition: transform 0.2s ease;
+}
+
+.artist-social-icons a:hover img {
+  transform: scale(1.2); 
 }
 
 .description-section {
@@ -97,7 +102,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 28px;
-  margin: 60px 0 0 0;
+  margin: 90px 0 90px 0;
   text-align: left;
   height: auto;
   line-height: 1.5;
@@ -106,13 +111,14 @@
 
 .description-section p {
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .related-merch-section {
   background-color: #0B1215;
   overflow: hidden;
   padding: 0 100px 200px;
+  margin: 0;
 }
 
 .related-merch-content {
@@ -139,7 +145,7 @@
   padding: 0 3vw;
   position: relative;
   gap: 10px;
-  margin-bottom: 60px;
+  margin: 0px;
 }
 
 .store-heading {
