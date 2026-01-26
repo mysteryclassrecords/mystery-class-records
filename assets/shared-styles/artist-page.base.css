@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 60px 60px 0;
+  padding: 60px 60px 60px;
   gap: 0;
 }
 
@@ -28,6 +28,7 @@
   color: #F3F4F6;
   transition: font-size 0.3s ease;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .artist-media {

@@ -1,4 +1,8 @@
-@media (max-width: 1280px) {   
+@media (max-width: 1280px) { 
+    .artist-section {
+        padding: 60px 60px 0px;
+    }
+    
     .artist-name {
         font-size: 66px;
     }
