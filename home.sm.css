@@ -1,0 +1,148 @@
+@media (max-width: 768px) {
+  .hero {
+    height: 66vh;
+  }
+
+  .hero-text {
+    top: 15px;
+    left: 15px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-detail {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+  .featured-release {
+    height: 500px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .featured-release-hero {
+    width: 66vw;
+    position: absolute;
+    order: 2;
+    margin: 0;
+    bottom: 0px;
+    left: 10px;
+    align-self: flex-start;
+  }
+
+  .falling-shapes {
+    width: 70%;
+  }
+
+  .shape {
+    width: 20px;
+  }
+
+  .release-text {
+    text-align: right;
+    order: 1;
+    z-index: 0;
+    position: absolute;
+    align-self: flex-end;
+    padding-right: 15px;
+  }
+
+  .release-heading {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .release-title {
+    font-size: 33px;
+    margin-top: 0px;
+  }
+
+  .rainbow-underline {
+    width: 280px;
+    height: 3px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .release-text p {
+    font-size: 16px;
+    max-width: clamp(100px, 80vw, 300px);
+    margin-top: 15px;
+  }
+
+  .pre-order-button {
+    margin-top: 20px;
+    width: 140px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+
+  .store-section {
+    padding: 50px 5vw;
+  }
+
+  .store-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5vw;
+    padding: 0;
+  }
+
+  .merch-block {
+    max-width: 200px;
+    border: 2px solid #0B1215;
+  }
+
+  .merch-block-details-container {
+    border-top: 2px solid #0B1215;
+  }
+
+  .merch-block:hover .default-image {
+    opacity: 1;
+  }
+
+  .merch-block:hover .hover-image {
+    opacity: 0;
+  }
+
+  .merch-block .default-image {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .merch-block .hover-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .merch-block.scrolled .default-image {
+      opacity: 0;
+  }
+
+  .merch-block.scrolled .hover-image {
+      opacity: 1;
+  }
+
+  .merch-block-names-container {
+    padding: 2px 4px 0px 4px;
+    border-right: 2px solid #0B1215;
+  }
+  
+  .merch-block-artist-name {
+    font-size: clamp(14px, 1.5vw, 15px);
+    margin: 0 0 1px 0;
+  }
+  
+  .merch-block-product-name {
+    font-size: clamp(8px, 1vw, 10px);
+    margin: 0;
+  }
+
+  .merch-block-price {
+    font-size: clamp(20px, 3vw, 30px);
+  }
+}
