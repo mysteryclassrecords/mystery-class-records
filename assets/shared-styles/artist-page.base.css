@@ -6,7 +6,7 @@
   flex-direction: column;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 60px 60px 40px;
+  padding: 60px 60px 0;
   gap: 0;
 }
 
@@ -27,7 +27,7 @@
   font-size: 36px;
   color: #F3F4F6;
   transition: font-size 0.3s ease;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .artist-media {
@@ -50,13 +50,14 @@
   margin: 0 auto;  
   max-height: 650px;
   max-width: 650px;
+  aspect-ratio: 1 / 1;
 }
 
 .artist-bar {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 30px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 .bandcamp-player {
@@ -103,7 +104,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 28px;
-  margin: 90px 0 90px 0;
+  margin: 50px 0 50px 0;
   text-align: left;
   height: auto;
   line-height: 1.5;
@@ -118,7 +119,7 @@
 .related-merch-section {
   background-color: #0B1215;
   overflow: hidden;
-  padding: 0 100px 200px;
+  padding: 0 100px 60px;
   margin: 0;
 }
 

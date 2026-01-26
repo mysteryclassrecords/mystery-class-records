@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         merchBlocks.forEach(block => {
             const rect = block.getBoundingClientRect();
 
-            if (rect.top < viewportHeight * 0.2) {
+            if (rect.top < viewportHeight * 0.25) {
                 block.classList.add("scrolled"); // Show hover image
             } else {
                 block.classList.remove("scrolled"); // Show default image

@@ -1,41 +1,61 @@
 @media (max-width: 768px) {
     .artist-section {
-        padding: 40px 40px 20px;
+        padding: 30px 30px 0;
         height: auto;
     }
     
     .artist-name {
         font-size: 48px;
+        margin: 0 0 5px 0;
     }
 
     .artist-location {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1;
+        margin: 0 0 20px 0;
     }
 
     .artist-bar {
         align-items: flex-start;
         flex-direction: column;
+        gap: 40px;
+        margin: 20px 0 0 0;
+        align-items: stretch;
+    }
+
+    .bandcamp-player {
+        width: 100%;
     }
 
     .artist-social-icons {
-        gap: 15px;
+        gap: 30px;
         margin: 0;
     }
 
     .artist-social-icons a img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .description-section {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 1.8;
+        margin: 30px 0 20px 0;
+    }
+
+    .related-merch-section {
+        padding: 20px 20px 60px;
+    }
+
+    .related-merch-content {
+        position: relative;
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .store-section {
         padding: 0 8vw;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
   
     .store-heading {
