@@ -1,0 +1,63 @@
+@media (max-width: 1280px) {   
+    .artist-name {
+        font-size: 66px;
+    }
+
+    .artist-location {
+        font-size: 32px;
+    }
+
+    .artist-social-icons {
+        gap: 24px;
+    }
+
+    .description-section {
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 70px 0 30px 0;
+    }
+
+    .related-merch-section {
+        padding: 0 20px 150px;
+    }
+
+    .store-section {
+        padding: 0 5vw;
+        margin-bottom: 40px;
+    }
+
+    .store-heading {
+    font-size: 34px;
+    }
+
+    .store-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5vw;
+    }
+
+    .merch-block {
+        border: 3px solid #0B1215;
+    }
+
+    .merch-block-details-container {
+        border-top: 3px solid #0B1215;
+    }
+
+    .merch-block-names-container {
+        padding: 6px;
+        border-right: 3px solid #0B1215;
+    }
+  
+    .merch-block-artist-name {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+  
+    .merch-block-product-name {
+        font-size: 12px;
+    }
+
+    .merch-block-price {
+        font-size: 30px;
+    }  
+}
