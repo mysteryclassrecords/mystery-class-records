@@ -10,6 +10,7 @@
 
     .artist-bar {
         margin: 40px 0 0 0;
+        gap: 24px;
     }
 
     .artist-social-icons {
