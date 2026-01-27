@@ -67,14 +67,13 @@
 .mcr-player {
   display: flex;
   align-items: center;
-  gap: 12px;
   width: 100%;
   padding: 10px 12px;
   background: #fff;
   flex: 1 1 0%;
   min-width: 0;
-  gap: 14px;
-  border: 2px solid black;
+  gap: 4px;
+  border: 2px solid white;
 }
 
 .mcr-player__btn {
@@ -125,7 +124,7 @@
 .mcr-player__row {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
   min-width: 0;
 }
 
@@ -146,6 +145,7 @@
   transform-origin: center;
   transition: transform 0.2s ease;
   cursor: pointer;
+  transition: font-size 0.3s ease;
 }
 
 .mcr-player:not(.is-playing) .mcr-player__label {
@@ -155,19 +155,18 @@
 .mcr-player__track {
   flex: 1;
   text-align: center;
-
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-size: 24px;
   color: #0B1215;
   line-height: 1;
-
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transform: translateY(3px);
   transition: transform 0.2s ease;
+  transition: font-size 0.3s ease;
 }
 
 @keyframes track-breathe {

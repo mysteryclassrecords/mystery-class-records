@@ -62,9 +62,41 @@
         <!-- <img src="../../assets/images/artists/idiot-mile/idiot-mile-live.webp" alt="" class="artist-image is-square"> -->
 
         <div class="artist-bar">
+          <div class="mcr-player" data-src="https://pub-71fb7e7f7f0047dbad1804034514d1b0.r2.dev/foam/Foam%20-%20Bind.mp3">
+            <button class="mcr-player__btn" type="button" aria-label="Play">
+              <span class="icon icon--play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 5v14l11-7-11-7z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+
+              <span class="icon icon--pause" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.75 6h2.5v12h-2.5zM12.75 6h2.5v12h-2.5z"></path>
+                </svg>
+              </span>
+            </button>
+
+            <div class="mcr-player__meta">
+              <div class="mcr-player__row">
+                <button class="mcr-player__label" type="button">
+                  Listen Now
+                </button>
+                <span class="mcr-player__track">Foam - Bind</span>
+              </div>
+
+              <audio class="mcr-player__audio" preload="metadata"></audio>
+            </div>
+          </div>
 
           <div class="artist-social-icons">
-            <!-- <a href=""><img src="../../assets/images/social-icons/facebook-icon.svg" alt="Facebook Icon"></a> -->
+            <a href="https://music.apple.com/us/artist/foam/1846891740"><img src="../../assets/images/social-icons/apple-music-icon.webp" alt="Apple Music Icon"></a>
+            <a href="https://open.spotify.com/artist/41ZQTegYhPpGpfYSk7gdND"><img src="../../assets/images/social-icons/spotify-icon.webp" alt="Spotify Icon"></a>
+            <!-- <a href=""><img src="../../assets/images/social-icons/bandcamp-icon.webp" alt="Bandcamp Icon"></a> -->
             <a href="https://www.instagram.com/_foam405/"><img src="../../assets/images/social-icons/instagram-icon.svg" alt="Instagram Icon"></a>
             <!-- <a href="https://www.youtube.com/@Cryhardtypebeat"><img src="../../assets/images/social-icons/youtube-icon.svg" alt="YouTube Icon"></a> -->
             <a href="https://www.tiktok.com/@foamband405"><img src="../../assets/images/social-icons/tiktok-icon.svg" alt="TikTok Icon"></a>
@@ -130,5 +162,6 @@
     <script src="../../assets/scripts/CartRefresh.js" async></script>
     <script src="../../assets/scripts/MobileHeaderExpand.js"></script>
     <script src="../../assets/scripts/MerchBlockScrollSwap.js"></script>
+    <script src="../../assets/scripts/McrPlayer.js"></script>
     </body>
 </html>

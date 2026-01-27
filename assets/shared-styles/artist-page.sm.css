@@ -23,17 +23,49 @@
         align-items: stretch;
     }
 
-    .bandcamp-player {
-        width: 100%;
+    .mcr-player {
+        gap: 0px;
+        padding: 6px 4px;
+    }
+
+    .mcr-player__btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .mcr-player__btn svg {
+        width: 34px;
+    }
+
+    .mcr-player__meta {
+        gap: 10px;
+    }
+
+    .mcr-player__row {
+        gap: 20px;
+    }
+
+    .mcr-player__label {
+        font-size: 20px;
+    }
+
+    .mcr-player__track {
+        font-size: 14px;
+        transform: translateY(0px);
+    }
+
+    @keyframes track-breathe {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50%      { transform: translateY(0px) scale(1.04); }
     }
 
     .artist-social-icons {
-        gap: 30px;
+        gap: 25px;
     }
 
     .artist-social-icons a img {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 
     .description-section {

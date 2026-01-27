@@ -62,12 +62,41 @@
         <!-- <img src="../../assets/images/artists/idiot-mile/idiot-mile-live.webp" alt="" class="artist-image is-square"> -->
 
         <div class="artist-bar">
-          <div class="bandcamp-player">
-            <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=806504497/size=small/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/" seamless><a href="https://panhandle.bandcamp.com/album/midwest-heartbreak">midwest heartbreak by panhandle.</a></iframe>
+          <div class="mcr-player" data-src="https://pub-71fb7e7f7f0047dbad1804034514d1b0.r2.dev/panhandle/panhandle.%20-%20hit%20the%20road.mp3">
+            <button class="mcr-player__btn" type="button" aria-label="Play">
+              <span class="icon icon--play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 5v14l11-7-11-7z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+
+              <span class="icon icon--pause" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.75 6h2.5v12h-2.5zM12.75 6h2.5v12h-2.5z"></path>
+                </svg>
+              </span>
+            </button>
+
+            <div class="mcr-player__meta">
+              <div class="mcr-player__row">
+                <button class="mcr-player__label" type="button">
+                  Listen Now
+                </button>
+                <span class="mcr-player__track">panhandle. - hit the road</span>
+              </div>
+
+              <audio class="mcr-player__audio" preload="metadata"></audio>
+            </div>
           </div>
 
           <div class="artist-social-icons">
-            <!-- <a href=""><img src="../../assets/images/social-icons/facebook-icon.svg" alt="Facebook Icon"></a> -->
+            <a href="https://music.apple.com/us/artist/panhandle/1729509661"><img src="../../assets/images/social-icons/apple-music-icon.webp" alt="Apple Music Icon"></a>
+            <a href="https://open.spotify.com/artist/0A2kM1l6p6Xei9DaffJ4GS"><img src="../../assets/images/social-icons/spotify-icon.webp" alt="Spotify Icon"></a>
+            <!-- <a href=""><img src="../../assets/images/social-icons/bandcamp-icon.webp" alt="Bandcamp Icon"></a> -->
             <a href="https://www.instagram.com/panhandle.band/"><img src="../../assets/images/social-icons/instagram-icon.svg" alt="Instagram Icon"></a>
             <a href="https://www.youtube.com/channel/UC2kpOUcdnaKj1b5w2fzFd-Q"><img src="../../assets/images/social-icons/youtube-icon.svg" alt="YouTube Icon"></a>
             <!-- <a href="https://www.tiktok.com/@cryhardtypebeat"><img src="../../assets/images/social-icons/tiktok-icon.svg" alt="TikTok Icon"></a> -->
@@ -101,7 +130,7 @@
             <a href="../../store/pndl-001/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/pndl-001/pndl-001.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/pndl-001/pndl-001.webp" alt="" class="merch-block-product-image default-image">
                   <img src="../../assets/images/products/pndl-001/pndl-001-hover.webp" alt="" class="merch-block-product-image hover-image">
                 </div>
                 <div class="merch-block-details-container">
@@ -119,7 +148,7 @@
             <a href="../../store/mcr-008/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/mcr-008/mcr-008.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/mcr-008/mcr-008.webp" alt="" class="merch-block-product-image default-image">
                   <img src="../../assets/images/products/mcr-008/mcr-008-hover.webp" alt="" class="merch-block-product-image hover-image">
                 </div>
                 <div class="merch-block-details-container">
@@ -189,5 +218,6 @@
     <script src="../../assets/scripts/CartRefresh.js" async></script>
     <script src="../../assets/scripts/MobileHeaderExpand.js"></script>
     <script src="../../assets/scripts/MerchBlockScrollSwap.js"></script>
+    <script src="../../assets/scripts/McrPlayer.js"></script>
     </body>
 </html>

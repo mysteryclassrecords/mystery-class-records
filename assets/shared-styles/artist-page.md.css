@@ -13,12 +13,46 @@
     }
 
     .artist-bar {
-        margin: 40px 0 0 0;
-        gap: 24px;
+        margin: 35px 0 0 0;
+        gap: 20px;
+    }
+
+    .mcr-player {
+        gap: 0px;
+        padding: 8px 4px;
+    }
+
+    .mcr-player__btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .mcr-player__btn svg {
+        width: 32px;
+    }
+
+    .mcr-player__meta {
+        gap: 10px;
+    }
+
+    .mcr-player__row {
+        gap: 20px;
+    }
+
+    .mcr-player__label {
+        font-size: 26px;
+    }
+
+    .mcr-player__track {
+        font-size: 16px;
     }
 
     .artist-social-icons {
-        gap: 24px;
+        gap: 15px;
+    }
+
+    .artist-social-icons img {
+        width: 36px;
     }
 
     .description-section {

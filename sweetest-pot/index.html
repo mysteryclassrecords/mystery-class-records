@@ -62,12 +62,41 @@
         <!-- <img src="../../assets/images/artists/idiot-mile/idiot-mile-live.webp" alt="" class="artist-image is-square"> -->
 
         <div class="artist-bar">
-          <div class="bandcamp-player">
-            <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3353736560/size=small/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/" seamless><a href="https://sweetestpot.bandcamp.com/album/burner-tape-vol-2">Burner Tape Vol. 2 by Sweetest Pot</a></iframe>
+          <div class="mcr-player" data-src="https://pub-71fb7e7f7f0047dbad1804034514d1b0.r2.dev/sweetest-pot/Sweetest%20Pot%20-%20Canals.mp3">
+            <button class="mcr-player__btn" type="button" aria-label="Play">
+              <span class="icon icon--play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 5v14l11-7-11-7z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+
+              <span class="icon icon--pause" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.75 6h2.5v12h-2.5zM12.75 6h2.5v12h-2.5z"></path>
+                </svg>
+              </span>
+            </button>
+
+            <div class="mcr-player__meta">
+              <div class="mcr-player__row">
+                <button class="mcr-player__label" type="button">
+                  Listen Now
+                </button>
+                <span class="mcr-player__track">Sweetest Pot - Canals</span>
+              </div>
+
+              <audio class="mcr-player__audio" preload="metadata"></audio>
+            </div>
           </div>
 
           <div class="artist-social-icons">
-            <!-- <a href=""><img src="../../assets/images/social-icons/facebook-icon.svg" alt="Facebook Icon"></a> -->
+            <a href="https://music.apple.com/us/artist/sweetest-pot/1616125435"><img src="../../assets/images/social-icons/apple-music-icon.webp" alt="Apple Music Icon"></a>
+            <a href="https://open.spotify.com/artist/7J17Ifbqk2YvBfrfz0rppb"><img src="../../assets/images/social-icons/spotify-icon.webp" alt="Spotify Icon"></a>
+            <!-- <a href=""><img src="../../assets/images/social-icons/bandcamp-icon.webp" alt="Bandcamp Icon"></a> -->
             <a href="https://www.instagram.com/sweetestpot/"><img src="../../assets/images/social-icons/instagram-icon.svg" alt="Instagram Icon"></a>
             <a href="https://www.youtube.com/@Sweetestpot"><img src="../../assets/images/social-icons/youtube-icon.svg" alt="YouTube Icon"></a>
             <a href="https://www.tiktok.com/@timestripper"><img src="../../assets/images/social-icons/tiktok-icon.svg" alt="TikTok Icon"></a>
@@ -97,7 +126,7 @@
             <a href="../../store/mcr-005/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/mcr-005/mcr-005.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/mcr-005/mcr-005.webp" alt="" class="merch-block-product-image default-image">
                   <img src="../../assets/images/products/mcr-005/mcr-005-hover.webp" alt="" class="merch-block-product-image hover-image">
                 </div>
                 <div class="merch-block-details-container">
@@ -115,7 +144,7 @@
             <a href="../../store/mcr-001/" class="merch-link">
               <div class="merch-block">
                 <div class="merch-block-image-container">
-                  <img src="../../assets/images/products/mcr-001/mcr-001.webp" alt="Product Image" class="merch-block-product-image default-image">
+                  <img src="../../assets/images/products/mcr-001/mcr-001.webp" alt="" class="merch-block-product-image default-image">
                   <img src="../../assets/images/products/mcr-001/mcr-001-hover.webp" alt="" class="merch-block-product-image hover-image">
                 </div>
                 <div class="merch-block-details-container">
@@ -185,5 +214,6 @@
     <script src="../../assets/scripts/CartRefresh.js" async></script>
     <script src="../../assets/scripts/MobileHeaderExpand.js"></script>
     <script src="../../assets/scripts/MerchBlockScrollSwap.js"></script>
+    <script src="../../assets/scripts/McrPlayer.js"></script>
     </body>
 </html>
