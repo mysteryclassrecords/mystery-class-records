@@ -278,11 +278,15 @@
 }
 
 .merch-block:hover .merch-block-details-container{
-  transform: scale(1.001);
+  transform: scale(1.01);
+}
+
+.merch-block:hover .merch-block-price-container{
+  transform: scale(1.01);
 }
 
 .merch-block:hover .merch-block-names-container{
-  transform: scale(1.005);
+  transform: scale(1.01);
 }
 
 .merch-block-image-container {

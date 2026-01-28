@@ -56,7 +56,11 @@
 
     @keyframes track-breathe {
         0%, 100% { transform: translateY(0px) scale(1); }
-        50%      { transform: translateY(0px) scale(1.04); }
+        50%      { transform: translateY(0px) scale(1.09); }
+    }
+
+    .mcr-player.is-playing .mcr-player__track {
+        animation: track-breathe 5s ease-in-out infinite;
     }
 
     .artist-social-icons {

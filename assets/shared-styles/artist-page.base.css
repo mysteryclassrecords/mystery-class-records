@@ -73,7 +73,7 @@
   flex: 1 1 0%;
   min-width: 0;
   gap: 4px;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .mcr-player__btn {
@@ -111,10 +111,10 @@
 .mcr-player.is-playing .icon--play { display: none; }
 .mcr-player.is-playing .icon--pause { display: inline-flex; }
 
-.mcr-player.is-playing {
-  border: 2px solid transparent;
+/* .mcr-player.is-playing {
+  border: 1px solid transparent;
   border-image: linear-gradient(90deg, #ff3b3b, #ffd33b, #3bff65, #3bd7ff, #3b5bff, #a93bff) 1;
-}
+} */
 
 .mcr-player__meta {
   flex: row;
@@ -165,7 +165,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   transform: translateY(3px);
-  transition: transform 0.2s ease;
   transition: font-size 0.3s ease;
 }
 
@@ -175,7 +174,7 @@
 }
 
 .mcr-player.is-playing .mcr-player__track {
-  animation: track-breathe 5s ease-in-out infinite;
+  animation: track-breathe 4s ease-in-out infinite;
 }
 
 .artist-social-icons {
@@ -305,7 +304,11 @@
 }
 
 .merch-block:hover .merch-block-details-container{
-  transform: scale(1.001);
+  transform: scale(1.01);
+}
+
+.merch-block:hover .merch-block-price-container{
+  transform: scale(1.01);
 }
 
 .merch-block:hover .merch-block-names-container{
