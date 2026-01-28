@@ -173,6 +173,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding: 30px 0 0 0;
   }
 
   .footer-top {
@@ -202,7 +203,7 @@
   }
 
   .footer-nav {
-    margin: 0;
+    margin: 5px 0 0 0;
     margin-bottom: 15px;
     justify-content: center;
     text-align: center;
@@ -230,14 +231,14 @@
   }
 
   .footer-tagline {
-    margin: 0;
+    margin: 5px 0 0px 0;
     margin-left: 20px;
     justify-content: center;
     text-align: center;
   }
 
   .footer-tagline p {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -247,12 +248,12 @@
   }
 
   .footer-copyright p {
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
   }
 
   .footer-social {
-    gap: 15px;
+    gap: 30px;
     margin: 5px 0;
     justify-content: center;
     text-align: center;

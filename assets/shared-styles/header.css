@@ -206,7 +206,7 @@
   }
 
   .header[data-expanded="true"] {
-    --header-height: 240px;
+    --header-height: 270px;
     flex-direction: column;
     align-items: flex-start;
     transition: height 0.3s ease;
@@ -292,10 +292,10 @@
   }
 
   .header[data-expanded="true"] ~ .rainbow-strip {
-    top: 240px;
+    top: 270px;
   }
 
   .header[data-expanded="true"] ~ .header-spacer {
-    height: 243px !important;
+    height: 273px !important;
   }
 }

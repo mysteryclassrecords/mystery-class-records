@@ -18,7 +18,7 @@
   }
 
   .featured-release {
-    height: 500px;
+    height: 400px;
     flex-direction: column;
     position: relative;
   }
@@ -27,7 +27,7 @@
     width: 66vw;
     position: absolute;
     order: 2;
-    margin: 0;
+    margin: 0 0 10px 0;
     bottom: 0px;
     left: 10px;
     align-self: flex-start;
