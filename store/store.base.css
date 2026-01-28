@@ -65,14 +65,6 @@
   transform: scale(1.05);
 }
 
-.merch-block:hover .merch-block-details-container{
-  transform: scale(1.01);
-}
-
-.merch-block:hover .merch-block-price-container{
-  transform: scale(1.01);
-}
-
 .merch-block-image-container {
   flex: 1;
   position: relative;
