@@ -25,7 +25,7 @@
 
     .mcr-player {
         gap: 0px;
-        padding: 6px 4px;
+        padding: 6px 4px 6px 4px;
     }
 
     .mcr-player__btn {
@@ -42,7 +42,6 @@
     }
 
     .mcr-player__row {
-        gap: 20px;
     }
 
     .mcr-player__label {
@@ -51,12 +50,13 @@
 
     .mcr-player__track {
         font-size: 14px;
-        transform: translateY(0px);
+        transform: translateY(1px);
+        margin-left: 8px;
     }
 
     @keyframes track-breathe {
-        0%, 100% { transform: translateY(0px) scale(1); }
-        50%      { transform: translateY(0px) scale(1.09); }
+        0%, 100% { transform: translateY(1px) scale(1); }
+        50%      { transform: translateY(1px) scale(1.09); }
     }
 
     .mcr-player.is-playing .mcr-player__track {

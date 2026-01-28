@@ -19,7 +19,7 @@
 
     .mcr-player {
         gap: 0px;
-        padding: 8px 4px;
+        padding: 8px 4px 8px 4px;
     }
 
     .mcr-player__btn {
@@ -36,7 +36,6 @@
     }
 
     .mcr-player__row {
-        gap: 20px;
     }
 
     .mcr-player__label {
@@ -45,6 +44,7 @@
 
     .mcr-player__track {
         font-size: 16px;
+        margin: 0 10px 0 5px;
     }
 
     .artist-social-icons {
