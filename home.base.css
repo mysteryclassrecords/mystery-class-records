@@ -288,7 +288,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
 }
 
 .default-image {
