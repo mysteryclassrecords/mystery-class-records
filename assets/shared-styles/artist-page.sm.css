@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .artist-section {
-        padding: 30px;
+        padding: 30px 30px 15px 30px;
         height: auto;
     }
     
@@ -74,6 +74,35 @@
         line-height: 1.8;
         margin: 30px 0 20px 0;
     }
+
+    .artist-videos {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 30px 50px 30px;
+        gap: 30px;
+        align-items: start;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+
+    .artist-videos__header {
+        font-size: 36px;
+        margin: 0 0 0px 0;
+    }
+
+    .yt-embed iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        max-width: 75vw;
+        min-width: 0px;
+    }
+
+    .yt-embed {
+        display: flex;
+        justify-content: center;
+    }
+
 
     .related-merch-section {
         padding: 0 20px 60px 20px;

@@ -227,6 +227,41 @@
   margin: 0 auto;
 }
 
+.artist-videos {
+  background-color: #0b1215;
+  height: auto;
+  overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto 40px;
+  padding: 0 60px 60px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.artist-videos__header {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #F3F4F6;
+  line-height: 1;
+  transition: font-size 0.3s ease;
+  text-transform: uppercase;
+  display: none;
+  grid-column: 1 / -1;
+  margin: 0 0 12px 0;
+}
+
+.yt-embed iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  max-width: 100%;
+  min-width: 10px;
+}
+
 .related-merch-section {
   background-color: #0B1215;
   overflow: hidden;
