@@ -1,0 +1,101 @@
+@media (max-width: 1280px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-text {
+    top: 40px;
+    left: 40px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .hero-detail {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  .featured-release {
+    height: 600px;
+  }
+
+  .featured-release-hero {
+    width: 600px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 3vw;
+  }
+
+  .release-text {
+    padding-right: 40px;
+    z-index: 1;
+  }
+
+  .release-heading {
+    font-size: 24px;
+  }
+
+  .release-title {
+    font-size: 70px;
+    margin-top: 10px;
+  }
+
+  .rainbow-underline {
+    margin-top: 10px;
+    width: 590px;
+    height: 4px;
+  }
+
+  .release-text p {
+    margin-top: 40px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+  }
+
+  .pre-order-button {
+    margin-top: 100px;
+    width: 200px;
+    height: 66px;
+    border-radius: 50px;
+    font-size: 26px;
+  }
+
+  .store-section {
+    padding: 60px 12vw;
+  }
+
+  .store-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4vw;
+    padding: 0;
+  }
+
+  .merch-block {
+    border: 3px solid #0B1215;
+  }
+
+  .merch-block-details-container {
+    border-top: 3px solid #0B1215;
+  }
+
+  .merch-block-names-container {
+    padding: 6px;
+    border-right: 3px solid #0B1215;
+  }
+  
+  .merch-block-artist-name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .merch-block-product-name {
+    font-size: 12px;
+  }
+
+  .merch-block-price {
+    font-size: 30px;
+  }
+}

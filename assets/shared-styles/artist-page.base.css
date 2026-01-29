@@ -1,0 +1,439 @@
+.artist-section {
+  background-color: #0b1215;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 60px 20px;
+  gap: 0;
+}
+
+.artist-name {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #F3F4F6;
+  line-height: 1;
+  transition: font-size 0.3s ease;
+  text-transform: uppercase;
+}
+
+.artist-location {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 36px;
+  color: #F3F4F6;
+  transition: font-size 0.3s ease;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.artist-media {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.artist-image.is-landscape {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;  
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.artist-image.is-square {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  max-height: 650px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.artist-bar {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 40px 0 0 0;
+  width: 100%;
+}
+
+.mcr-player {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px 10px 12px;
+  background: #fff;
+  flex: 1 1 0%;
+  min-width: 0;
+  gap: 4px;
+  border: 1px solid white;
+}
+
+.mcr-player__btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #0B1215;
+  -webkit-tap-highlight-color: transparent;
+  width: 44px;
+  height: 44px;
+  transition: transform 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mcr-player__btn:hover {
+    transform: scale(1.2);
+  }
+}
+
+.mcr-player__btn svg {
+  width: 42px;
+  height: auto;
+  display: block;
+  fill: #0B1215;
+}
+
+.mcr-player__btn .icon--pause { display: none; }
+.mcr-player.is-playing .icon--play { display: none; }
+.mcr-player.is-playing .icon--pause { display: inline-flex; }
+
+/* .mcr-player.is-playing {
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #ff3b3b, #ffd33b, #3bff65, #3bd7ff, #3b5bff, #a93bff) 1;
+} */
+
+.mcr-player__meta {
+  flex: 1;
+  gap: 400px;
+  min-width: 0;
+}
+
+.mcr-player__row {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.mcr-player__label {  
+  font-family: "coolvetica", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #0B1215;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+
+.mcr-player:not(.is-playing) .mcr-player__label {
+  cursor: pointer;
+}
+
+.mcr-player__track {
+  flex: 1;
+  text-align: center;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #0B1215;
+  line-height: 1.2;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(4px);
+  transition: font-size 0.3s ease;
+  min-width: 0;
+  margin: 0 20px 0 5px;
+}
+
+@keyframes track-breathe {
+  0%, 100% { transform: translateY(4px) scale(1); }
+  50%      { transform: translateY(4px) scale(1.05); }
+}
+
+.mcr-player.is-playing .mcr-player__track {
+  animation: track-breathe 4s ease-in-out infinite;
+}
+
+.artist-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  transition: gap 0.3s ease;
+  flex: 0 0 auto;
+}
+
+.artist-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-social-icons img {
+  width: 38px;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.artist-social-icons a:hover img {
+  transform: scale(1.2); 
+}
+
+.description-section {
+  background-color: #0B1215;
+  color: #f3f4f6;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  margin: 50px 0 50px 0;
+  text-align: left;
+  height: auto;
+  line-height: 1.5;
+  transition: font-size 0.3s ease;
+}
+
+.description-section p {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.artist-videos {
+  background-color: #0b1215;
+  height: auto;
+  overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto 40px;
+  padding: 0 60px 60px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.artist-videos__header {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #F3F4F6;
+  line-height: 1;
+  transition: font-size 0.3s ease;
+  text-transform: uppercase;
+  display: none;
+  grid-column: 1 / -1;
+  margin: 0 0 12px 0;
+}
+
+.yt-embed iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  max-width: 100%;
+  min-width: 10px;
+}
+
+.related-merch-section {
+  background-color: #0B1215;
+  overflow: hidden;
+  padding: 0 100px 60px;
+  margin: 0;
+}
+
+.related-merch-content {
+  position: relative;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.rainbow-container-top img,
+.rainbow-container-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.store-section {
+  width: 100%;
+  background-color: #0B1215;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3vw;
+  position: relative;
+  gap: 40px;
+  margin: 0px;
+}
+
+.store-heading {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #F3F4F6;
+  margin: 0;
+  align-self: flex-start;
+  transition: font-size 0.3s ease;
+}
+
+.store-grid {
+  display: grid;
+  gap: 2vw;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  justify-content: center;
+  padding: 0;
+}
+
+.merch-link {
+  display: block;
+}
+
+.merch-link:hover {
+  cursor: pointer;
+}
+
+.merch-block {
+  background-color: #F3F4F6; 
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 133%;
+  transition: transform 0.3s ease;
+  border: 4px solid #0B1215;
+  transition: transform 0.3s ease;
+  text-transform: uppercase;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.merch-block:hover {
+  transform: scale(1.05);
+}
+
+.merch-block-image-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-block-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.default-image {
+  opacity: 1;
+}
+
+.hover-image {
+  opacity: 0;
+}
+
+.merch-block:hover .default-image {
+  opacity: 0;
+}
+
+.merch-block:hover .hover-image {
+  opacity: 1;
+}
+
+.merch-block-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 20%;
+  border-top: 4px solid #0B1215;
+  transition: font-size 0.3s ease;
+}
+
+.merch-block-names-container {
+  flex: 3;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 8px 0 8px;
+  border-right: 4px solid #0B1215;
+  position: relative;
+  overflow: hidden;
+}
+
+.merch-block-artist-name {
+  font-family: "coolvetica", sans-serif;
+  font-weight: bold;
+  font-size: clamp(18px, 1vw, 20px);
+  color: #0B1215;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.merch-block-product-name {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 0.8vw, 18px);
+  color: #0B1215;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.merch-block-price-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.merch-block-price {
+  font-family: "ringold-sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #0B1215;
+}

@@ -1,0 +1,10 @@
+portrait: a clear, intentional photo of a solo artist
+
+band: a clear photo of a band, showing all members
+
+promo: a stylized image tied to a specific era
+
+live: an action shot taken during a live performance
+
+press: a polished, publication-ready image with neutral or controlled background
+

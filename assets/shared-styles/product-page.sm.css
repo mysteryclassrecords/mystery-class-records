@@ -1,0 +1,161 @@
+@media (max-width: 768px) {
+    .product-section {
+      padding: 40px 40px 20px;
+      height: auto;
+    }
+  
+    .product-content-container {
+      gap: clamp(10px, 2.5vw, 300px);
+    }
+    
+    .product-image {
+      width: clamp(0px, 70vw, 300px);
+      height: clamp(0px, 70vw, 300px);
+    }
+    
+    .product-details-container {
+      text-align: center;
+      gap: clamp(4px, 1.5vw, 40px);
+    }
+    
+    .product-title {
+      font-size: 48px;
+    }
+    
+    .product-artist {
+      font-size: 24px;
+      line-height: 1;
+    }
+    
+    .release-date {
+      font-size: 16px;
+    }
+    
+    .price-and-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .product-price{
+        justify-self: center;
+        text-align: center;
+    }
+    
+    .product-buy-button {
+        justify-self: center;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .track-list h3 {
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    .track-list ol {
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    
+    .pressing-info h3 {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .pressing-info p {
+      font-size: 13px;
+      text-align: center;
+    }
+    
+    .wide-separator {
+      display: none;
+    }
+  
+    .description-section {
+      font-size: 17px;
+      line-height: 1.8;
+      align-self: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .related-merch-section {
+      padding: 0 20px 60px 20px;
+    }
+  
+    .store-section {
+      padding: 0 2vw;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+  
+    .store-heading {
+      font-size: 42px;
+      align-self: center;
+    }
+  
+    .store-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2.5vw;
+      padding: 0;
+    }
+
+    .merch-block {
+      max-width: 200px;
+      border: 2px solid #0B1215;
+    }
+  
+    .merch-block:hover .default-image {
+      opacity: 1;
+    }
+  
+    .merch-block:hover .hover-image {
+      opacity: 0;
+    }
+  
+    .merch-block .default-image {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    .merch-block .hover-image {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+  
+    .merch-block.scrolled .default-image {
+        opacity: 0;
+    }
+  
+    .merch-block.scrolled .hover-image {
+        opacity: 1;
+    }
+  
+    .merch-block-names-container {
+      padding: 2px 4px 0 4px;
+      border-right: 2px solid #0B1215;
+    }
+
+    .merch-block-details-container {
+      border-top: 2px solid #0B1215;
+    }
+    
+    .merch-block-artist-name {
+      font-size: clamp(12px, 1vw, 14px);
+      margin-bottom: 0px;
+    }
+    
+    .merch-block-product-name {
+      font-size: clamp(8px, 0.8vw, 9px);
+    }
+  
+    .merch-block-price {
+      font-size: clamp(8px, 90%, 16px);
+    }
+}

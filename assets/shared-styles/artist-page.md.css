@@ -1,0 +1,124 @@
+@media (max-width: 1280px) { 
+    .artist-section {
+        padding: 60px 60px 0px;
+    }
+    
+    .artist-name {
+        font-size: 66px;
+    }
+
+    .artist-location {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .artist-bar {
+        margin: 35px 0px 0px 0px;
+        gap: 20px;
+    }
+
+    .mcr-player {
+        gap: 0px;
+        padding: 8px 4px 8px 4px;
+    }
+
+    .mcr-player__btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .mcr-player__btn svg {
+        width: 32px;
+    }
+
+    .mcr-player__meta {
+        gap: 10px;
+    }
+
+    .mcr-player__label {
+        font-size: 26px;
+    }
+
+    .mcr-player__track {
+        font-size: 16px;
+        margin: 0px 10px 0px 5px;
+    }
+
+    .artist-social-icons {
+        gap: 15px;
+    }
+
+    .artist-social-icons img {
+        width: 36px;
+    }
+
+    .description-section {
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 40px 0 40px 0;
+    }
+
+    .artist-videos {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 60px 40px 60px;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    }
+
+    .artist-videos__header {
+        font-size: 46px;
+        margin: 0 0 0 0;
+    }
+
+    .yt-embed iframe {
+        max-width: 100%;
+        min-width: 0px;
+    }
+
+    .related-merch-section {
+        padding: 20px 20px 60px 20px;
+    }
+
+    .store-section {
+        padding: 0 2vw;
+        margin-bottom: 20px;
+    }
+
+    .store-heading {
+    font-size: 34px;
+    }
+
+    .store-grid {
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        gap: 2.5vw;
+        padding: 0;
+    }
+
+    .merch-block {
+        border: 3px solid #0B1215;
+    }
+
+    .merch-block-details-container {
+        border-top: 3px solid #0B1215;
+    }
+
+    .merch-block-names-container {
+        border-right: 3px solid #0B1215;
+        padding: 2px 4px 0 4px;
+    }
+  
+    .merch-block-artist-name {
+        font-size: clamp(17px, 1vw, 18px);
+        margin-bottom: 2px;
+    }
+  
+    .merch-block-product-name {
+        font-size: clamp(13px, 0.8vw, 13px);
+    }
+
+    .merch-block-price {
+        font-size: 130%;
+    }  
+}

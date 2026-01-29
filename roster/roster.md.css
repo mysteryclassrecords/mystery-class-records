@@ -1,0 +1,38 @@
+@media (max-width: 1280px) {  
+  .roster-section {
+    padding: 60px 12vw;
+  }
+
+  .roster-heading {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+
+  .roster-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4vw;
+    padding: 0;
+  }
+
+  .artist-block {
+    border: 3px solid #0B1215;
+  }
+
+  .artist-block-name-container {
+    padding: 6px;
+    border-top: 3px solid #0B1215;
+  }
+  
+  .artist-block-artist-name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .artist-block-product-name {
+    font-size: 12px;
+  }
+
+  .artist-block-price {
+    font-size: 30px;
+  }
+}
