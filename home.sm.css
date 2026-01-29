@@ -111,12 +111,12 @@
 
   .merch-block .default-image {
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
   }
 
   .merch-block .hover-image {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
   }
 
   .merch-block.scrolled .default-image {
