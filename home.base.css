@@ -62,7 +62,7 @@
 }
 
 .featured-release-hero {
-  flex: 0 1 1550px;
+  flex: 0 1 1400px;
   min-width: 0;
   align-self: flex-end;
 }
@@ -71,7 +71,7 @@
   width: 100%;
   height: auto;
   display: block;
-  max-width: 1600px;
+  max-width: 1500px;
 }
 
 .release-text {
