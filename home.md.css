@@ -51,7 +51,6 @@
   .release-text p {
     margin-top: 40px;
     font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 450px;
   }
 
