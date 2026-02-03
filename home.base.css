@@ -64,6 +64,7 @@
   flex: 0 1 1400px;
   min-width: 0;
   align-self: flex-end;
+  z-index: 2;
 }
 
 .featured-release-hero img {
@@ -189,7 +190,7 @@
   animation: fallAnim 9s linear infinite;
   animation-delay: calc(var(--i) * -2s);
   width: 50px;
-  z-index: 2
+  z-index: 1
 }
 
 .shape:nth-child(3n) {
