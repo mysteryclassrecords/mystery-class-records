@@ -18,19 +18,28 @@
   }
 
   .featured-release {
-    height: 600px;
+    padding: 40px 40px 0 40px;
   }
 
   .featured-release-hero {
-    width: 600px;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 3vw;
+    flex: 0 1 1400px;
+  }
+
+  .featured-release-hero img {
+    max-width: 1500px;
+  }
+
+  .falling-shapes {
+    width: 90%;
+  }
+
+  .shape {
+    width: 40px;
   }
 
   .release-text {
-    padding-right: 40px;
-    z-index: 1;
+    margin-bottom: 40px;
+    gap: 40px;
   }
 
   .release-heading {
@@ -39,28 +48,26 @@
 
   .release-title {
     font-size: 70px;
-    margin-top: 10px;
   }
 
   .rainbow-underline {
-    margin-top: 10px;
-    width: 590px;
+    width: 530px;
     height: 4px;
   }
 
   .release-text p {
-    margin-top: 40px;
     font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 450px;
+
+    padding: 10px 12px 6px 10px;
+    border-radius: 20px;
   }
 
   .pre-order-button {
-    margin-top: 100px;
     width: 200px;
     height: 66px;
-    border-radius: 50px;
     font-size: 26px;
+    border-radius: 40px;
   }
 
   .store-section {
