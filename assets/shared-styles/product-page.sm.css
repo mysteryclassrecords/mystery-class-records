@@ -110,6 +110,10 @@
       max-width: 200px;
       border: 2px solid #0B1215;
     }
+
+    .merch-block-product-image {
+      transform: scale(1.08);
+    }
   
     .merch-block:hover .default-image {
       opacity: 1;

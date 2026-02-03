@@ -42,7 +42,6 @@
   transition: font-size 0.3s ease;
 }
 
-/* Featured Release Section */
 .featured-release {
   width: 100vw;
   padding: 60px 50px 0 50px;
@@ -138,6 +137,16 @@
   transition: font-size 0.3s ease;
   z-index: 3;
   margin: 0px;
+  color: #2D2D39;
+
+  background: linear-gradient(
+    to left,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.6) 60%,
+    rgba(255,255,255,0) 100%
+  );
+  padding: 10px 12px 6px 10px;
+  border-radius: 20px;
 }
 
 .pre-order-button {
