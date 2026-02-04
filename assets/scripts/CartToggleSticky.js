@@ -32,7 +32,9 @@
                         "styles": {
                             "button": {
                                 "font-family": "Raleway, sans-serif",
-                                "font-weight": "bold",
+                                "font-weight": "700",
+
+                            "font-style": "italic",
                                 "font-size": "18px",
                                 "padding-top": "17px",
                                 "padding-bottom": "17px",
@@ -111,7 +113,9 @@
                         "styles": {
                             "toggle": {
                                 "font-family": "Raleway, sans-serif",
-                                "font-weight": "bold",
+                                "font-weight": "700",
+
+                            "font-style": "italic",
                                 "background-color": "#0b1215",
                                 ":hover": {
                                     "background-color": "#131f24"
