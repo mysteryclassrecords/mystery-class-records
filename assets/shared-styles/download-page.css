@@ -1,0 +1,251 @@
+.hero-section {
+  background-color: #0b1215;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0px auto 60px;
+  padding: 60px 60px 20px;
+  gap: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.download-name {
+  font-family: "ringold-sans", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #F3F4F6;
+  line-height: 1;
+  transition: font-size 0.3s ease;
+  text-transform: uppercase;
+}
+
+.artist-name {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 36px;
+  color: #F3F4F6;
+  transition: font-size 0.3s ease;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.hero-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Album art */
+.album-art-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.album-art {
+  width: min(520px, 88vw);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(243, 244, 246, 0.10);
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(243, 244, 246, 0.78);
+  margin-top: 10px;
+  letter-spacing: 0.02em;
+}
+
+/* Cards */
+.download-card,
+.links-card,
+.help-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(243, 244, 246, 0.10);
+  border-radius: 18px;
+  padding: 22px;
+  backdrop-filter: blur(10px);
+}
+
+.section-title {
+  font-family: "ringold-sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  color: #F3F4F6;
+  margin: 0 0 14px 0;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  font-family: "ringold-sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #0b1215;
+  background: #F3F4F6;
+  border: 1px solid rgba(243, 244, 246, 0.35);
+  transition: transform 0.08s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btn-primary:active {
+  transform: translateY(0px);
+  opacity: 0.9;
+}
+
+.download-meta {
+  font-family: "coolvetica", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(243, 244, 246, 0.78);
+  margin: 12px 0 0 0;
+}
+
+/* Secondary actions */
+.secondary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-secondary,
+.btn-tertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: "ringold-sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #F3F4F6;
+  border: 1px solid rgba(243, 244, 246, 0.18);
+  background: transparent;
+  transition: transform 0.08s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary:hover,
+.btn-tertiary:hover {
+  background: rgba(243, 244, 246, 0.06);
+  border-color: rgba(243, 244, 246, 0.28);
+  transform: translateY(-1px);
+}
+
+/* Streaming pills */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "coolvetica", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(243, 244, 246, 0.90);
+  border: 1px solid rgba(243, 244, 246, 0.14);
+  background: rgba(255, 255, 255, 0.02);
+  transition: background 0.2s ease, transform 0.08s ease, border-color 0.2s ease;
+}
+
+.pill:hover {
+  background: rgba(243, 244, 246, 0.06);
+  border-color: rgba(243, 244, 246, 0.26);
+  transform: translateY(-1px);
+}
+
+.fineprint {
+  margin-top: 12px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 10;
+  color: rgba(243, 244, 246, 0.65);
+}
+
+/* Help */
+.help-list {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(243, 244, 246, 0.85);
+  font-family: "coolvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.help-list li {
+  margin: 10px 0;
+}
+
+.kbd {
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(243, 244, 246, 0.18);
+  background: rgba(243, 244, 246, 0.06);
+  font-style: italic;
+}
+
+.help-small {
+  margin-top: 14px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 14px;
+  color: rgba(243, 244, 246, 0.70);
+}
+
+.inline-link {
+  color: rgba(243, 244, 246, 0.92);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Responsive typography (keeps your big title but prevents overflow) */
+@media (max-width: 900px) {
+  .hero-section { padding: 42px 22px 18px; }
+  .download-name { font-size: 56px; }
+  .artist-name { font-size: 28px; margin-bottom: 20px; }
+  .link-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .download-name { font-size: 44px; }
+  .artist-name { font-size: 22px; }
+}
