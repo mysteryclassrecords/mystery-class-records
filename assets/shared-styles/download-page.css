@@ -58,8 +58,9 @@
 
 /* Subtitle */
 .hero-subtitle {
-  font-family: "coolvetica", sans-serif;
-  font-weight: 400;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 20px;
   font-style: italic;
   color: rgba(243, 244, 246, 0.78);
@@ -121,10 +122,10 @@
 }
 
 .download-meta {
-  font-family: "coolvetica", sans-serif;
   font-style: italic;
-  font-weight: 400;
   font-size: 16px;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
   color: rgba(243, 244, 246, 0.78);
   margin: 12px 0 0 0;
 }
@@ -178,10 +179,10 @@
   padding: 12px 10px;
   border-radius: 999px;
   text-decoration: none;
-  font-family: "coolvetica", sans-serif;
-  font-style: italic;
   font-size: 16px;
-  font-weight: 400;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: rgba(243, 244, 246, 0.90);
   border: 1px solid rgba(243, 244, 246, 0.14);
   background: rgba(255, 255, 255, 0.02);
@@ -196,9 +197,10 @@
 
 .fineprint {
   margin-top: 12px;
-  font-family: "coolvetica", sans-serif;
   font-size: 14px;
-  font-weight: 10;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 400;
+  font-style: italic;
   color: rgba(243, 244, 246, 0.65);
 }
 
@@ -207,7 +209,9 @@
   margin: 0;
   padding-left: 18px;
   color: rgba(243, 244, 246, 0.85);
-  font-family: "coolvetica", sans-serif;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -226,7 +230,9 @@
 
 .help-small {
   margin-top: 14px;
-  font-family: "coolvetica", sans-serif;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   color: rgba(243, 244, 246, 0.70);
 }
