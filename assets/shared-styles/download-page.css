@@ -213,7 +213,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .help-list li {
@@ -221,7 +221,7 @@
 }
 
 .kbd {
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 8px;
   border: 1px solid rgba(243, 244, 246, 0.18);
   background: rgba(243, 244, 246, 0.06);
@@ -254,4 +254,5 @@
 @media (max-width: 480px) {
   .download-name { font-size: 44px; }
   .artist-name { font-size: 22px; }
+  .kbd { padding: 0px 6px;}
 }
