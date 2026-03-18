@@ -81,7 +81,7 @@
   }
 
   .store-section {
-    padding: 50px 5vw;
+    padding: 50px 5vw 30px;
   }
 
   .store-grid {
@@ -147,4 +147,8 @@
   .merch-block-price {
     font-size: clamp(20px, 3vw, 30px);
   }
+
+  .see-all-button {
+    font-size: 15px;
+}
 }

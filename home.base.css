@@ -248,10 +248,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 13vw;
   overflow: hidden;
   position: relative;
-  padding: 60px 13vw;
+  padding: 60px 13vw 60px;
 }
 
 .store-grid {
@@ -380,4 +379,26 @@
   font-weight: 400;
   font-size: 40px;
   color: #0B1215;
+}
+
+.see-all-container {
+  text-align: center;
+  background-color: #F3F4F6;
+  padding-bottom: 20px;
+}
+
+.see-all-button {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  text-decoration:underline;
+  color: #0B1215;
+  transition: transform 0.3s ease;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.see-all-button:hover {
+  transform: scale(1.1);
 }
