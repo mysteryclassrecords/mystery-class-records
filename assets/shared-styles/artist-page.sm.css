@@ -15,10 +15,14 @@
         margin: 0 0 30px 0;
     }
 
+    .artist-media {
+        margin: 0 auto 30px;
+    }
+
     .artist-bar {
         align-items: flex-start;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         margin: 20px 0 0 0;
         align-items: stretch;
     }
@@ -78,8 +82,8 @@
     .artist-videos {
         max-width: 1500px;
         margin: 0 auto;
-        padding: 0 30px 50px 30px;
-        gap: 30px;
+        padding: 0;
+        gap: 15px;
         align-items: start;
         grid-template-columns: repeat(auto-fit, 1fr);
     }
@@ -94,18 +98,17 @@
         height: auto;
         aspect-ratio: 16 / 9;
         display: block;
-        max-width: 75vw;
+        max-width: 100%;
         min-width: 0px;
     }
 
     .yt-embed {
         display: flex;
-        justify-content: center;
     }
 
 
     .related-merch-section {
-        padding: 0 20px 60px 20px;
+        padding: 0 5px;
     }
 
     .related-merch-content {
@@ -114,15 +117,20 @@
         margin: 0 auto;
     }
 
+    .rainbow-container-top img {
+        height: 10px;
+    }
+
+    .rainbow-container-bottom img {
+        height: 10px;
+    }
+
     .store-section {
-        padding: 0 2vw;
-        margin-bottom: 20px;
-        gap: 10px;
+        padding: 0 13px;
     }
   
     .store-heading {
-        font-size: 36px;
-        align-self: center;
+        font-size: 32px;
     }
   
     .store-grid {
