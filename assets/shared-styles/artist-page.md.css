@@ -12,6 +12,10 @@
         margin-bottom: 30px;
     }
 
+    .artist-media {
+        margin: 0 auto 40px;
+    }
+
     .artist-bar {
         margin: 35px 0px 0px 0px;
         gap: 20px;
@@ -61,7 +65,6 @@
     .artist-videos {
         max-width: 1500px;
         margin: 0 auto;
-        padding: 0 60px 40px 60px;
         gap: 24px;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
@@ -78,16 +81,15 @@
     }
 
     .related-merch-section {
-        padding: 20px 20px 60px 20px;
+        padding: 60px 30px 0;
     }
 
     .store-section {
-        padding: 0 2vw;
-        margin-bottom: 20px;
+        padding: 0 30px;
     }
 
     .store-heading {
-    font-size: 34px;
+    font-size: 42px;
     }
 
     .store-grid {
