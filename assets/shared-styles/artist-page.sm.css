@@ -98,18 +98,17 @@
         height: auto;
         aspect-ratio: 16 / 9;
         display: block;
-        max-width: 75vw;
+        max-width: 100%;
         min-width: 0px;
     }
 
     .yt-embed {
         display: flex;
-        justify-content: center;
     }
 
 
     .related-merch-section {
-        padding: 0 20px 60px 20px;
+        padding: 0 5px;
     }
 
     .related-merch-content {
@@ -127,14 +126,11 @@
     }
 
     .store-section {
-        padding: 0 2vw;
-        margin-bottom: 20px;
-        gap: 10px;
+        padding: 0 13px;
     }
   
     .store-heading {
-        font-size: 36px;
-        align-self: center;
+        font-size: 32px;
     }
   
     .store-grid {
