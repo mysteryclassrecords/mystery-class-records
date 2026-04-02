@@ -15,10 +15,14 @@
         margin: 0 0 30px 0;
     }
 
+    .artist-media {
+        margin: 0 auto 30px;
+    }
+
     .artist-bar {
         align-items: flex-start;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         margin: 20px 0 0 0;
         align-items: stretch;
     }
@@ -78,8 +82,8 @@
     .artist-videos {
         max-width: 1500px;
         margin: 0 auto;
-        padding: 0 30px 50px 30px;
-        gap: 30px;
+        padding: 0;
+        gap: 15px;
         align-items: start;
         grid-template-columns: repeat(auto-fit, 1fr);
     }
@@ -112,6 +116,14 @@
         position: relative;
         max-width: 95%;
         margin: 0 auto;
+    }
+
+    .rainbow-container-top img {
+        height: 10px;
+    }
+
+    .rainbow-container-bottom img {
+        height: 10px;
     }
 
     .store-section {
