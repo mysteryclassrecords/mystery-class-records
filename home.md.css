@@ -17,6 +17,9 @@
     margin-top: 15px;
   }
 
+  .section-transition {
+  }
+
   .featured-release {
     padding: 40px 40px 0 40px;
   }
@@ -44,23 +47,22 @@
   }
 
   .release-heading {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .release-title {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .rainbow-underline {
-    width: 530px;
     height: 4px;
   }
 
   .release-text p {
     font-size: 20px;
     max-width: 450px;
-
-    padding: 10px 12px 6px 10px;
+    line-height: 1.2;
+    padding-right: 6px;
     border-radius: 20px;
   }
 
@@ -69,6 +71,52 @@
     height: 66px;
     font-size: 26px;
     border-radius: 40px;
+  }
+
+  .bulletin-board {
+    padding: 40px 40px 40px;
+    gap: 40px;
+  }
+
+  .bulletin-board__content {
+    max-width: 650px;
+    gap: 40px;
+  }
+
+  .bulletin-board__eyebrow {
+    font-size: 20px;
+  }
+
+  .bulletin-board__title {
+    font-size: 60px;
+  }
+
+  .bulletin-board__underline {
+    height: 4px;
+  }
+
+  .bulletin-board__description {
+    font-size: 20px;
+    max-width: 450px;
+    padding-left: 6px;
+    border-radius: 20px;
+    line-height: 1.2;
+  }
+
+  .bulletin-board__button {
+    width: 200px;
+    height: 66px;
+    font-size: 26px;
+    border-radius: 40px;
+  }
+
+  .bulletin-board__hero {
+    flex: 0 1 340px;
+    margin-right: 40px;
+  }
+
+  .bulletin-board__hero img {
+    max-width: 340px;
   }
 
   .store-section {

@@ -8,6 +8,24 @@
   transition: height 0.3s ease;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  pointer-events: none;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 18, 28, 0) 0%,
+    rgba(8, 18, 28, 0.35) 55%,
+    rgba(8, 18, 28, 0.75) 100%
+  );
+}
+
 .hero-video {
   width: 100%;
   height: 100%;
@@ -42,6 +60,21 @@
   transition: font-size 0.3s ease;
 }
 
+.section-transition {
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 18, 28, 0) 0%,
+    rgba(8, 18, 28, 0.45) 45%,
+    rgba(8, 18, 28, 0.9) 100%
+  );
+}
+
 .featured-release {
   width: 100vw;
   padding: 60px 50px 0 50px;
@@ -60,12 +93,35 @@
   background-size: 100% 100%;
 }
 
+.featured-release::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  pointer-events: none;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 18, 28, 0) 0%,
+    rgba(8, 18, 28, 0.35) 55%,
+    rgba(8, 18, 28, 0.75) 100%
+  );
+}
+
 .featured-release-hero {
   flex: 0 1 1400px;
   min-width: 0;
   align-self: flex-end;
   z-index: 2;
   perspective: 1200px;
+}
+
+.featured-release-hero a {
+  display: block;
+  cursor: pointer;
 }
 
 .featured-release-hero img {
@@ -143,7 +199,7 @@
 .rainbow-underline {
   width: 100%;
   height: 5px;
-  margin-top: 8px;
+  margin: 0px;
   transition: width 0.3s ease;
 
   background: linear-gradient(
@@ -165,7 +221,7 @@
   font-weight: 550;
   font-size: 26px;
   max-width: 600px;
-  line-height: 2;
+  line-height: 1.5;
   transition: font-size 0.3s ease;
   z-index: 3;
   margin: 0px;
@@ -178,7 +234,7 @@
     rgba(255,255,255,0) 100%
   ); */
 
-  padding: 10px 12px 6px 10px;
+  padding-right: 6px;
   border-radius: 20px;
 }
 
@@ -272,21 +328,6 @@
   }
 }
 
-.section-transition {
-  width: 100%;
-  height: 60px;
-  pointer-events: none;
-  position: relative;
-  z-index: 5;
-  margin-top: -60px;
-  background: linear-gradient(
-    to bottom,
-    rgba(8, 18, 28, 0) 0%,
-    rgba(8, 18, 28, 0.45) 45%,
-    rgba(8, 18, 28, 0.9) 100%
-  );
-}
-
 .bulletin-board::after {
   content: "";
   position: absolute;
@@ -319,7 +360,7 @@
   position: absolute;
   inset: 0;
 
-  background-image: url("assets/images/events/bykm-album-release.png");
+  background-image: url("assets/images/events/bykm-album-release.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -334,13 +375,22 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(11, 18, 21, 0.45);
+  pointer-events: none;
   z-index: -1;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(11, 18, 21, 0.45) 0%,
+      rgba(11, 18, 21, 0.45) calc(100% - 60px),
+      rgba(8, 18, 28, 0.75) 100%
+    );
 }
 
 .bulletin-board__content {
   flex: 1 1 55%;
   max-width: 900px;
+  min-width: 0px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -385,16 +435,15 @@
   height: 5px;
   transition: width 0.3s ease;
   background: linear-gradient(
-    to left,
-    rgba(243, 244, 246, 0) 0%,
-    #FF0000 10%,
-    #FFB300 25%,
-    #FFFF00 40%,
-    #00FF00 55%,
-    #00FFF7 70%,
-    #0000FF 85%,
+    to right,
+    #FF0000 0%,
+    #FFB300 15%,
+    #FFFF00 30%,
+    #00FF00 45%,
+    #00FFF7 60%,
+    #0000FF 75%,
     #8E00FF 90%,
-    #8E00FF 100%
+    rgba(142, 0, 255, 0) 100%
   );
 }
 
@@ -403,12 +452,14 @@
   font-weight: 550;
   font-size: 26px;
   max-width: 600px;
-  line-height: 2;
+  min-width: 0;
+  line-height: 1.5;
   transition: font-size 0.3s ease;
   margin: 0;
   color: #F3F4F6;
-  padding: 10px 12px 6px 10px;
+  padding-left: 6px;
   border-radius: 20px;
+  z-index: 3;
 }
 
 .bulletin-board__button {
@@ -427,6 +478,7 @@
   transition: transform 0.3s ease;
   margin: 0;
   text-transform: uppercase;
+  position: relative;
 }
 
 .bulletin-board__button:hover {
@@ -437,7 +489,6 @@
   flex: 0 1 420px;
   display: flex;
   justify-content: center;
-  z-index: 3;
   perspective: 1000px;
   margin-right: 120px;
 }
@@ -451,7 +502,7 @@
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.45),
     0 8px 18px rgba(0, 0, 0, 0.35);
-  transform: rotateY(-6deg) rotateZ(1deg);
+  transform: rotateY(-6deg) rotateZ(2deg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
