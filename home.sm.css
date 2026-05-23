@@ -17,10 +17,6 @@
     margin-top: 5px;
   }
 
-  .section-transition {
-    z-index: 2;
-  }
-
   .featured-release {
     padding: 30px 15px 0px 0px;
     background-size: cover;
@@ -124,10 +120,6 @@
 
   .bulletin-board__hero {
     max-width: 30%;
-  }
-
-
-  .bulletin-board__hero img {
   }
 
   .store-section {
