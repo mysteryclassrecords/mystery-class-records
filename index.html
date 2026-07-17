@@ -58,8 +58,9 @@
       </div>
     </div>
     
-    <!-- Featured Release Section -->
-    <div class="featured-release">
+    <div class="featured-release" style="background-color: #D60000">
+      <!-- Swap Above style for this to set a background image -->
+      <!-- style="background-image:url('assets/images/products/mcr-020/background.webp');" -->
       <div class="featured-release-hero">
         <a href="store/mcr-020-cd/">
           <img
@@ -96,11 +97,38 @@
         </p>
         <button class="pre-order-button" onclick="location.href='store/mcr-020-cd/'">
           BUY NOW
-        </button>        
+        </button>
       </div>
     </div>
 
-    <section class="bulletin-board" aria-labelledby="bulletin-board-title">
+    <section class="bulletin-board" aria-labelledby="bulletin-board-title" style="width: 100vw; 
+         padding: 60px 50px; 
+         color: #F3F4F6; 
+         display: flex; 
+         justify-content: space-between; 
+         align-items: center; 
+         gap: 60px; 
+         position: relative; 
+         overflow: hidden;">
+
+  <!-- Blurred Background Layer -->
+  <div style="position: absolute; 
+              inset: 0; 
+              background-image: url('assets/images/products/mcr-020/poster.webp'); 
+              background-repeat: no-repeat; 
+              background-position: center; 
+              background-size: cover; 
+              filter: blur(20px); 
+              transform: scale(1.08); 
+              z-index: -2;">
+  </div>
+
+  <!-- Optional Dark Overlay -->
+  <div style="position: absolute; 
+              inset: 0; 
+              background: rgba(0, 0, 0, 0.55); 
+              z-index: -1;">
+  </div>
 
       <div class="bulletin-board__content">
         <div class="bulletin-board__header">

@@ -71,7 +71,6 @@
   transition: height 0.3s ease;
   position: relative;
   overflow: hidden;
-  background-color: #D60000;
 
   /* background-image: url("assets/images/products/mcr-020/background.webp"); */
   background-repeat: no-repeat;
@@ -338,23 +337,6 @@
   gap: 60px;
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-}
-
-.bulletin-board::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: url("assets/images/products/mcr-020/poster.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  filter: blur(20px);
-  transform: scale(1.08);
-
-  z-index: -2;
 }
 
 .bulletin-board::after {
