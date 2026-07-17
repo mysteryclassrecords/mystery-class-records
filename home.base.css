@@ -71,8 +71,9 @@
   transition: height 0.3s ease;
   position: relative;
   overflow: hidden;
+  background-color: #D60000;
 
-  background-image: url("assets/images/products/mcr-018/background.webp");
+  /* background-image: url("assets/images/products/mcr-020/background.webp"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -345,7 +346,7 @@
   position: absolute;
   inset: 0;
 
-  background-image: url("assets/images/events/bykm-album-release.webp");
+  background-image: url("assets/images/products/mcr-020/poster.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
