@@ -339,22 +339,6 @@
   overflow: hidden;
 }
 
-.bulletin-board::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(11, 18, 21, 0.45) 0%,
-      rgba(11, 18, 21, 0.45) calc(100% - 60px),
-      rgba(8, 18, 28, 0.75) 100%
-    );
-}
-
 .bulletin-board__content {
   flex: 1 1 55%;
   max-width: 900px;
